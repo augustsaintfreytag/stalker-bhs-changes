@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+	<string id="ui_inv_damage_immunity">
+		<text>%c[0,255,255,255]Analgesic Effect:</text>
+	</string>
+	<string id="ui_inv_limb_generic">
+		<text>%c[0,255,255,255]Medical Effect:</text>
+	</string>
+	<string id="ui_inv_limb_splint">
+		<text>%c[0,255,255,255]Limb Support:</text>
+	</string>
+	<string id="ui_inv_limb_restore">
+		<text>%c[0,255,255,255]Body Recovery:</text>
+	</string>
+	<string id="ui_inv_limb_surgery">
+		<text>%c[0,255,255,255]Body Surgery:</text>
+	</string>
+</string_table>
