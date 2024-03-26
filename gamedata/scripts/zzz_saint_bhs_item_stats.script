@@ -1,0 +1,204 @@
+-- Modules
+
+local gc = game.translate_string
+
+-- Localization
+
+local str_intensity = {
+	weak,
+	moderate,
+	potent
+}
+
+-- Patches
+
+bhs_max_limb_health = {}
+bhs_max_limb_health_total = 1 -- Don't use default value 0 to prevent division by zero.
+bhs_items_limb_restore = {}
+bhs_items_any_limb_restore = {}
+bhs_items_limb_splint = {}
+bhs_items_surgical = {}
+bhs_items_analgesic = {}
+
+function apply_compatibility_patches()
+	if not zzz_player_injuries or not zzz_player_injuries.healhelplist then
+		-- BHS or other modules not available.
+		return
+	end
+
+	bhs_max_limb_health = zzz_player_injuries.maxhp or {}
+	bhs_max_limb_health_total = bhs_max_limb_health.head + bhs_max_limb_health.torso + bhs_max_limb_health.rightleg +
+		bhs_max_limb_health.leftleg + bhs_max_limb_health.rightarm + bhs_max_limb_health.leftarm
+	bhs_items_limb_restore = zzz_player_injuries.healhelplist or {}
+	bhs_items_any_limb_restore = zzz_player_injuries.healonelist or {}
+	bhs_items_limb_splint = zzz_player_injuries.splintlist or {}
+	bhs_items_surgical = zzz_player_injuries.surgerylist or {}
+	bhs_items_analgesic = zzz_player_injuries.painkillerlist or {}
+
+	utils_ui.stats_table["booster"]["boost_damage_immunity"] = {
+		index = 3,
+		typ = "float",
+		name = "ui_inv_damage_immunity",
+		icon_p = "ui_am_prop_damage_immunity",
+		icon_n = "",
+		track = false,
+		magnitude = 1,
+		unit = "",
+		compare = false,
+		sign = false,
+		show_always = false,
+		value_functor = { "zzz_saint_bhs_item_stats", "get_damage_immunity" }
+	}
+
+	utils_ui.stats_table["booster"]["boost_limb_splint"] = {
+		index = 4,
+		typ = "float",
+		name = "ui_inv_limb_splint",
+		icon_p = "ui_am_prop_limb_splint",
+		icon_n = "",
+		track = false,
+		magnitude = 1,
+		unit = "",
+		compare = false,
+		sign = false,
+		show_always = false,
+		value_functor = { "zzz_saint_bhs_item_stats", "get_limb_splint" }
+	}
+
+	utils_ui.stats_table["booster"]["boost_limb_restore"] = {
+		index = 5,
+		typ = "float",
+		name = "ui_inv_limb_restore",
+		icon_p = "ui_am_prop_limb_restore",
+		icon_n = "",
+		track = false,
+		magnitude = 1,
+		unit = "",
+		compare = false,
+		sign = false,
+		show_always = false,
+		value_functor = { "zzz_saint_bhs_item_stats", "get_limb_restore" }
+	}
+
+	utils_ui.stats_table["booster"]["boost_limb_surgery"] = {
+		index = 6,
+		typ = "float",
+		name = "ui_inv_limb_surgery",
+		icon_p = "ui_am_prop_limb_surgery",
+		icon_n = "",
+		track = false,
+		magnitude = 1,
+		unit = "",
+		compare = false,
+		sign = false,
+		show_always = false,
+		value_functor = { "zzz_saint_bhs_item_stats", "get_limb_surgery" }
+	}
+end
+
+-- Values
+
+function get_damage_immunity(obj, sec)
+	if not sec then sec = obj:section() end
+
+	local effects = bhs_items_analgesic[sec] or {}
+	local level = effects.painkillerpower
+
+	if not level then
+		return nil
+	end
+
+	local duration = math.ceil(effects.painkillerduration / 1000)
+	local str = "Level " .. level .. " (" .. duration .. " " .. gc("ui_inv_seconds_short") .. ")"
+
+	return str
+end
+
+function get_limb_splint(obj, sec)
+	if not sec then sec = obj:section() end
+
+	local effects = bhs_items_limb_splint[sec] or {}
+
+	if not amount then
+		return nil
+	end
+
+	return "Arms, Legs"
+end
+
+function get_limb_restore(obj, sec)
+	if not sec then sec = obj:section() end
+
+	local targeted_limb_effects = bhs_items_limb_restore[sec]
+	local any_limb_effects = bhs_items_any_limb_restore[sec]
+
+	-- 60 units total amount healed by base values, total limb health is 84 units
+	local total_heal_power = 0
+	local total_heal_duration = 0
+
+	if targeted_limb_effects then
+		local effects = targeted_limb_effects
+		local total_heal_amount_head_and_torso = effects.head + effects.torso
+		local total_heal_amount_limbs = effects.rightleg + effects.leftleg + effects.rightarm + effects.leftarm
+		local total_heal_amount = total_heal_amount_head_and_torso + total_heal_amount_limbs
+
+		total_heal_power = total_heal_amount / bhs_max_limb_health_total
+		total_heal_duration = math.ceil(effects.healtimer / 1000)
+	elseif any_limb_effects then
+		local effects = any_limb_effects
+		local total_heal_amount = effects.healamount
+
+		total_heal_power = total_heal_amount / bhs_max_limb_health_total
+		total_heal_duration = math.ceil(effects.healtimer / 1000)
+	else
+		return nil
+	end
+
+	local str_components = {}
+
+	if total_heal_power >= 0.5 then
+		table.insert(str_components, "Strong Recovery for")
+	elseif total_heal_power >= 0.3 then
+		table.insert(str_components, "Moderate Recovery for")
+	else
+		table.insert(str_components, "Weak Recovery for")
+	end
+
+	table.insert(str_components, "Head, Torso, Arms, Legs")
+	table.insert(str_components, "(" .. total_heal_duration .. " " .. gc("ui_inv_seconds_short") .. ")")
+
+	return table.concat(str_components, " ")
+end
+
+function get_limb_surgery(obj, sec)
+	if not sec then sec = obj:section() end
+
+	local effects = bhs_items_surgical[sec] or {}
+	local amount = effects.surgeryamount
+
+	if not amount then
+		return nil
+	end
+
+	return "Head, Torso, Arms, Legs"
+end
+
+-- Hooks
+
+function hook_overrides()
+	if not ish_item_stats or not ish_item_stats.apply_compatibility_patches then
+		-- Module to be patched not available.
+		return
+	end
+
+	local original_apply_compatibility_patches = ish_item_stats.apply_compatibility_patches
+
+	ish_item_stats.apply_compatibility_patches = function()
+		original_apply_compatibility_patches()
+		apply_compatibility_patches()
+	end
+end
+
+function on_game_start()
+	hook_overrides()
+end
