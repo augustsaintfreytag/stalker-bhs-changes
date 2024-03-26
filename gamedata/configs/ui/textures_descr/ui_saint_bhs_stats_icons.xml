@@ -1,0 +1,8 @@
+<w>
+    <file name="ui\ui_actor_sleep_screen">
+		<texture id="ui_am_prop_limb_surgery" x="806" y="470" width="19" height="19" />
+		<texture id="ui_am_prop_damage_immunity" x="806" y="490" width="19" height="19" />
+		<texture id="ui_am_prop_limb_splint" x="806" y="509" width="19" height="19" />
+		<texture id="ui_am_prop_limb_restore" x="806" y="528" width="19" height="19" />
+    </file>
+</w>
