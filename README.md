@@ -1,0 +1,1 @@
+A mod making custom changes to the Body Health System mod and its add-on BHS Overhaul for the GAMMA mod pack of STALKER Anomaly.
