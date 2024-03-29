@@ -109,7 +109,7 @@ function get_damage_immunity(obj, sec)
 	end
 
 	local duration = math.ceil(effects.painkillerduration / 1000)
-	local str = "Level " .. level .. " (" .. duration .. " " .. gc("ui_inv_seconds_short") .. ")"
+	local str = "Level " .. level .. " (" .. duration .. " " .. gc("ui_inv_seconds") .. ")"
 
 	return str
 end
