@@ -3517,6 +3517,22 @@ function prop_condition(obj, sec)
 	return obj and obj:condition() or 1
 end
 
+-- Numeric value formatting with thousands separator, supporting both integers and floats.
+-- Examples, input 200 -> 200, 1000 -> 1.000, 2250000 -> 2.250.000, 1250.50 -> 1.250,50
+function prop_formatted_number(val)
+	if type(val) ~= "number" then
+		return val
+	end
+
+	local formatted = string.format("%d", val)
+	local k = 1
+
+	while k > 0 do
+		formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1.%2')
+	end
+
+	return formatted
+end
 function get_utils_xml()
 	return XMLP
 end
