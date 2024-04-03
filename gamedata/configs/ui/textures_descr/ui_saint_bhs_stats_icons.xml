@@ -1,8 +1,22 @@
 <w>
     <file name="ui\ui_actor_sleep_screen">
+		<!-- Additions -->
 		<texture id="ui_am_prop_limb_surgery" x="806" y="471" width="19" height="19" />
 		<texture id="ui_am_prop_damage_immunity" x="806" y="490" width="19" height="19" />
 		<texture id="ui_am_prop_limb_splint" x="806" y="509" width="19" height="19" />
 		<texture id="ui_am_prop_limb_restore" x="806" y="528" width="19" height="19" />
+
+		<!-- Overrides -->
+		<texture id="ui_am_propery_01" x="749" y="433" width="19" height="19" /> <!-- Fire Wound Protection -->
+		<texture id="ui_am_propery_02" x="749" y="452" width="19" height="19" /> <!-- Bleeding Protection -->
+		<texture id="ui_am_propery_03" x="749" y="471" width="19" height="19" /> <!-- Durability -->
+		<texture id="ui_am_propery_04" x="749" y="490" width="19" height="19" /> <!-- Wound Healing -->
+		<texture id="ui_am_propery_05" x="749" y="509" width="19" height="19" /> <!-- Health Restoration -->
+		<texture id="ui_am_propery_06" x="768" y="433" width="19" height="19" /> <!-- Vision -->
+		<texture id="ui_am_propery_07" x="768" y="452" width="19" height="19" /> <!-- Stamina/Breathing -->
+		<texture id="ui_am_propery_08" x="768" y="471" width="19" height="19" /> <!-- Weight -->
+		<texture id="ui_am_propery_09" x="768" y="490" width="19" height="19" /> <!-- Radiation Protection -->
+		<texture id="ui_am_propery_10" x="768" y="509" width="19" height="19" /> <!-- Electric Protection -->
+		<texture id="ui_am_propery_11" x="787" y="433" width="19" height="19" /> <!-- Psi Protection-->
     </file>
 </w>
