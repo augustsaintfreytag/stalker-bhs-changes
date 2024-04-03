@@ -330,4 +330,43 @@
 		</text>
 	</string>
 	
+	<string id="st_drug_psy_blockade">
+		<text>Psy Block</text>
+	</string>
+	<string id="st_drug_psy_blockade_descr">
+		<text>An experimental psychotropic medication developed to provide biological resistance to the effects of active psi fields and mind-affecting hazards in the Zone. Psy Block is a compound consisting mainly of the typical class antipsychotic chlorpromazine and other unknown anxiolytic and lightly sedative substances. Ingestion induces short-term alexithymia (emotional blindness) and may cause side effects of nausea, disorientation, and apathy. Even while under its effects, prolonged exposure to psi fields is highly discouraged.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] experimental item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_purple] • %c[ui_gray_2] minor fatigue\n
+		%c[d_purple] • %c[ui_gray_2] moderate antipsychotic\n
+		</text>
+	</string>
+
+	<string id="st_surginst">
+		<text>Surgical Instruments</text>
+	</string>
+	<string id="st_surginst_descr">
+		<text>Medical tools that belong to a surgical field kit for emergency procedures. The tools can either be combined with other items to make make assemble a proper kit or used as-is for emergency interventions. Without a proper surgery kit, direct use will require disinfection and bandaging.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_purple] • %c[ui_gray_2] minor limb triage\n
+		%c[d_red] • %c[ui_gray_2] minor surgical trauma\n
+		</text>
+	</string>
+	
+	<string id="st_zagustin">
+		<text>Tranexyban</text>
+	</string>
+	<string id="st_zagustin_descr">
+		<text>An antifibrinolytic agent for treatment and prevention of major hemorrhaging and excessive menstruation. Tranexamic acid is a synthetic derivative of lysine and acts by preventing the breakdown of fibrin, allowing sustained blood clotting and control bleeding. Side effects are rare, with low chances for seizures, altered vision, and anaphylactic shock; hydration is recommended. The drug is commonly carried by medical and military personnel in the Zone.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medicine\n
+		%c[d_purple] • %c[ui_gray_2] fast usage (syringe)\n
+		%c[d_purple] • %c[ui_gray_2] minor bleeding control\n
+		%c[d_purple] • %c[ui_gray_2] minor bleeding resistance\n
+		</text>
+	</string>
 </string_table>
