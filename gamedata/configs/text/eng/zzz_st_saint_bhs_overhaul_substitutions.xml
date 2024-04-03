@@ -18,7 +18,7 @@
 		<text>Vinca</text>
 	</string>
 	<string id="st_drug_coagulant_descr">
-		<text>Ukrainian Vikasolum, an artificial equivalent of vitamin K. The main purpose of this drug is to increase blood coagulation speed. In great demand among stalkers who want slow-healing wounds and lacerations inflicted by mutants to close up faster. Its effects are long-lasting and can be used in situations with high risk of injury.\n \n
+		<text>An artificial equivalent of vitamin K, also known as Vikasolum. Its main function is to increase blood coagulation speed. In great demand among stalkers who want slow-healing wounds and lacerations inflicted by mutants to close up faster. Its effects are long-lasting and can be used in situations with high risk of injury.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medicine\n
 		%c[d_blue] • %c[ui_gray_2] imported\n
@@ -252,6 +252,8 @@
 	<string id="st_analgetic_descr">
 		<text>A non-steroidal anti-inflammatory drug (NSAID) from the group of phenylacetic acid derivatives, commonly used as an analgetic in the treatment of mild to moderate pain, migraines, inflammation, and swelling. It features a considerable side effects profile, including headaches, dizziness, drowsiness, and rarely, memory disorders, disorientation, and general irritability. While being phased out as a common painkiller, it expired stock still made its way from warehouse clearances into the Zone and taken for the treatment of severe injuries when better alternatives can not be procured.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_purple] • %c[ui_gray_2] very minor health recovery\n
 		%c[d_purple] • %c[ui_gray_2] very minor bleeding control\n
 		%c[d_purple] • %c[ui_gray_2] moderate analgesic effect\n
@@ -264,6 +266,8 @@
 	<string id="st_antibio_chlor_descr">
 		<text>A tetracycline antibiotic with antiprotozoal and antibacterial effects. It was the first tetracycline identified and the second antibiotic agent developed after penicillin. This class of medication works by inhibiting protein synthesis in the mRNA translation complex, among other mechanisms. It is effective against a broad spectrum of bacteria, but also against viruses, and some conditions not spread by infection. It is used in the Zone to guard against specific environmental hazards, often in combination with other substances. Side effects may include nausea, phototoxicity, digestive problems, allergic reactions, and rarely, headaches.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_purple] • %c[ui_gray_2] minor radiation resistance\n
 		%c[d_purple] • %c[ui_gray_2] minor toxicity resistance\n
 		</text>
@@ -275,10 +279,12 @@
 	<string id="st_rebirth_desc">
 		<text>An extremely potent, highly experimental regenerative drug. For its near-miraculous beneficial effects, it is informally called "Rebirth". Axyltallisal was developed by Zone researchers as part of an interdisciplinary study on triage and recovery after severe physical trauma and serious anomalous field exposure. The drug is assumed to contain volatile neurogenetics, neuroprotectants, immunotherapeutics, analeptics, and additional unknown agents; its official composition was not published. Intended to be used in a controlled and safe environment. When ingested, the patient will enter a short-lasting comatose state while the drug induces an extreme state of physical and neurological regeneration. The patient should regain consciousness after the effect naturally wear off. Side effects of repeated uses are unknown.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] experimental item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_red] • %c[ui_gray_2] anesthetic (unconsciousness)\n
 		%c[d_purple] • %c[ui_gray_2] major health recovery\n
 		%c[d_purple] • %c[ui_gray_2] major radiation treatment\n
-		%c[d_purple] • %c[ui_gray_2] major analgesic efefct\n
+		%c[d_purple] • %c[ui_gray_2] major analgesic effect\n
 		</text>
 	</string>
 
@@ -288,6 +294,8 @@
 	<string id="st_drug_anabiotic_descr">
 		<text>A highly experimental research chemical developed as a last resort for surviving direct exposure to an emission, with a drastic mode of effect and an overwhelming side effects profile. It is an unknown combination of sodium thiopental, a rapid-onset barbiturate anesthetic, and other sedatives that dramatically slow metabolic processes in the body to a state of suspended animation. A second stage nonbenzodiazepine is released on an organic fuse that lasts for the approximate duration of an emission and restores bodily functions and consciousness. Even one-time use of Rebirth can have permanent adverse effects on the user, the extent of which are unknown, not including nervous system damage sustained from direct emission exposure. If no certain alternatives are available, lay down on the ground in fetal position, shielding head and torso, ingest on emission build-up, and wait for onset of sedative effects. After successful reanimation, ensure proper hydration, nutrition, and medical attention. Should not be combined with other substances.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] experimental item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_red] • %c[ui_gray_2] anesthetic (unconsciousness)\n
 		%c[d_red] • %c[ui_gray_2] major emission survival chance\n
 		%c[d_purple] • %c[ui_gray_2] moderate health recovery\n
