@@ -2685,139 +2685,162 @@ function UIInfoItem:Update(obj, sec, flags)
 		local val_a_is_empty = val_is_empty(val_a)
 		local val_a_is_negative = val_is_intrinsically_negative(val_a)
 
-		if val_a then
-			if gr.show_always or ((not gr.show_always) and not val_a_is_empty) then
-				cnt = cnt + 1
-				local ele = self.stats[cnt]
+		if not val_a then
+			goto continue
+		end
 
-				-- Set up icon
-				local icon_p = gr.icon_p
-				local icon_n = (gr.icon_n ~= "") and gr.icon_n or icon_p
-				local icon = val_a_is_negative and icon_n or icon_p
+		if not (gr.show_always or ((not gr.show_always) and not val_a_is_empty)) then
+			goto continue
+		end
+
+		cnt = cnt + 1
+		local ele = self.stats[cnt]
+
+		-- Set up icon
+		local icon_p = gr.icon_p
+		local icon_n = (gr.icon_n ~= "") and gr.icon_n or icon_p
+		local icon = val_a_is_negative and icon_n or icon_p
+
+		if gr.sign_inverse then
+			icon = val_a_is_negative and icon_p or icon_n
+		end
+
+		ele.icon:InitTexture(icon)
+
+		-- Set up name
+		ele.cap:SetText(game.translate_string(gr.name))
+
+		-- Reset
+		ele.bar2:Show(false)
+		ele.bar1:Show(false)
+		ele.txt:Show(false)
+		ele.comp:Show(false)
+
+		-- Progress bar
+		if gr.track then
+			val_a = tonumber(val_a) or 0 -- This routine assumes numeric value, force convert to prevent crashes.
+			local valbar_a = clamp((math.abs(val_a) * gr.magnitude), 0, 1)
+
+			-- Comparison item
+			local val_b = obj_b and get_stats_value(obj_b, obj_b:section(), gr, stat)
+			local valbar_b = val_b and clamp((math.abs(val_b) * gr.magnitude), 0, 1)
+			if valbar_b and (valbar_a ~= valbar_b) then
+				-- If focued item's value is bigger than slot item's value -> focued item's bar: green + 2nd layer
+				if valbar_a > valbar_b then
+					ele.bar1:SetProgressPos(valbar_b)
+					ele.bar1:SetColor(clr_list["info_def"])
+
+					ele.bar2:SetProgressPos(valbar_a)
+					ele.bar2:SetColor(clr_list["info_p"])
+
+					ele.comp:SetTextColor(clr_list["info_p_txt"])
+
+					-- If focued item's value is smaller than slot item's value -> focued item's bar: red + 1nd layer
+				else
+					ele.bar1:SetProgressPos(valbar_a)
+					ele.bar1:SetColor(clr_list["info_def"])
+
+					ele.bar2:SetProgressPos(valbar_b)
+					ele.bar2:SetColor(clr_list["info_n"])
+
+					ele.comp:SetTextColor(clr_list["info_n_txt"])
+				end
+
+				local diff_val = math.ceil((valbar_a - valbar_b) * 100)
+				ele.comp:SetText((diff_val > 0 and "+" or "") .. diff_val .. "%")
+				ele.comp:Show(true)
+				ele.bar1:Show(true)
+				ele.bar2:Show(true)
+				ele.bar1:ShowBackground(false)
+
+				-- No comparison
+			else
+				ele.bar1:SetProgressPos(valbar_a)
+				ele.bar1:SetColor(clr_list["info_def"])
+				ele.bar1:Show(true)
+				ele.bar1:ShowBackground(true)
+			end
+
+			-- Text
+		elseif ele.txt then
+			-- This routine allows for both numeric and text (pre-formatted) values.
+
+			if type(val_a) == "number" then
+				-- Numeric value, use existing routine to format and display.
+				local valbar_a = val_a * gr.magnitude
+				local unit = gr.unit and gr.unit ~= "" and game.translate_string(gr.unit) or ""
+				local clr = valbar_a >= 0 and clr_list["p1"] or clr_list["n1"]
+
+				valbar_a = math.ceil(valbar_a)
 
 				if gr.sign_inverse then
-					icon = val_a_is_negative and icon_p or icon_n
+					clr = valbar_a < 0 and clr_list["p1"] or clr_list["n1"]
+					--valbar_a = -1 * valbar_a -- invert sign again if needed
 				end
 
-				ele.icon:InitTexture(icon)
+				local sign = gr.sign and valbar_a > 0 and "+" or ""
 
-				-- Set up name
-				ele.cap:SetText(game.translate_string(gr.name))
+				-- Comparison item
+				local val_b = obj_b and get_stats_value(obj_b, obj_b:section(), gr, stat)
+				local valbar_b = val_b and val_b * gr.magnitude
 
-				-- Reset
-				ele.bar2:Show(false)
-				ele.bar1:Show(false)
-				ele.txt:Show(false)
-				ele.comp:Show(false)
+				if valbar_b and (valbar_a ~= valbar_b) then
+					local diff_val = math.ceil(valbar_a - valbar_b)
+					-- …
 
-				-- Progress bar
-				if gr.track then
-					val_a = tonumber(val_a) or 0 -- This routine assumes numeric value, force convert to prevent crashes.
-					local valbar_a = clamp((math.abs(val_a) * gr.magnitude), 0, 1)
+					ele.comp:SetText("(" .. (diff_val > 0 and "+" or "") .. diff_val .. ")")
+					ele.comp:Show(true)
+					clr = (valbar_a > valbar_b) and clr_list["info_p_txt"] or clr_list["info_n_txt"]
+				end
 
-					-- Comparison item
-					local val_b = obj_b and get_stats_value(obj_b, obj_b:section(), gr, stat)
-					local valbar_b = val_b and clamp((math.abs(val_b) * gr.magnitude), 0, 1)
-					if valbar_b and (valbar_a ~= valbar_b) then
-						-- If focued item's value is bigger than slot item's value -> focued item's bar: green + 2nd layer
-						if valbar_a > valbar_b then
-							ele.bar1:SetProgressPos(valbar_b)
-							ele.bar1:SetColor(clr_list["info_def"])
-
-							ele.bar2:SetProgressPos(valbar_a)
-							ele.bar2:SetColor(clr_list["info_p"])
-
-							ele.comp:SetTextColor(clr_list["info_p_txt"])
-
-							-- If focued item's value is smaller than slot item's value -> focued item's bar: red + 1nd layer
-						else
-							ele.bar1:SetProgressPos(valbar_a)
-							ele.bar1:SetColor(clr_list["info_def"])
-
-							ele.bar2:SetProgressPos(valbar_b)
-							ele.bar2:SetColor(clr_list["info_n"])
-
-							ele.comp:SetTextColor(clr_list["info_n_txt"])
-						end
-
-						local diff_val = math.ceil((valbar_a - valbar_b) * 100)
-						ele.comp:SetText((diff_val > 0 and "+" or "") .. diff_val .. "%")
-						ele.comp:Show(true)
-						ele.bar1:Show(true)
-						ele.bar2:Show(true)
-						ele.bar1:ShowBackground(false)
-
-						-- No comparison
-					else
-						ele.bar1:SetProgressPos(valbar_a)
-						ele.bar1:SetColor(clr_list["info_def"])
-						ele.bar1:Show(true)
-						ele.bar1:ShowBackground(true)
-					end
-
-					-- Text
-				elseif ele.txt then
-					-- This routine allows for both numeric and text (pre-formatted) values.
-
-					if type(val_a) == "number" then
-						-- Numeric value, use existing routine to format and display.
-						local valbar_a = val_a * gr.magnitude
-						local unit = gr.unit and gr.unit ~= "" and game.translate_string(gr.unit) or ""
-						local clr = valbar_a >= 0 and clr_list["p1"] or clr_list["n1"]
-						valbar_a = math.ceil(valbar_a)
-
-						if gr.sign_inverse then
-							clr = valbar_a < 0 and clr_list["p1"] or clr_list["n1"]
-							--valbar_a = -1 * valbar_a -- invert sign again if needed
-						end
-						local sign = gr.sign and valbar_a > 0 and "+" or ""
-
-						-- Comparison item
-						local val_b = obj_b and get_stats_value(obj_b, obj_b:section(), gr, stat)
-						local valbar_b = val_b and val_b * gr.magnitude
-						if valbar_b and (valbar_a ~= valbar_b) then
-							local diff_val = math.ceil(valbar_a - valbar_b)
-							ele.comp:SetText("(" .. (diff_val > 0 and "+" or "") .. diff_val .. ")")
-							ele.comp:Show(true)
-							clr = (valbar_a > valbar_b) and clr_list["info_p_txt"] or clr_list["info_n_txt"]
-						end
-
-						if gr.sign_inverse_txt then
-							if valbar_a > 0 then
-								sign = "-"
-							elseif valbar_a < 0 then
-								valbar_a = -1 * valbar_a
-								sign = "+"
-							end
-						end
-
-						ele.txt:SetText(sign .. valbar_a .. " " .. unit)
-						ele.txt:SetTextColor(clr)
-						ele.txt:Show(true)
-					else
-						-- Text value (or none), assume value is already formatted, use as-is.
-						local clr = gr.sign_inverse and clr_list["n1"] or clr_list["p1"]
-						local unit = gr.unit and gr.unit ~= "" and game.translate_string(gr.unit) or ""
-
-						val_a = val_a or "(None)"
-
-						ele.txt:SetText(val_a .. " " .. unit)
-						ele.txt:SetTextColor(clr)
-						ele.txt:Show(true)
+				if gr.sign_inverse_txt then
+					if valbar_a > 0 then
+						sign = "-"
+					elseif valbar_a < 0 then
+						valbar_a = -1 * valbar_a
+						sign = "+"
 					end
 				end
 
+				local valbar_a_formatted = ""
+				local unit_is_time = string.find(gr.unit, "ui_inv_seconds") ~= nil
 
-				y = y + ele.base:GetHeight()
-				--printf("stat ele [%s] [%s] | cnt: %s - y: %s - value: %s", sec, stat, cnt, y, val_a)
+				if unit_is_time then
+					valbar_a_formatted = prop_formatted_time(valbar_a)
+				else
+					valbar_a_formatted = sign .. prop_formatted_number(valbar_a) .. " " .. unit
+				end
 
-				local ele_prev = cnt_last and self.stats[cnt_last]
-				self:Sync_Y(ele_prev and ele_prev.base, ele.base, 0)
-				cnt_last = cnt
+				ele.txt:SetText(valbar_a_formatted)
+				ele.txt:SetTextColor(clr)
+				ele.txt:Show(true)
+			else
+				-- Text value (or none), assume value is already formatted, use as-is.
+				local clr = gr.sign_inverse and clr_list["n1"] or clr_list["p1"]
+				local unit = gr.unit and gr.unit ~= "" and game.translate_string(gr.unit) or ""
+				local sign = gr.sign and (gr.sign_inverse and "-" or "+") or ""
 
-				ele.base:Show(true)
+				val_a = val_a or "(None)"
+
+				ele.txt:SetText(sign .. val_a .. " " .. unit)
+				ele.txt:SetTextColor(clr)
+				ele.txt:Show(true)
 			end
 		end
+
+
+		y = y + ele.base:GetHeight()
+		--printf("stat ele [%s] [%s] | cnt: %s - y: %s - value: %s", sec, stat, cnt, y, val_a)
+
+		local ele_prev = cnt_last and self.stats[cnt_last]
+		self:Sync_Y(ele_prev and ele_prev.base, ele.base, 0)
+		cnt_last = cnt
+
+		ele.base:Show(true)
+
+
+
+		::continue::
 	end
 
 	self.stats_dialog:SetWndSize(vector2():set(self.stats_dialog:GetWidth(), y + 10))
