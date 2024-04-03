@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+
+	<string id="st_bandage">
+		<text>Bandage</text>
+	</string>
+	<string id="st_bandage_descr">
+		<text>An elastic bandage used to stop bleeding and prevent the infection of wounds. For regular bleeding, carefully apply the bandage to the wound. For arterial bleeding, urgently tie the bandage around the affected area.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (adhesive plaster)\n
+		%c[d_orange] • %c[ui_gray_2] moderate bleeding control\n
+		</text>
+	</string>
+
+	<string id="st_drug_coagulant">
+		<text>Vinca</text>
+	</string>
+	<string id="st_drug_coagulant_descr">
+		<text>Ukrainian Vikasolum, an artificial equivalent of vitamin K. The main purpose of this drug is to increase blood coagulation speed. In great demand among stalkers who want slow-healing wounds and lacerations inflicted by mutants to close up faster. Its effects are long-lasting and can be used in situations with high risk of injury.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medicine\n
+		%c[d_blue] • %c[ui_gray_2] imported\n
+		%c[d_orange] • %c[ui_gray_2] moderate bleeding control\n
+		</text>
+	</string>
+
+	<string id="st_drug_anabiotic">
+		<text>Anabiotics</text>
+	</string>
+	<string id="st_drug_anabiotic_descr">
+		<text>An experimental drug developed by Professor Ozersky for scientific research teams working in the Zone. At its core, the drug contains tetrodotoxin, known colloquially as "zombie powder," which causes a complete shutdown of the body's central nervous system that may allow people to survive emissions outside cover. After six years worth of field tests, thoughtful stalkers know to keep a few on hand for unexpected blowouts.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medicine\n
+		%c[d_blue] • %c[ui_gray_2] zone-produced\n
+		%c[d_red] • %c[ui_gray_2] causes temporary blackout\n
+		</text>
+	</string>
+
+	<string id="st_drug_antidot">
+		<text>Antidote</text>
+	</string>
+	<string id="st_drug_antidot_descr">
+		<text>The IP2 antitoxin is a complex substance comprising several antidotes, including metoclopramidum, pyridoxine, thiamine, riboxin and other compounds. The drug is used to inject a range of antibiotics to neutralize natural poisons, together with synthetic poison absorbers, into the bloodstream. IP2 is not particularly popular in the Zone as most stalkers rely on a gas mask and a protective suit. However, there are still those who have a few units of this antidote stashed for emergency situations. The effects of the drug are long-lasting. Take one capsule at a time.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medicine\n
+		%c[d_blue] • %c[ui_gray_2] imported\n
+		%c[d_orange] • %c[ui_gray_2] moderate toxin resistance\n
+		</text>
+	</string>
+
+	<string id="st_jgut_zhgut">
+		<text>Tourniquet</text>
+	</string>
+	<string id="st_jgut_descr">
+		<text>A haemostatic rubber tourniquet, used to stop arterial bleeding. The tourniquet is applied to the limb above the wound, and tightened until the bleeding stops, then secured in place. An applied tourniquet should be removed after 15-20 minutes to prevent tissue necrosis.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] imported\n
+		%c[d_blue] • %c[ui_gray_2] major bleeding control\n
+		</text>
+	</string>
+
+	<string id="st_yadylin">
+		<text>Yadulin</text>
+	</string>
+	<string id="st_yadylin_descr">
+		<text>A strong nonsteroidal anti-inflammatory drug (NSAID) for managing varying levels of pain. Yadulin features quick onset analgesic effects, an increased production of adrenaline in the body, and blocks enzymes responsible for inflammation and swelling. Has frequent side effects of nausea. A common pain relief drug in the Zone, though arguably more popular for its versatility in the synthesis of other compounds.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medicine\n
+		%c[d_blue] • %c[ui_gray_2] imported\n
+		%c[d_orange] • %c[ui_gray_2] minor analgesic effects\n
+		%c[d_red] • %c[ui_gray_2]causes nausea\n
+		</text>
+	</string>
+
+	<string id="st_medkit">
+		<text>First Aid Kit</text>
+	</string>
+	<string id="st_medkit_descr">
+		<text>An AI-2 individual first aid kit (Аптечка Индивидуальная) with various civilian-grade items for treating wounds, pain, and low levels of radiation exposure. The kit was developed as a standard service first aid kit for various defence and law enforcement agencies and civil defense forces of the USSR. Some of the original components may have been swapped out for modern analogs for its distribution and use in the Zone.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_red] • %c[ui_gray_2] slow usage (field kit)\n
+		%c[d_orange] • %c[ui_gray_2] moderate health recovery\n 
+		%c[d_orange] • %c[ui_gray_2] minor bleeding control\n
+		%c[d_orange] • %c[ui_gray_2] minor limb recovery\n
+		%c[d_orange] • %c[ui_gray_2] minor radiation treatment\n
+		</text>
+	</string>
+
+	<string id="st_medkit_army">
+		<text>Field Medkit</text>
+	</string>
+	<string id="st_medkit_army_descr">
+		<text>A specialized first aid kit for use by military combatants. The kit contains blood coagulants, painkillers, antibiotics, immunostimulants, and radiation-countering substances. It also includes a single-use kit for removing bullets and other foreign fragments from the body. Primarily issued to military personnel and their associates, commonly imported via offical supply routes.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] military item\n
+		%c[d_red] • %c[ui_gray_2] slow usage (field kit)\n
+		%c[d_orange] • %c[ui_gray_2] major health recovery\n
+		%c[d_orange] • %c[ui_gray_2] moderate bleeding control\n
+		%c[d_orange] • %c[ui_gray_2] moderate limb recovery\n
+		%c[d_orange] • %c[ui_gray_2] minor radiation treatment\n
+		%c[d_orange] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_medkit_science">
+		<text>Expeditionary Medkit</text>
+	</string>
+	<string id="st_medkit_science_descr">
+		<text>A specialized first aid kit developed and used by research personnel in the Zone. The kit contains blood coagulants, painkillers, antibiotics, immunostimulants, and is additionally stocked with experimental substances to counter minor to moderate radiation poisoning. It also includes a single-use kit for removing bullets and other foreign fragments from the body.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] scientific item\n
+		%c[d_red] • %c[ui_gray_2] slow usage (field kit)\n
+		%c[d_orange] • %c[ui_gray_2] major health recovery\n
+		%c[d_orange] • %c[ui_gray_2] moderate bleeding control\n
+		%c[d_orange] • %c[ui_gray_2] moderate limb recovery\n
+		%c[d_orange] • %c[ui_gray_2] moderate radiation treatment\n
+		%c[d_orange] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_akvatab">
+		<text>Ibuprofen</text>
+	</string>
+	<string id="st_akvatab_descr">
+		<text>Common analgesic medication in the nonsteroidal anti-inflammatory drug (NSAID) class used for treating minor to moderate pain. Ibuprofen works by inhibiting the production of prostaglandins, chemicals that promote inflammation, pain, and fever in the body, it is fast-acting, well tolerated, and cheap. Commonly used to treat minor injuries and headaches.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medicine\n
+		%c[d_blue] • %c[ui_gray_2] imported\n
+		%c[d_orange] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_stim_impro">
+		<text>Stimpack</text>
+	</string>
+	<string id="st_stim_impro_descr">
+		<text>An injectable stimulant delivery package for use in the field. Contains a composition of agents with analgetic and analeptic effects. This type of stimpack is produced directly by factions in the Zone with an unknown blend of imported and synthesized substances and questionable purity. Frequent side effects include headaches, paraesthesia, and considerable increase in nutritional demand. Popular medical item used among novices due to its low price compared to imported medical supplies and wide availability.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_orange] • %c[ui_gray_2] zone-produced\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (injector)\n
+		%c[d_orange] • %c[ui_gray_2] moderate health recovery\n
+		%c[d_orange] • %c[ui_gray_2] moderate limb recovery\n
+		%c[d_orange] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_stim_military">
+		<text>Military Stimpack</text>
+	</string>
+	<string id="st_stim_military_descr">
+		<text>A military-grade injectable stimulant delivery package for use by combatants in the field. Contains a composition of potent agents with analgetic and analeptic effects. This type of stimpack is widely distributed to military personnel operating in the Zone and imported from outside pharmaceutical suppliers. Designed as an emergency measure in life-threatening situations. Its side effects include nausea, headaches and an increase in nutritional demand.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] military item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (injector)\n
+		%c[d_orange] • %c[ui_gray_2] major health recovery\n
+		%c[d_orange] • %c[ui_gray_2] moderate limb recovery\n
+		%c[d_orange] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_stim_scientic">
+		<text>Expeditionary Stimpack</text>
+	</string>
+	<string id="st_stim_scientic_descr">
+		<text>An injectable stimulant delivery package for use by research personnel in the field. Contains a composition of potent agents with analgetic, analeptic, and radiation-countering effects. This type of stimpack is commonly used by researchers and their associates, specifically designed for high-risk expeditions into the Zone. Developed by one of Kiev's defence research institutes in a line-up of other gear and equipment for exclusion zone research. Its chemical blend has a lower side effects profile than other packages, slight nausea, headaches, and increased nutritional demand may occur.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] scientific item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (injector)\n
+		%c[d_orange] • %c[ui_gray_2] major health recovery\n
+		%c[d_orange] • %c[ui_gray_2] moderate limb recovery\n
+		%c[d_orange] • %c[ui_gray_2] moderate radiation treatment\n
+		%c[d_orange] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_cocaine">
+		<text>Cocaine</text>
+	</string>
+	<string id="st_cocaine_descr">
+		<text>A tropane alkaloid acting as a powerful central nervous system stimulant with euphoric effects and heightened energy levels and wakefulness. The duration of its effects depend on the mode of administration and substance purity. Common side effects include anxiety, paranoia, and restlessness. Used both recreationally and practically in the field to counter drowsiness. Some factions openly distribute it among their members while use in the Zone in general is not overly common.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_orange] • %c[ui_gray_2] moderate stimulant\n
+		%c[d_orange] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_adrenalin">
+		<text>Epinephrine Shot</text>
+	</string>
+	<string id="st_adrenalin_descr">
+		<text>A shot containing Epinephrine (also known as adrenalin), a hormone and a neurotransmitter. When released in the body, it acts rapidly in regulating heart rate, blood vessel and air passage diameters, metabolic shifts, and triggers instant energy production within cells throughout the body. Medically, epinephrine is used to treat anaphylaxis, cardiac arrest, and superficial bleeding. In the field, Epinephrine can be used as an emergency stimulant to counteract drowsiness and fatigue.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_orange] • %c[ui_gray_2] major stimulant\n
+		</text>
+	</string>
+
+	<string id="st_morphine">
+		<text>Morphine Shot</text>
+	</string>
+	<string id="st_morphine_descr">
+		<text>An iron ampoule containing morphine, designed as field equipment for military field personnel. Morphine is regarded as the gold standard of opioid analgesics, used to relieve acute pain levels. Like other opioids, such as oxycodone, hydromorphone, and diacetylmorphine (heroin), morphine acts directly on the central nervous system (CNS). Serious side effects include nausea, low blood pressure, and increased nutritional demand after comedown. Morphine is stocked by medical personnel in the Zone and often carried as emergency relief for severe physical injuries.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_purple] • %c[ui_gray_2]minor bleeding control\n
+		%c[d_purple] • %c[ui_gray_2]major limb triage\n
+		%c[d_purple] • %c[ui_gray_2]major analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_salicidic_acid">
+		<text>Metamizole Shot</text>
+	</string>
+	<string id="st_salicidic_acid_descr">
+		<text>An iron ampoule containing a combination of metamizole and an antihemorrhagic agent, designed as field equipment for military field personnel. Metamizole is a strong non-steroidal anti-inflammatory drug (NSAID), effective in treating moderate to intense pain and fever. Side effects include nausea, weakness, increased nutritional demand, and delayed onset leukopenia and agranulocytosis. The substance blend is often stocked by military personnel in the Zone for use by medical staff.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_purple] • %c[ui_gray_2]very minor bleeding control\n
+		%c[d_purple] • %c[ui_gray_2]moderate limb triage\n
+		%c[d_purple] • %c[ui_gray_2]moderate analgesic effect\n</text>
+	</string>
+
+	<string id="st_antibio_sulfad">
+		<text>Sulfadimethoxine</text>
+	</string>
+	<string id="st_antibio_sulfad_descr">
+		<text>An effective sulfonamide antimicrobial medication used to treat infections and diseases caused by bacteria. Sulfadimethoxine is a bacteriostatic agent that works by blocking synthesis of folic acid, a key component in the production of DNA and RNA. While the drug's primary function is to act against bacteria, including E. coli, Salmonella, and Staphylococcus, it also has an observable effect against some anomalous toxins and effects of light radiation exposure. Side effects include headaches, digestive disorders, skin rashes, fevers, and leukopenia.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_purple] • %c[ui_gray_2] minor radiation resistance\n
+		%c[d_purple] • %c[ui_gray_2] minor toxicity resistance\n
+		</text>
+	</string>
+
+	<string id="st_analgetic">
+		<text>Diclofenac</text>
+	</string>
+	<string id="st_analgetic_descr">
+		<text>A non-steroidal anti-inflammatory drug (NSAID) from the group of phenylacetic acid derivatives, commonly used as an analgetic in the treatment of mild to moderate pain, migraines, inflammation, and swelling. It features a considerable side effects profile, including headaches, dizziness, drowsiness, and rarely, memory disorders, disorientation, and general irritability. While being phased out as a common painkiller, it expired stock still made its way from warehouse clearances into the Zone and taken for the treatment of severe injuries when better alternatives can not be procured.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_purple] • %c[ui_gray_2] very minor health recovery\n
+		%c[d_purple] • %c[ui_gray_2] very minor bleeding control\n
+		%c[d_purple] • %c[ui_gray_2] moderate analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_antibio_chlor">
+		<text>Chlortetracycline</text>
+	</string>
+	<string id="st_antibio_chlor_descr">
+		<text>A tetracycline antibiotic with antiprotozoal and antibacterial effects. It was the first tetracycline identified and the second antibiotic agent developed after penicillin. This class of medication works by inhibiting protein synthesis in the mRNA translation complex, among other mechanisms. It is effective against a broad spectrum of bacteria, but also against viruses, and some conditions not spread by infection. It is used in the Zone to guard against specific environmental hazards, often in combination with other substances. Side effects may include nausea, phototoxicity, digestive problems, allergic reactions, and rarely, headaches.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_purple] • %c[ui_gray_2] minor radiation resistance\n
+		%c[d_purple] • %c[ui_gray_2] minor toxicity resistance\n
+		</text>
+	</string>
+
+	<string id="st_rebirth">
+		<text>Axyltallisal</text>
+	</string>
+	<string id="st_rebirth_desc">
+		<text>An extremely potent, highly experimental regenerative drug. For its near-miraculous beneficial effects, it is informally called "Rebirth". Axyltallisal was developed by Zone researchers as part of an interdisciplinary study on triage and recovery after severe physical trauma and serious anomalous field exposure. The drug is assumed to contain volatile neurogenetics, neuroprotectants, immunotherapeutics, analeptics, and additional unknown agents; its official composition was not published. Intended to be used in a controlled and safe environment. When ingested, the patient will enter a short-lasting comatose state while the drug induces an extreme state of physical and neurological regeneration. The patient should regain consciousness after the effect naturally wear off. Side effects of repeated uses are unknown.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_red] • %c[ui_gray_2] anesthetic (unconsciousness)\n
+		%c[d_purple] • %c[ui_gray_2] major health recovery\n
+		%c[d_purple] • %c[ui_gray_2] major radiation treatment\n
+		%c[d_purple] • %c[ui_gray_2] major analgesic efefct\n
+		</text>
+	</string>
+
+	<string id="st_drug_anabiotic">
+		<text>Anabiotic</text>
+	</string>
+	<string id="st_drug_anabiotic_descr">
+		<text>A highly experimental research chemical developed as a last resort for surviving direct exposure to an emission, with a drastic mode of effect and an overwhelming side effects profile. It is an unknown combination of sodium thiopental, a rapid-onset barbiturate anesthetic, and other sedatives that dramatically slow metabolic processes in the body to a state of suspended animation. A second stage nonbenzodiazepine is released on an organic fuse that lasts for the approximate duration of an emission and restores bodily functions and consciousness. Even one-time use of Rebirth can have permanent adverse effects on the user, the extent of which are unknown, not including nervous system damage sustained from direct emission exposure. If no certain alternatives are available, lay down on the ground in fetal position, shielding head and torso, ingest on emission build-up, and wait for onset of sedative effects. After successful reanimation, ensure proper hydration, nutrition, and medical attention. Should not be combined with other substances.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_red] • %c[ui_gray_2] anesthetic (unconsciousness)\n
+		%c[d_red] • %c[ui_gray_2] major emission survival chance\n
+		%c[d_purple] • %c[ui_gray_2] moderate health recovery\n
+		%c[d_purple] • %c[ui_gray_2] moderate radiation treatment\n
+		</text>
+	</string>
+	
+</string_table>
