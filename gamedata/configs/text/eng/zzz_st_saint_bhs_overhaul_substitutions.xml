@@ -302,5 +302,32 @@
 		%c[d_purple] • %c[ui_gray_2] moderate radiation treatment\n
 		</text>
 	</string>
+
+	<string id="st_tetanus">
+		<text>Hydrocodone</text>
+	</string>
+	<string id="st_tetanus_descr">
+		<text>A semi-synthetic opioid for the treatment of moderate to severe and persistent pain and use as a cough suppressant. This variant combines dihydrocodeinone with acetaminophen, a non-opioid analgesic, and antipyretic (a combination sold under the brand name Vicodin, Lortab, and others). The medication induces euphoria and sedation, it is commonly abused for recreational use. It has a high chance for addiction and its side effects include nausea, drowsiness, constipation, and respiratory problems in higher doses. In the field, it may be used as a painkiller after sustaining physical injuries, especially to rest and recover.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_purple] • %c[ui_gray_2] minor health recovery\n
+		%c[d_purple] • %c[ui_gray_2] moderate analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_sleepingpills">
+		<text>Diazepam</text>
+	</string>
+	<string id="st_sleepingpills_descr">
+		<text>A benzodiazepine derivative with sedative, hypnotic, and anxiolytic properties, increasing effects of the GABA neurotransmitter. It is used to treat anxiety, insomnia, seizures, and as a general sedative. While short-term use is considered reasonably safe, prolonged use carries risk of dependence and cognitive issues. In the Zone, it is used primarily as a sleeping aid to counter stress, anxiety, and insomnia. Frequent side effects include nausea, drowsiness, amnesia, and confusion.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_purple] • %c[ui_gray_2] moderate fatigue\n
+		%c[d_purple] • %c[ui_gray_2] minor antipsychotic\n
+		</text>
+		</text>
+	</string>
 	
 </string_table>
