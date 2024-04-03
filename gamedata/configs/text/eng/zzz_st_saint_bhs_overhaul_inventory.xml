@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="windows-1251"?>
 
 <string_table>
+	<!-- Units -->
+	<string id="ui_inv_minutes">
+		<text>minutes</text>
+	</string>
+	<string id="ui_inv_minutes_short">
+		<text>min</text>
+	</string>
+	<string id="ui_inv_par_hour">
+		<text>PAR/h</text>
+	</string>
+	<string id="ui_inv_levels">
+		<text>levels</text>
+	</string>
+	<string id="ui_inv_suffix_effect_prolonged">
+		<text>Prolonged Effect</text>
+	</string>
 
 	<!-- Stats -->
 	<string id="ui_inv_damage_immunity">
