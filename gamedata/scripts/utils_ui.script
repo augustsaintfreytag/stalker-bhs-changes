@@ -3533,6 +3533,27 @@ function prop_formatted_number(val)
 
 	return formatted
 end
+
+-- Formats a time value given in seconds into a human-readable format (seconds, minutes).
+-- Uses localized unit descriptions `ui_inv_seconds` and `ui_inv_minutes`.
+function prop_formatted_time(val)
+	if type(val) ~= "number" then
+		return val
+	end
+
+	local formatted = ""
+	local seconds = val % 60
+	local minutes = math.floor(val / 60) % 60
+
+	if minutes > 0 then
+		formatted = minutes .. " " .. game.translate_string("ui_inv_minutes")
+	else
+		formatted = seconds .. " " .. game.translate_string("ui_inv_seconds")
+	end
+
+	return formatted
+end
+
 function get_utils_xml()
 	return XMLP
 end
