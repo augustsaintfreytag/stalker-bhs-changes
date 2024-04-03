@@ -116,7 +116,7 @@ function get_limb_splint(obj, sec)
 		return nil
 	end
 
-	return "Splint (Arms, Legs)"
+	return gc("ui_inv_splint") .. " (" .. gc("ui_inv_splint_arms_legs") .. ")"
 end
 
 function get_limb_restore(obj, sec)
@@ -150,9 +150,9 @@ function get_limb_restore(obj, sec)
 	local str = tostring(total_heal_power) .. "%"
 
 	if all_limb_effects then
-		str = str .. " (All Body Parts)"
+		str = str .. " (" .. gc("ui_inv_splint_all") .. ")"
 	elseif sequential_limb_effects then
-		str = str .. " (Any Body Part)"
+		str = str .. " (" .. gc("ui_inv_splint_sequential") .. ")"
 	end
 
 	return str
@@ -168,7 +168,7 @@ function get_limb_surgery(obj, sec)
 		return nil
 	end
 
-	return "Surgery (All Body Parts)"
+	return gc("ui_inv_surgery") .. " (" .. gc("ui_inv_splint_all") .. ")"
 end
 
 -- Hooks
