@@ -2,6 +2,7 @@
 
 <string_table>
 	<!-- Units -->
+	
 	<string id="ui_inv_minutes">
 		<text>minutes</text>
 	</string>
@@ -17,8 +18,24 @@
 	<string id="ui_inv_suffix_effect_prolonged">
 		<text>Prolonged Effect</text>
 	</string>
+	<string id="ui_inv_surgery">
+		<text>Restorative Surgery</text>
+	</string>
+	<string id="ui_inv_splint">
+		<text>Splint</text>
+	</string>
+	<string id="ui_inv_splint_arms_legs">
+		<text>Arms, Legs</text>
+	</string>
+	<string id="ui_inv_splint_all">
+		<text>All Body Parts</text>
+	</string>
+	<string id="ui_inv_splint_sequential">
+		<text>Any Body Part</text>
+	</string>
 
 	<!-- Stats -->
+
 	<string id="ui_inv_damage_immunity">
 		<text>Analgesic Effect</text>
 	</string>
@@ -30,7 +47,5 @@
 	</string>
 	<string id="ui_inv_limb_surgery">
 		<text>Body Operation</text>
-	</string>
-	</string>
 	</string>
 </string_table>
