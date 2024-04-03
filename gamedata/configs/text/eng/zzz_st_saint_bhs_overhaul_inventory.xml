@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="windows-1251"?>
 
 <string_table>
+
+	<!-- Stats -->
 	<string id="ui_inv_damage_immunity">
-		<text>%c[0,255,255,255]Analgesic:</text>
+		<text>Analgesic Effect</text>
 	</string>
 	<string id="ui_inv_limb_splint">
-		<text>%c[0,255,255,255]Triage:</text>
+		<text>Limb Triage</text>
 	</string>
 	<string id="ui_inv_limb_restore">
-		<text>%c[0,255,255,255]Recovery:</text>
+		<text>Limb Recovery</text>
 	</string>
 	<string id="ui_inv_limb_surgery">
-		<text>%c[0,255,255,255]Operation:</text>
+		<text>Body Operation</text>
+	</string>
 	</string>
 	</string>
 </string_table>
