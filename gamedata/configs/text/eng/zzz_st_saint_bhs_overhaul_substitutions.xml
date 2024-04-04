@@ -336,7 +336,6 @@
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] experimental item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
-		%c[d_purple] • %c[ui_gray_2] minor fatigue\n
 		%c[d_purple] • %c[ui_gray_2] moderate antipsychotic\n
 		</text>
 	</string>
@@ -361,8 +360,7 @@
 		<text>An antifibrinolytic agent for treatment and prevention of major hemorrhaging and excessive menstruation. Tranexamic acid is a synthetic derivative of lysine and acts by preventing the breakdown of fibrin, allowing sustained blood clotting and control bleeding. Side effects are rare, with low chances for seizures, altered vision, and anaphylactic shock; hydration is recommended. The drug is commonly carried by medical and military personnel in the Zone.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
-		%c[d_blue] • %c[ui_gray_2] medicine\n
-		%c[d_purple] • %c[ui_gray_2] fast usage (syringe)\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_purple] • %c[ui_gray_2] minor bleeding control\n
 		%c[d_purple] • %c[ui_gray_2] minor bleeding resistance\n
 		</text>
