@@ -277,7 +277,7 @@
 		<text>Axyltallisal</text>
 	</string>
 	<string id="st_rebirth_desc">
-		<text>An extremely potent, highly experimental regenerative drug. For its near-miraculous beneficial effects, it is informally called "Rebirth". Axyltallisal was developed by Zone researchers as part of an interdisciplinary study on triage and recovery after severe physical trauma and serious anomalous field exposure. The drug is assumed to contain volatile neurogenetics, neuroprotectants, immunotherapeutics, analeptics, and additional unknown agents; its official composition was not published. Intended to be used in a controlled and safe environment. When ingested, the patient will enter a short-lasting comatose state while the drug induces an extreme state of physical and neurological regeneration. The patient should regain consciousness after the effect naturally wears off. Side effects of repeated uses are unknown.\n \n
+		<text>An extremely potent, highly experimental regenerative drug. For its near-miraculous beneficial effects, it is informally called "Rebirth". The compound was developed by Zone researchers as part of an interdisciplinary study on triage and recovery after severe physical trauma and serious anomalous field exposure. The drug is assumed to contain volatile neurogenetics, neuroprotectants, immunotherapeutics, analeptics, and additional unknown agents; its official composition was not published. Intended to be used in a controlled and safe environment. When ingested, the patient will enter a short-lasting comatose state while the drug induces an extreme state of physical and neurological regeneration. The patient should regain consciousness after the effect naturally wears off. Side effects of repeated uses are unknown.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] experimental item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
@@ -318,7 +318,7 @@
 		<text>Diazepam</text>
 	</string>
 	<string id="st_sleepingpills_descr">
-		<text>A benzodiazepine derivative with sedative, hypnotic, and anxiolytic properties, increasing effects of the GABA neurotransmitter. It is used to treat anxiety, insomnia, seizures, and as a general sedative. While short-term use is considered reasonably safe, prolonged use carries risk of dependence and cognitive issues. In the Zone, it is used primarily as a sleeping aid to counter stress, anxiety, and insomnia. Frequent side effects include nausea, drowsiness, amnesia, and confusion.\n \n
+		<text>A benzodiazepine derivative with sedative, hypnotic, and anxiolytic properties, increasing effects of the GABA neurotransmitter. It is used to treat anxiety, insomnia, seizures, and as a general sedative. While short-term use is considered reasonably safe, prolonged use carries risk of dependence and cognitive issues. Frequent side effects include nausea, drowsiness, amnesia, and confusion. In the Zone, it is used primarily as a sleeping aid to counter stress, anxiety, and sleeplessness.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
@@ -383,7 +383,7 @@
 		<text>Fluorapine Shot</text>
 	</string>
 	<string id="st_propital_descr">
-		<text>An military-issue injector containing a potent metabolic stimulant and a mix of purine and pyrimidine analog cytotoxic substances. Its stimulant part acts to accelerate wound-healing processes in the body, while the cytotoxic substances aim to target and destroy damaged cells and pathogens. The drug was originally developed from pharmaceutical anti-cancer trials and selected for military use for its effect on trauma recovery times. It is used to triage physical injuries in the field when proper medical care can not be provided. Side effects include chest pain, fever, bleeding, and increased nutritional demand.\n \n
+		<text>An military-issue injector containing a moderate metabolic stimulant and a mix of purine and pyrimidine analog cytotoxic substances. Its stimulant part acts to accelerate wound-healing processes in the body, while the cytotoxic substances aim to target and destroy damaged cells and pathogens. The drug was originally developed from pharmaceutical anti-cancer trials and selected for military use for its effect on trauma recovery times. It is used to triage physical injuries in the field when proper medical care can not be provided. Side effects include chest pain, fever, bleeding, and increased nutritional demand.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] military item\n
@@ -393,11 +393,26 @@
 		</text>
 	</string>
 
+	<string id="st_etg">
+		<text>SJ-I Combat Stimulant Shot</text>
+	</string>
+	<string id="st_etg_descr">
+		<text>A military-issue stimulant to increase physical capabilities, alertness, and cognitive performance, intended for use in combat scenarios. It contains part epinephrine, part pipradrol, a mild central nervous system stimulant and NDRI, and part metamizole, an ampyrone sulfonate group medication with analgesic and antipyretic effects. In combination, the shot provides an acute boost to physical and psychological resilience, even in high stress environments. Side effects are generally lower than other combat stimulant pens and may include insomnia, tachycardia, anxiety, and rarely hypertension, euphoria, depression, psychosis, and others. SJ-I is distributed, usually as a pen injector, to military personnel set to perform under extreme conditions for longer periods of time. Among the SJ class pens, it is well tolerated and has fewer adverse effects.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] military item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (injector)\n
+		%c[d_purple] • %c[ui_gray_2] moderate stimulant effects\n
+		%c[d_purple] • %c[ui_gray_2] moderate analgesic effects\n
+		%c[d_purple] • %c[ui_gray_2] minor antipsychotic effects\n
+		</text>
+	</string>
+
 	<string id="st_sj1">
-		<text>SJ1 Combat Stimulant Shot</text>
+		<text>SJ-V Combat Stimulant Shot</text>
 	</string>
 	<string id="st_sj1_descr">
-		<text>A military-issue stimulant to boost physical capabilities and mental alertness in combat scenarios. It contains part amfepramone, an amphetamine class psychostimulant, and part metamizole, an ampyrone sulfonate group medication with analgesic and antipyretic effects. In combination, the shot provides an acute boost in physical and psychological resilience, even in high stress environments. Common side effects include hypertension, hypotension, tachycardia, nausea, abdominal pain, weight loss, and others. The SJ1 type shot may be distributed to military personnel that are set to perform under extreme conditions for prolonged periods of time. It is the more widely used, lower risk counter-part of the SJ6 stimulant shot.\n \n
+		<text>A military-issue stimulant to increase physical capabilities, alertness, and cognitive performance, intended for use in combat scenarios. It contains part epinephrine, part amfepramone, an amphetamine class psychostimulant, and part metamizole, an ampyrone sulfonate group medication with analgesic and antipyretic effects. In combination, the shot provides an acute boost to physical and psychological resilience, even in high stress environments, as well as mild to moderate euphoric effects. Side effects include hyperactivity, sweating, teeth grinding, hypertension, hypotension, irregular heartbeat, nausea, weight loss, and others. SJ-V is distributed, usually as a pen injector, to military personnel set to perform under extreme conditions for longer periods of time. Among the SJ class pens, it is decently tolerated and has acceptable adverse effects compared to its significant desired effects.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] military item\n
@@ -410,10 +425,10 @@
 	</string>
 
 	<string id="st_sj6">
-		<text>SJ6 Combat Stimulant Shot</text>
+		<text>SJ-IX Combat Stimulant Shot</text>
 	</string>
 	<string id="st_sj6_descr">
-		<text>A military-issue stimulant to boost physical capabilities, alertness, and cognitive performance, intended for use in combat scenarios. It contains part methamphetamine racetame, a potent central nervous system stimulant, and part metamizole, an ampyrone sulfonate group medication with analgesic and antipyretic effects. In combination, the shot provides acute boost in physical and psychological resilience, even in high stress environments, as well as mild to moderate euphoric effects. Side effects include hyperactivity, sweating, teeth grinding, hypertension, hypotension, irregular heartbeat, nausea, weight loss, and others. The SJ6 type shot may be distributed to military personnel that are set to perform under extreme conditions for prolonged periods of time. It is the more potent, higher risk counter-part of the SJ1 stimulant shot.\n \n
+		<text>A military-issue stimulant to increase physical capabilities, alertness, and cognitive performance, intended for use in combat scenarios. It contains part epinephrine, part methamphetamine racetame, a potent central nervous system stimulant, and part metamizole, an ampyrone sulfonate group medication with analgesic and antipyretic effects. In combination, the shot provides an acute boost to physical and psychological resilience, even in high stress environments, as well as mild to moderate euphoric effects. Side effects include hyperactivity, sweating, teeth grinding, hypertension, hypotension, irregular heartbeat, nausea, weight loss, and others. SJ-IX is distributed in limited quantities, usually as a pen injector, to military personnel set to perform under extreme conditions for longer periods of time. Among the SJ class pens, it is decently tolerated but also has notable adverse effects and a moderate addiction and abuse profile.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] military item\n
@@ -449,6 +464,32 @@
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_purple] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_splint">
+		<text>Synthetic Splint</text>
+	</string>
+	<string id="st_splint_descr">
+		<text>A lightweight splint for immobilizing and stabilizing fractures, sprains, and other injuries, made from synthetic materials and a number of velcro straps to secure it. It is designed to be easily applied and removed, and can be used to support and protect injured limbs.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (velcro straps)\n
+		%c[d_purple] • %c[ui_gray_2] moderate limb triage\n
+		</text>
+	</string>
+
+	<string id="st_alu_splint">
+		<text>SAM Splint</text>
+	</string>
+	<string id="st_alu_splint_descr">
+		<text>A compact, lightweight, and versatile splint for immobilizing and stabilizing fractures, sprains, and other injuries. The SAM Splint is made of a thin core of aluminum alloy, sandwiched between two layers of closed-cell foam. It can be bent into any of three simple curves, becoming extremely strong and supportive for any fractured or injured limb. The splint is durable, waterproof, and radiolucent. It is widely carried in the Zone to treat damage to arms and legs.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (malleable aluminum)\n
+		%c[d_purple] • %c[ui_gray_2] moderate limb triage\n
 		</text>
 	</string>
 </string_table>
