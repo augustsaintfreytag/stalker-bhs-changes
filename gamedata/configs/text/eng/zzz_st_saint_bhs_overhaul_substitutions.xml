@@ -277,7 +277,7 @@
 		<text>Axyltallisal</text>
 	</string>
 	<string id="st_rebirth_desc">
-		<text>An extremely potent, highly experimental regenerative drug. For its near-miraculous beneficial effects, it is informally called "Rebirth". Axyltallisal was developed by Zone researchers as part of an interdisciplinary study on triage and recovery after severe physical trauma and serious anomalous field exposure. The drug is assumed to contain volatile neurogenetics, neuroprotectants, immunotherapeutics, analeptics, and additional unknown agents; its official composition was not published. Intended to be used in a controlled and safe environment. When ingested, the patient will enter a short-lasting comatose state while the drug induces an extreme state of physical and neurological regeneration. The patient should regain consciousness after the effect naturally wear off. Side effects of repeated uses are unknown.\n \n
+		<text>An extremely potent, highly experimental regenerative drug. For its near-miraculous beneficial effects, it is informally called "Rebirth". Axyltallisal was developed by Zone researchers as part of an interdisciplinary study on triage and recovery after severe physical trauma and serious anomalous field exposure. The drug is assumed to contain volatile neurogenetics, neuroprotectants, immunotherapeutics, analeptics, and additional unknown agents; its official composition was not published. Intended to be used in a controlled and safe environment. When ingested, the patient will enter a short-lasting comatose state while the drug induces an extreme state of physical and neurological regeneration. The patient should regain consciousness after the effect naturally wears off. Side effects of repeated uses are unknown.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] experimental item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
@@ -292,14 +292,12 @@
 		<text>Anabiotic</text>
 	</string>
 	<string id="st_drug_anabiotic_descr">
-		<text>A highly experimental research chemical developed as a last resort for surviving direct exposure to an emission, with a drastic mode of effect and an overwhelming side effects profile. It is an unknown combination of sodium thiopental, a rapid-onset barbiturate anesthetic, and other sedatives that dramatically slow metabolic processes in the body to a state of suspended animation. A second stage nonbenzodiazepine is released on an organic fuse that lasts for the approximate duration of an emission and restores bodily functions and consciousness. Even one-time use of Rebirth can have permanent adverse effects on the user, the extent of which are unknown, not including nervous system damage sustained from direct emission exposure. If no certain alternatives are available, lay down on the ground in fetal position, shielding head and torso, ingest on emission build-up, and wait for onset of sedative effects. After successful reanimation, ensure proper hydration, nutrition, and medical attention. Should not be combined with other substances.\n \n
+		<text>A highly experimental research chemical developed as a last resort for surviving direct exposure to an emission, with a drastic mode of effect and an overwhelming side effects profile. It is an unknown combination of sodium thiopental, a rapid-onset barbiturate anesthetic, and other sedatives that dramatically slow metabolic processes in the body to a state of suspended animation. A second stage nonbenzodiazepine is released on an organic fuse that lasts for the approximate duration of an emission and restores bodily function and consciousness. Even one-time use of anabiotics can have permanent adverse effects on the user, the extent of which are unknown, not including nervous system damage sustained from direct emission exposure. If no certain alternatives are available, lay down on the ground in fetal position, shielding head and torso, ingest on emission build-up, and wait for onset of sedative effects. After successful reanimation, ensure proper hydration, nutrition, and medical attention. Should not be combined with other substances.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] experimental item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_red] • %c[ui_gray_2] anesthetic (unconsciousness)\n
 		%c[d_red] • %c[ui_gray_2] major emission survival chance\n
-		%c[d_purple] • %c[ui_gray_2] moderate health recovery\n
-		%c[d_purple] • %c[ui_gray_2] moderate radiation treatment\n
 		</text>
 	</string>
 
