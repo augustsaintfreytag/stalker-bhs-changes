@@ -393,6 +393,38 @@
 		</text>
 	</string>
 
+	<string id="st_sj1">
+		<text>SJ1 Combat Stimulant Shot</text>
+	</string>
+	<string id="st_sj1_descr">
+		<text>A military-issue stimulant to boost physical capabilities and mental alertness in combat scenarios. It contains part amfepramone, an amphetamine class psychostimulant, and part metamizole, an ampyrone sulfonate group medication with analgesic and antipyretic effects. In combination, the shot provides an acute boost in physical and psychological resilience, even in high stress environments. Common side effects include hypertension, hypotension, tachycardia, nausea, abdominal pain, weight loss, and others. The SJ1 type shot may be distributed to military personnel that are set to perform under extreme conditions for prolonged periods of time. It is the more widely used, lower risk counter-part of the SJ6 stimulant shot.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] military item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (injector)\n
+		%c[d_purple] • %c[ui_gray_2] major stimulant effects\n
+		%c[d_purple] • %c[ui_gray_2] moderate analgesic effects\n
+		%c[d_purple] • %c[ui_gray_2] minor antipsychotic effects\n
+		%c[d_red] • %c[ui_gray_2] minor hallucinogenic effects\n
+		</text>
+	</string>
+
+	<string id="st_sj6">
+		<text>SJ6 Combat Stimulant Shot</text>
+	</string>
+	<string id="st_sj6_descr">
+		<text>A military-issue stimulant to boost physical capabilities, alertness, and cognitive performance, intended for use in combat scenarios. It contains part methamphetamine racetame, a potent central nervous system stimulant, and part metamizole, an ampyrone sulfonate group medication with analgesic and antipyretic effects. In combination, the shot provides acute boost in physical and psychological resilience, even in high stress environments, as well as mild to moderate euphoric effects. Side effects include hyperactivity, sweating, teeth grinding, hypertension, hypotension, irregular heartbeat, nausea, weight loss, and others. The SJ6 type shot may be distributed to military personnel that are set to perform under extreme conditions for prolonged periods of time. It is the more potent, higher risk counter-part of the SJ1 stimulant shot.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] military item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (injector)\n
+		%c[d_purple] • %c[ui_gray_2] major stimulant effects\n
+		%c[d_purple] • %c[ui_gray_2] moderate analgesic effects\n
+		%c[d_purple] • %c[ui_gray_2] minor antipsychotic effects\n
+		%c[d_red] • %c[ui_gray_2] minor hallucinogenic effects\n
+		</text>
+	</string>
+
 	<string id="st_cms">
 		<text>Surgical Field Kit</text>
 	</string>
