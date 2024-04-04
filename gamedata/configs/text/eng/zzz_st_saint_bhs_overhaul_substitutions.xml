@@ -365,4 +365,58 @@
 		%c[d_purple] • %c[ui_gray_2] minor bleeding resistance\n
 		</text>
 	</string>
+
+	<string id="st_bandage_army">
+		<text>Military Bandage</text>
+	</string>
+	<string id="st_bandage_army_descr">
+		<text>An elastic, self-adhesive military-issue bandage used to stop bleeding and prevent infection of wounds. It provides excellent grip, can be quickly applied in the field, and later removed without residue. The bandage is lightweight, flexible, and can be used for regular and arterial bleeding.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] military item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (adhesive)\n
+		%c[d_purple] • %c[ui_gray_2] major bleeding control\n
+		</text>
+	</string>
+
+	<string id="st_propital">
+		<text>Fluorapine Shot</text>
+	</string>
+	<string id="st_propital_descr">
+		<text>An military-issue injector containing a potent metabolic stimulant and a mix of purine and pyrimidine analog cytotoxic substances. Its stimulant part acts to accelerate wound-healing processes in the body, while the cytotoxic substances aim to target and destroy damaged cells and pathogens. The drug was originally developed from pharmaceutical anti-cancer trials and selected for military use for its effect on trauma recovery times. It is used to triage physical injuries in the field when proper medical care can not be provided. Side effects include chest pain, fever, bleeding, and increased nutritional demand.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] military item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (injector)\n
+		%c[d_purple] • %c[ui_gray_2] minor health recovery\n
+		%c[d_purple] • %c[ui_gray_2] minor bleeding resistance\n
+		</text>
+	</string>
+
+	<string id="st_cms">
+		<text>Surgical Field Kit</text>
+	</string>
+	<string id="st_cms_descr">
+		<text>A portable kit that provides medical instruments and supplies to perform minor surgical operations and suturing in the field. It includes a stainless steel scalpel, tweezers, scissors, needle holder, various kinds of wipes, as well as sterile suturing material made from nylon and bandage tape. The kit is designed for use by trained medical professionals for severe injuries and wounds that require immediate attention when a proper field hospital or care facility is not available.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] high quality\n
+		%c[d_red] • %c[ui_gray_2] slow usage (field kit)\n
+		%c[d_purple] • %c[ui_gray_2] major limb triage\n
+		%c[d_purple] • %c[ui_gray_2] major limb recovery\n
+		</text>
+	</string>
+
+	<string id="st_analgin">
+		<text>Paracetamol</text>
+	</string>
+	<string id="st_analgin_descr">
+		<text>An acetaminophen class antipyretic medication used to treat mild to moderate pain and fever. Paracetamol is an inexpensive over-the-counter drug, it is well tolerated and has a notably low side effects profile with rare cases of nausea, skin rashes, and liver damage when ingested in high doses. In the Zone, it is primarily stocked and used by medical personnel.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_purple] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
 </string_table>
