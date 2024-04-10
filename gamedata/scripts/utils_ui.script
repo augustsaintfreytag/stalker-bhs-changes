@@ -2803,7 +2803,7 @@ function UIInfoItem:Update(obj, sec, flags)
 				end
 
 				local valbar_a_formatted = ""
-				local unit_is_time = string.find(gr.unit, "ui_inv_seconds") ~= nil
+				local unit_is_time = string.find(gr.unit or "", "ui_inv_seconds") ~= nil
 
 				if unit_is_time then
 					valbar_a_formatted = prop_formatted_time(valbar_a)
