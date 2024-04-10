@@ -9,6 +9,9 @@
 	<string id="ui_inv_minutes_short">
 		<text>min</text>
 	</string>
+	<string id="ui_inv_health">
+		<text>Wound Healing</text>
+	</string>
 	<string id="ui_inv_par_hour">
 		<text>PAR/h</text>
 	</string>
