@@ -276,7 +276,7 @@
 	<string id="st_rebirth">
 		<text>Axyltallisal</text>
 	</string>
-	<string id="st_rebirth_desc">
+	<string id="st_rebirth_descr">
 		<text>An extremely potent, highly experimental regenerative drug. For its near-miraculous beneficial effects, it is informally called "Rebirth". The compound was developed by Zone researchers as part of an interdisciplinary study on triage and recovery after severe physical trauma and serious anomalous field exposure. The drug is assumed to contain volatile neurogenetics, neuroprotectants, immunotherapeutics, analeptics, and additional unknown agents; its official composition was not published. Intended to be used in a controlled and safe environment. When ingested, the patient will enter a short-lasting comatose state while the drug induces an extreme state of physical and neurological regeneration. The patient should regain consciousness after the effect naturally wears off. Side effects of repeated uses are unknown.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] experimental item\n
@@ -324,7 +324,6 @@
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_purple] • %c[ui_gray_2] moderate fatigue\n
 		%c[d_purple] • %c[ui_gray_2] minor antipsychotic\n
-		</text>
 		</text>
 	</string>
 	
