@@ -100,6 +100,8 @@ function apply_compatibility_patches()
 		show_always = false,
 		value_functor = { "zzz_saint_bhs_item_stats", "get_limb_surgery" }
 	}
+
+	utils_ui.stats_table["booster"]["eat_satiety"]["index"] = 17
 end
 
 -- Values
