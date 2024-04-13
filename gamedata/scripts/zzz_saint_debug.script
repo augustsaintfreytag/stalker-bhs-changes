@@ -81,7 +81,10 @@ function get_sorted_effect_properties(section)
 
 		if not is_empty(value) then
 			local normalized_value = normalized_effect_value(property, value)
-			table.insert(sorted_properties, { property, normalized_value })
+
+			if normalized_value ~= 0 then
+				table.insert(sorted_properties, { property, normalized_value })
+			end
 		end
 	end
 
