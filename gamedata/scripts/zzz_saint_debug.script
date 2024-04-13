@@ -158,7 +158,7 @@ function print_medical_item_stats()
 		local section_kind = ini_sys:r_string_ex(section, "kind")
 
 		--if section_class ~= "II_FOOD" and section_kind ~= "i_medical" then
-		if section_kind ~= "i_medical" then
+		if section_kind ~= "i_medical" or string.match(section, "mp_") then
 			return
 		end
 
