@@ -203,7 +203,7 @@ function print_medical_item_stats()
 		table.insert(lines, "| section | " .. section .. " |")
 		table.insert(lines, "| localized_name | " .. localized_name .. " |")
 		table.insert(lines, "| localized_description | " .. ellipsized_str(localized_description) .. " |")
-		table.insert(lines, "| auto_significants | " .. significant_properties_list .. " |")
+		table.insert(lines, "| significants | " .. significant_properties_list .. " |")
 
 		for _, pair in ipairs(pairs) do
 			local property = pair[1]
