@@ -18,5 +18,12 @@
 		<texture id="ui_am_propery_09" x="768" y="490" width="19" height="19" /> <!-- Radiation Protection -->
 		<texture id="ui_am_propery_10" x="768" y="509" width="19" height="19" /> <!-- Electric Protection -->
 		<texture id="ui_am_propery_11" x="787" y="433" width="19" height="19" /> <!-- Psi Protection-->
+
+		<texture id="ui_am_prop_time_period" x="806" y="433" width="19" height="19" /> <!-- Duration -->
+		<texture id="ui_am_prop_radio_restore" x="863" y="490" width="19" height="19" /> <!-- Radiation Damage -->
+		<texture id="ui_am_prop_sleep_p" x="768" y="585" width="19" height="19" /> <!-- Sleep Positive -->
+		<texture id="ui_am_prop_sleep_n" x="863" y="585" width="19" height="19" /> <!-- Sleep Negative -->
+		<texture id="ui_am_prop_thirst_p" x="749" y="585" width="19" height="19" /> <!-- Thirst Positive -->
+		<texture id="ui_am_prop_thirst_n" x="844" y="585" width="19" height="19" /> <!-- Thirst Positive -->
     </file>
 </w>
