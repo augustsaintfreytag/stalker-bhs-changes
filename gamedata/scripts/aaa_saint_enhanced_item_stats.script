@@ -157,11 +157,11 @@ function utils_ui.UIInfoItem:Update(obj, sec, flags)
 		-- Progress bar
 		if gr.track then
 			val_a = tonumber(val_a) or 0 -- This routine assumes numeric value, force convert to prevent crashes.
-			local valbar_a = clamp((math.abs(val_a) * gr.magnitude), 0, 1)
+			local valbar_a = clamp((math.floor(math.abs(val_a) * gr.magnitude)), 0, 1)
 
 			-- Comparison item
 			local val_b = obj_b and utils_ui.get_stats_value(obj_b, obj_b:section(), gr, stat)
-			local valbar_b = val_b and clamp((math.abs(val_b) * gr.magnitude), 0, 1)
+			local valbar_b = val_b and clamp((math.floor(math.abs(val_b) * gr.magnitude)), 0, 1)
 			if valbar_b and (valbar_a ~= valbar_b) then
 				-- If focued item's value is bigger than slot item's value -> focued item's bar: green + 2nd layer
 				if valbar_a > valbar_b then
@@ -205,7 +205,7 @@ function utils_ui.UIInfoItem:Update(obj, sec, flags)
 
 			if type(val_a) == "number" then
 				-- Numeric value, use existing routine to format and display.
-				local valbar_a = val_a * gr.magnitude
+				local valbar_a = math.floor(val_a * gr.magnitude)
 				local unit = gr.unit and gr.unit ~= "" and game.translate_string(gr.unit) or ""
 				local clr = valbar_a >= 0 and clr_list["p1"] or clr_list["n1"]
 
@@ -220,7 +220,7 @@ function utils_ui.UIInfoItem:Update(obj, sec, flags)
 
 				-- Comparison item
 				local val_b = obj_b and utils_ui.get_stats_value(obj_b, obj_b:section(), gr, stat)
-				local valbar_b = val_b and val_b * gr.magnitude
+				local valbar_b = val_b and math.floor(val_b * gr.magnitude)
 
 				if valbar_b and (valbar_a ~= valbar_b) then
 					local diff_val = math.ceil(valbar_a - valbar_b)
