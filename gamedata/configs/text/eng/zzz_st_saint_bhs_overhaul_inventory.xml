@@ -43,8 +43,19 @@
 		<text>Any Body Part</text>
 	</string>
 
-	<!-- Stats -->
-
+	<!-- Inventory Stats -->
+	<string id="ui_inv_satiety">
+		<text>Satiation</text>
+	</string>
+	<string id="ui_inv_hydration">
+		<text>Hydration</text>
+	</string>
+	<string id="ui_inv_radiation">
+		<text>Radiation</text>
+	</string>
+	<string id="ui_inv_sleep">
+		<text>Exhaustion</text>
+	</string>
 	<string id="ui_inv_damage_immunity">
 		<text>Analgesic Effect</text>
 	</string>
@@ -56,5 +67,8 @@
 	</string>
 	<string id="ui_inv_limb_surgery">
 		<text>Body Operation</text>
+	</string>
+	<string id="ui_inv_af_condition">
+		<text>Condition</text>
 	</string>
 </string_table>
