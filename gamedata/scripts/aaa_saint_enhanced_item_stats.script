@@ -345,7 +345,7 @@ function prop_formatted_time(val)
 	local seconds = val % 60
 	local minutes = math.floor(val / 60) % 60
 
-	if minutes > 0 then
+	if minutes > 1 then
 		formatted = minutes .. " " .. game.translate_string("ui_inv_minutes")
 	else
 		formatted = seconds .. " " .. game.translate_string("ui_inv_seconds")
