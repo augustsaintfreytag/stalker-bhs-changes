@@ -35,7 +35,7 @@ function apply_compatibility_patches()
 		icon_n = "",
 		track = false,
 		magnitude = 12500, -- 0.0004 should be 5% PAR/x,
-		unit = "ui_inv_par_hour",
+		unit = "st_par_hour",
 		compare = false,
 		sign = true,
 		show_always = false
@@ -104,7 +104,7 @@ function apply_compatibility_patches()
 	utils_ui.stats_table["booster"]["eat_satiety"]["index"] = 17
 end
 
--- Values
+-- Values & Descriptions
 
 function get_damage_immunity(obj, sec)
 	if not sec then sec = obj:section() end
@@ -117,7 +117,7 @@ function get_damage_immunity(obj, sec)
 	end
 
 	-- local duration = math.ceil(effects.painkillerduration / 1000)
-	local str = level .. " " .. gc("ui_inv_levels") .. " (" .. gc("ui_inv_suffix_effect_prolonged") .. ")"
+	local str = level .. " " .. gc("st_levels") .. " (" .. gc("ui_inv_suffix_effect_prolonged") .. ")"
 
 	return str
 end

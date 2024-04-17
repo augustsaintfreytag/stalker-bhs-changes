@@ -2,6 +2,18 @@
 
 <string_table>
 	<!-- Units -->
+
+	<string id="st_ml">
+		<text>ml</text>
+	</string>
+	<string id="st_par_hour">
+		<text>PAR/h</text>
+	</string>
+	<string id="st_levels">
+		<text>levels</text>
+	</string>
+
+	<!-- Inventory Units -->
 	
 	<string id="ui_inv_minutes">
 		<text>minutes</text>
@@ -11,12 +23,6 @@
 	</string>
 	<string id="ui_inv_health">
 		<text>Wound Healing</text>
-	</string>
-	<string id="ui_inv_par_hour">
-		<text>PAR/h</text>
-	</string>
-	<string id="ui_inv_levels">
-		<text>levels</text>
 	</string>
 	<string id="ui_inv_suffix_effect_prolonged">
 		<text>Prolonged Effect</text>
