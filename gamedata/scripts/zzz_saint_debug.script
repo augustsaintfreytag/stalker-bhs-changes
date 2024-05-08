@@ -192,6 +192,14 @@ function print_medical_item_stats()
 			end
 		end
 
+		for _, property in ipairs({	"$spawn", "visual", "use_sound", "snd_on_take", "anm"}) do
+			local value = ini_sys:r_string_ex(section, property)
+
+			if value and value ~= "" then
+				table.insert(pairs, { property, value })
+			end
+		end
+
 		-- Output Formatting
 
 		local lines = {}
