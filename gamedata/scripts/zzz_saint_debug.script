@@ -209,7 +209,11 @@ function print_medical_item_stats()
 			local property = pair[1]
 			local value = pair[2]
 
-			table.insert(lines, "| " .. property .. " | " .. formatted_float(value) .. " |")
+			if (type(value) == "number") then
+				value = formatted_float(value)
+			end
+
+			table.insert(lines, "| " .. property .. " | " .. value .. " |")
 		end
 
 		number_of_items = number_of_items + 1
