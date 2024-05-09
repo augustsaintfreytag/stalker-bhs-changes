@@ -12,29 +12,28 @@ Items that are primarily painkillers and damage resistance boosters. These may b
 
 | Name            | Identifier       | Cost | boost_strike_immunity, boost_wound_immunity, bhs_painkillerlist |
 | --------------- | ---------------- | ---- | --------------------------------------------------------------- |
-| Paracetamol     | `analgin`        | 2500 | 0, 0, 2                                                         |
-| Ibuprofen       | `akvatab`        | 2500 | 0, 0, 4                                                         |
-| Hydrocodone     | `tetanus`        | 1940 | 0, 0, 4                                                         |
-| Yadylin         | `yadylin`        | 985  | 0, 0, 5                                                         |
-| Diclofenac      | `analgetic`      | 1100 | 0.05, 0.05, 5                                                   |
-| Metamizole Shot | `salicidic_acid` | 1600 | 0.075, 0.075, 6                                                 |
-| Morphine Shot   | `morphine`       | 2000 | 0.1, 0.1, 7                                                     |
+| Ibuprofen       | `salicidic_acid` | 1680 | 0.02, 0.02, 2                                                   |
+| Yadylin         | `yadylin`        | 1880 | 0.05, 0.05, 5                                                   |
+| Diclofenac      | `analgetic`      | 2680 | 0.05, 0.05, 5                                                   |
+| Oxycodone       | `tetanus`        | 3880 | 0.06, 0.06, 6                                                   |
+| Metamizole Shot | `analgin`        | 4280 | 0.1, 0.1, 10                                                    |
+| Morphine Shot   | `morphine`       | 5080 | 0.15, 0.15, 15                                                  |
 
 ### First Aid
 
 Items that are taken after sustaining damage, to heal main player health and to triage damaged body parts. Some may also restore radiation exposure as a side effect (e.g. expeditionary items).
 
-| Name                   | Identifier        | Cost  | boost_health_restore, bhs_healonelist |
-| ---------------------- | ----------------- | ----- | ------------------------------------- |
-| Fluorapine Shot        | `propital`        | 4000  | 0.0015, 21                            |
-| Axyltallisal           | `rebirth`         | 12000 | 0.0188, 60                            |
-| First Aid Kit          | `medkit`          | 2500  | 0.0015, 21                            |
-| Military Medkit        | `medkit_army`     | 4500  | 0.0025, 32                            |
-| Expeditionary Medkit   | `medkit_scientic` | 6500  | 0.0025, 32                            |
-| Stimpack               | `stimpack`        | 3000  | 0.007, 21                             |
-| Military Stimpack      | `stimpack`        | 5000  | 0.01, 32                              |
-| Expeditionary Stimpack | `stimpack`        | 6000  | 0.01, 32                              |
-| Survival Kit           | `survival_kit`    | 7500  | 0.0015, 60                            |
+| Name                   | Identifier          | Cost  | boost_health_restore, bhs_healonelist |
+| ---------------------- | ------------------- | ----- | ------------------------------------- |
+| First Aid Kit          | `medkit`            | 1800  | 0.0015, 21                            |
+| Military Medkit        | `medkit_army`       | 2800  | 0.0025, 32                            |
+| Expeditionary Medkit   | `medkit_scientic`   | 4200  | 0.0025, 32                            |
+| Stimpack               | `stimpack`          | 2200  | 0.007, 21                             |
+| Military Stimpack      | `stimpack_army`     | 3200  | 0.01, 32                              |
+| Expeditionary Stimpack | `stimpack_scientic` | 4600  | 0.01, 32                              |
+| Fluorapine Shot        | `propital`          | 3580  | 0.0015, 21 (Purpose unknown)          |
+| Survival Kit           | `survival_kit`      | 7200  | 0.0015, 60                            |
+| Axyltallisal           | `rebirth`           | 12000 | 0.0188, 60                            |
 
 ### Bleeding & Body
 
@@ -42,13 +41,13 @@ Items that primarily prevent or reduce bleeding and are used to triage or fully 
 
 | Name                 | Identifier       | Cost | boost_bleeding_restore, bhs_* |
 | -------------------- | ---------------- | ---- | ----------------------------- |
-| Bandage              | `bandage`        | 1000 | 0.016, none                   |
-| Vinca                | `drug_coagulant` | 5000 | 0.00042, 11 (healone)         |
-| Tourniquet           | `jgut`           | 1750 | 0.04, none                    |
-| Synthetic Splint     | `splint`         | 600  | 0, 1 (splint)                 |
-| SAM Splint           | `alu_splint`     | 1500 | 0, 1 (splint)                 |
+| Bandage              | `bandage`        | 600  | 0.016, none                   |
+| Tourniquet           | `jgut`           | 1200 | 0.04, none                    |
+| Vinca                | `drug_coagulant` | 2480 | 0.00042, 11 (healone)         |
+| Synthetic Splint     | `splint`         | 800  | 0, 1 (splint)                 |
+| SAM Splint           | `alu_splint`     | 1400 | 0, 1 (splint)                 |
 | Surgical Field Kit   | `cms`            | 8000 | 0, 1 (surgery)                |
-| Surgical Instruments | `surginst`       | 800  | 0, 1 (surgery)                |
+| Surgical Instruments | `surginst`       | 1180 | 0, 1 (surgery)                |
 
 ### Stimulants
 
@@ -56,10 +55,11 @@ Items that are taken before or during combat for primarily increased carry weigh
 
 | Name                        | Identifier     | Cost | boost_power_restore, boost_max_weight, boost_strike_immunity |
 | --------------------------- | -------------- | ---- | ------------------------------------------------------------ |
-| Caffeine Tablets            | `caffeine`     | 2550 | 0.0008, 2.653, 0                                             |
-| Hercules                    | `drug_booster` | 1750 | 0.0028, 6.123, 0                                             |
-| Cocaine                     | `cocaine`      | 3500 | 0.00442, 12.645, 0                                           |
-| Epinephrine Shot            | `adrenalin`    | 6520 | 0.00629, 22.294, 0                                           |
+| Caffeine Tablets            | `caffeine`     | 1480 | 0.0008, 1, 0                                                 |
+| Modafinil                   | `akvatab`      | 2280 | 0.001, 2, 0                                                  |
+| Hercules                    | `drug_booster` | 3480 | 0.0028, 6.5, 0                                               |
+| Cocaine                     | `cocaine`      | 3500 | 0.00442, 12, 0                                               |
+| Epinephrine Shot            | `adrenalin`    | 6520 | 0.00629, 22, 0                                               |
 | SJ-I Combat Stimulant Shot  | `etg`          | 4500 | 0.00642, 25, 0                                               |
 | SJ-V Combat Stimulant Shot  | `sj1`          | 4000 | 0.00442, 20, 0.15                                            |
 | SJ-IX Combat Stimulant Shot | `sj6`          | 5500 | 0.00842, 30, 0.2                                             |
