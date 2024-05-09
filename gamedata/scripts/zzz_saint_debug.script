@@ -1,8 +1,9 @@
 local item_properties = {
 	"tier",
 	"cost",
+	"inv_weight",
+	"inv_empty_weight",
 	"max_uses",
-	"item_visual",
 	"eat_satiety",
 	"eat_thirstiness",
 	"eat_alcohol",
@@ -192,7 +193,7 @@ function print_medical_item_stats()
 			end
 		end
 
-		for _, property in ipairs({	"$spawn", "visual", "use_sound", "snd_on_take", "anm"}) do
+		for _, property in ipairs({	"$spawn", "visual", "item_visual", "use_sound", "snd_on_take", "anm"}) do
 			local value = ini_sys:r_string_ex(section, property)
 
 			if value and value ~= "" then
