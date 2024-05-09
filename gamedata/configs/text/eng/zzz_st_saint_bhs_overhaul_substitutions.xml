@@ -111,7 +111,7 @@
 		<text>Expeditionary Medkit</text>
 	</string>
 	<string id="st_medkit_science_descr">
-		<text>A specialized first aid kit developed and used by research personnel in the Zone. The kit contains blood coagulants, painkillers, antibiotics, immunostimulants, and is additionally stocked with experimental substances to counter minor to moderate radiation poisoning. It also includes a single-use kit for removing bullets and other foreign fragments from the body.\n \n
+		<text>A specialized first aid kit developed and used by research personnel in the Zone. The kit contains blood coagulants, painkillers, antibiotics, immunostimulants, and is additionally stocked with experimental substances to counter minor to moderate radiation poisoning. It also includes a single-use kit for removing bullets and other foreign fragments from the body. The item is based off parts from available military medkits but adds neuroprotectives and compounds to flush absorbed radiation.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_blue] • %c[ui_gray_2] scientific item\n
@@ -124,10 +124,10 @@
 		</text>
 	</string>
 
-	<string id="st_akvatab">
+	<string id="st_salicidic_acid">
 		<text>Ibuprofen</text>
 	</string>
-	<string id="st_akvatab_descr">
+	<string id="st_salicidic_acid_descr">
 		<text>Common analgesic medication in the nonsteroidal anti-inflammatory drug (NSAID) class used for treating minor to moderate pain. Ibuprofen works by inhibiting the production of prostaglandins, chemicals that promote inflammation, pain, and fever in the body, it is fast-acting, well tolerated, and cheap. Commonly used to treat minor injuries and headaches.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medicine\n
@@ -170,7 +170,7 @@
 		<text>Expeditionary Stimpack</text>
 	</string>
 	<string id="st_stim_scientic_descr">
-		<text>An injectable stimulant delivery package for use by research personnel in the field. Contains a composition of potent agents with analgetic, analeptic, and radiation-countering effects. This type of stimpack is commonly used by researchers and their associates, specifically designed for high-risk expeditions into the Zone. Developed by one of Kiev's defence research institutes in a line-up of other gear and equipment for exclusion zone research. Its chemical blend has a lower side effects profile than other packages, slight nausea, headaches, and increased nutritional demand may occur.\n \n
+		<text>An injectable stimulant delivery package for use by research personnel in the field. It contains a composition of potent agents with analgetic, analeptic, and radiation-countering effects. This type of stimpack is commonly used by researchers and their associates, specifically designed for high-risk expeditions into the Zone. Developed by one of Kiev's defence research institutes in a line-up of other gear and equipment for exclusion zone research. Its chemical blend has a lower side effects profile than other packages, slight nausea, headaches, and increased nutritional demand may occur. The item is based off parts from available military medkits but adds neuroprotectives and compounds to flush absorbed radiation.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_blue] • %c[ui_gray_2] scientific item\n
@@ -220,10 +220,10 @@
 		</text>
 	</string>
 
-	<string id="st_salicidic_acid">
+	<string id="st_analgin">
 		<text>Metamizole Shot</text>
 	</string>
-	<string id="st_salicidic_acid_descr">
+	<string id="st_analgin_descr">
 		<text>An iron ampoule containing a combination of metamizole and an antihemorrhagic agent, designed as field equipment for military field personnel. Metamizole is a strong non-steroidal anti-inflammatory drug (NSAID), effective in treating moderate to intense pain and fever. Side effects include nausea, weakness, increased nutritional demand, and delayed onset leukopenia and agranulocytosis. The substance blend is often stocked by military personnel in the Zone for use by medical staff.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
@@ -302,10 +302,10 @@
 	</string>
 
 	<string id="st_tetanus">
-		<text>Hydrocodone</text>
+		<text>Oxycodone</text>
 	</string>
 	<string id="st_tetanus_descr">
-		<text>A semi-synthetic opioid for the treatment of moderate to severe and persistent pain and use as a cough suppressant. This variant combines dihydrocodeinone with acetaminophen, a non-opioid analgesic, and antipyretic (a combination sold under the brand name Vicodin, Lortab, and others). The medication induces euphoria and sedation, it is commonly abused for recreational use. It has a high chance for addiction and its side effects include nausea, drowsiness, constipation, and respiratory problems in higher doses. In the field, it may be used as a painkiller after sustaining physical injuries, especially to rest and recover.\n \n
+		<text>A semi-synthetic opioid for the treatment of moderate to severe and persistent pain and use as a cough suppressant. This variant combines dihydrohydroxycodeinone with acetaminophen, a non-opioid analgesic, and antipyretic (a combination sold under the brand name Vicodin, Lortab, and others). The medication induces euphoria and sedation, it is commonly abused for recreational use. It has a high chance for addiction and its side effects include nausea, drowsiness, constipation, and respiratory problems in higher doses. In the field, it may be used as a painkiller after sustaining physical injuries, especially to rest and recover.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
@@ -454,10 +454,10 @@
 		</text>
 	</string>
 
-	<string id="st_analgin">
+	<string id="st_paracetamol">
 		<text>Paracetamol</text>
 	</string>
-	<string id="st_analgin_descr">
+	<string id="st_paracetamol_descr">
 		<text>An acetaminophen class antipyretic medication used to treat mild to moderate pain and fever. Paracetamol is an inexpensive over-the-counter drug, it is well tolerated and has a notably low side effects profile with rare cases of nausea, skin rashes, and liver damage when ingested in high doses. In the Zone, it is primarily stocked and used by medical personnel.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
