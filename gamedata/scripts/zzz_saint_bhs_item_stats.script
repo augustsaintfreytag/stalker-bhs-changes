@@ -27,6 +27,8 @@ function apply_compatibility_patches()
 	bhs_items_surgical = zzz_player_injuries.surgerylist or {}
 	bhs_items_analgesic = zzz_player_injuries.painkillerlist or {}
 
+	utils_ui.stats_table["booster"]["boost_time"]["index"] = 0
+
 	utils_ui.stats_table["booster"]["boost_health_restore"] = {
 		index = 2,
 		typ = "float",
