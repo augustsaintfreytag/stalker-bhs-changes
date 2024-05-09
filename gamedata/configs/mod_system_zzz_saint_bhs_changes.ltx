@@ -1,3 +1,133 @@
+; Medical Item Balancing
+; Anomaly x GAMMA x BHS x BHSRO
+
+; Analgesics
+
+; Ibuprofen
+![salicidic_acid]
+cost											= 1680
+inv_weight										= 0.02
+empty_weight									= 0.001
+eat_alcohol										= -0.1
+eat_thirstiness									= 0.05
+boost_health_restore							= 0.0001
+boost_wound_immunity							= 0.02
+boost_fire_wound_immunity						= 0.02
+boost_explosion_immunity						= 0.02
+boost_strike_immunity							= 0.02
+boost_bhs_painkiller							= 2
+boost_time										= 280
+max_uses										= 5
+tier											= 1
+$spawn											= "food and drugs\analgetic"
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills_2
+snd_on_take										= other
+
+; Yadylin
+![yadylin]
+cost											= 1880
+inv_weight										= 0.08
+eat_alcohol										= 0.3
+eat_thirstiness									= 0.05
+boost_health_restore							= 0.0002
+boost_wound_immunity							= 0.05
+boost_fire_wound_immunity						= 0.05
+boost_explosion_immunity						= 0.05
+boost_strike_immunity							= 0.05
+boost_bhs_painkiller							= 5
+boost_time										= 180
+max_uses										= 1
+tier											= 2
+$spawn											= "food and drugs\analgetic"
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills_2
+snd_on_take										= other
+
+; Diclofenac
+![analgetic]
+cost											= 2680
+inv_weight										= 0.02
+empty_weight									= 0.001
+eat_alcohol										= 0.05
+eat_thirstiness									= 0.05
+boost_health_restore							= 0.0001
+boost_wound_immunity							= 0.05
+boost_fire_wound_immunity						= 0.05
+boost_explosion_immunity						= 0.05
+boost_strike_immunity							= 0.05
+boost_bhs_painkiller							= 5
+boost_time										= 280
+max_uses										= 5
+tier											= 2
+$spawn											= "food and drugs\analgetic"
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills_2
+snd_on_take										= other
+
+; Oxycodone
+![tetanus]
+cost											= 3880
+inv_weight										= 0.02
+empty_weight									= 0.001
+eat_alcohol										= 0.15
+eat_satiety										= -0.12
+eat_thirstiness									= 0.1
+boost_health_restore							= 0
+boost_wound_immunity							= 0.06
+boost_fire_wound_immunity						= 0.06
+boost_explosion_immunity						= 0.06
+boost_strike_immunity							= 0.06
+boost_bhs_painkiller							= 6
+boost_time										= 280
+max_uses										= 5
+tier											= 2
+$spawn											= "food and drugs\analgetic"
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills_2
+snd_on_take										= other
+
+; Metamizole Shot
+![analgin]
+cost											= 4280
+inv_weight										= 0.02
+eat_alcohol										= 0.15
+eat_satiety										= -0.05
+eat_thirstiness									= 0.08
+boost_health_restore							= 0
+boost_wound_immunity							= 0.1
+boost_fire_wound_immunity						= 0.1
+boost_explosion_immunity						= 0.1
+boost_strike_immunity							= 0.1
+boost_bhs_painkiller							= 10
+boost_time										= 360
+max_uses										= 1
+tier											= 3
+$spawn											= "food and drugs\analgetic"
+visual											= dynamics\devices\glucose_shots\glucose.ogf
+use_sound										= interface\inv_syringe
+snd_on_take										= other
+
+; Morphine Shot
+![morphine]
+cost											= 5080
+inv_weight										= 0.02
+eat_alcohol										= 0.15
+eat_satiety										= -0.08
+eat_thirstiness									= 0.12
+boost_health_restore							= 0
+boost_wound_immunity							= 0.15
+boost_fire_wound_immunity						= 0.15
+boost_explosion_immunity						= 0.15
+boost_strike_immunity							= 0.15
+boost_bhs_painkiller							= 15
+boost_time										= 360
+max_uses										= 1
+tier											= 4
+$spawn											= "food and drugs\analgetic"
+visual											= dynamics\eft_meds\itm_stim_morphine.ogf
+use_sound										= interface\inv_syringe
+snd_on_take										= other
 ![medkit]
 boost_time										= 65
 boost_health_restore							= 0.0015
