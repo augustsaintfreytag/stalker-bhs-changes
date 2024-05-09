@@ -466,6 +466,17 @@
 		</text>
 	</string>
 
+	<string id="st_akvatab">
+		<text>Modafinil</text>
+	</string>
+	<string id="st_akvatab_descr">
+		<text>An eugeroic stimulant that promotes wakefulness and heightened cognition, usually prescriped for the treatment of narcolepsy and excessive daytime fatigue. It is sometimes also prescribed off-label for attention deficit hyperactivity disorder (ADHD) with mixed efficacy and in adjunctive (combination therapy) treatment of bipolar disorder. Historically, Modafinil has been distributed to military personnel for fatigue management as a safer alternative to amphetamines and to ISS-stationed astronauts to manage circadian dyssynchrony. In the field, it is a viable option to induce alertness and cognitive enhancement with a low side effects and addiction profile.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_purple] • %c[ui_gray_2]moderate stimulant effects\n</text>
+	</string>
+
 	<string id="st_splint">
 		<text>Synthetic Splint</text>
 	</string>
