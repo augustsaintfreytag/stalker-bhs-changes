@@ -328,14 +328,14 @@
 	</string>
 	
 	<string id="st_drug_psy_blockade">
-		<text>Psy Block</text>
+		<text>Haloperidol</text>
 	</string>
 	<string id="st_drug_psy_blockade_descr">
-		<text>An experimental psychotropic medication developed to provide biological resistance to the effects of active psi fields and mind-affecting hazards in the Zone. Psy Block is a compound consisting mainly of the typical class antipsychotic chlorpromazine and other unknown anxiolytic and lightly sedative substances. Ingestion induces short-term alexithymia (emotional blindness) and may cause side effects of nausea, disorientation, and apathy. Even while under its effects, prolonged exposure to psi fields is highly discouraged.\n \n
+		<text>A potent psychotropic medication often resold under the colloquial brand "Psy Block" for resistance to the effects of mind-affecting hazards found in the Zone. Haloperidol is a potent first generation antipsychotic used in the treatment of acute psychosis, hallucinations, hyperactive delirium, schizophrenia, severe nausea from the effects of radiation therapy, and as an antiemetic. Ingestion induces short-term alexithymia (emotional blindness) and may cause side effects of nausea, disorientation, and apathy. Prolonged exposure to cognition-affecting fields is highly discouraged, wearing properly shielding headgear is advised.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] experimental item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
-		%c[d_purple] • %c[ui_gray_2] moderate antipsychotic\n
+		%c[d_purple] • %c[ui_gray_2] major antipsychotic\n
 		</text>
 	</string>
 
