@@ -21,6 +21,9 @@
 	<string id="ui_inv_minutes_short">
 		<text>min</text>
 	</string>
+	<string id="ui_inv_time_instant">
+		<text>Instantaneous</text>
+	</string>
 	<string id="ui_inv_health">
 		<text>Wound Healing</text>
 	</string>
