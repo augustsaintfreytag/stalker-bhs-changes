@@ -8,8 +8,6 @@ A listing of all items as they are added by the pack combination.
 
 Items that are primarily painkillers and damage resistance boosters. These may be used to triage damaged body parts as a temporary relief and taken voluntarily before combat encounters to increase survival chances.
 
-> Todo: Too many painkillers, middle part can be repurposed.
-
 | Name            | Identifier       | Cost | boost_strike_immunity, boost_wound_immunity, bhs_painkillerlist |
 | --------------- | ---------------- | ---- | --------------------------------------------------------------- |
 | Ibuprofen       | `salicidic_acid` | 1680 | 0.02, 0.02, 2                                                   |
@@ -42,8 +40,9 @@ Items that primarily prevent or reduce bleeding and are used to triage or fully 
 | Name                 | Identifier       | Cost | boost_bleeding_restore, bhs_* |
 | -------------------- | ---------------- | ---- | ----------------------------- |
 | Bandage              | `bandage`        | 600  | 0.016, none                   |
-| Tourniquet           | `jgut`           | 1200 | 0.04, none                    |
-| Vinca                | `drug_coagulant` | 2480 | 0.00042, 11 (healone)         |
+| Military Bandage     | `bandage_army`   | 800  | 0.02, none                    |
+| Tourniquet           | `jgut`           | 1200 | 0.12, none                    |
+| Vinca                | `drug_coagulant` | 1880 | 0.00042, 11 (healone)         |
 | Synthetic Splint     | `splint`         | 800  | 0, 1 (splint)                 |
 | SAM Splint           | `alu_splint`     | 1400 | 0, 1 (splint)                 |
 | Surgical Field Kit   | `cms`            | 8000 | 0, 1 (surgery)                |
@@ -57,35 +56,33 @@ Items that are taken before or during combat for primarily increased carry weigh
 | --------------------------- | -------------- | ---- | ------------------------------------------------------------ |
 | Caffeine Tablets            | `caffeine`     | 1480 | 0.0008, 1, 0                                                 |
 | Modafinil                   | `akvatab`      | 2280 | 0.001, 2, 0                                                  |
-| Hercules                    | `drug_booster` | 3480 | 0.0028, 6.5, 0                                               |
-| Cocaine                     | `cocaine`      | 3500 | 0.00442, 12, 0                                               |
-| Epinephrine Shot            | `adrenalin`    | 6520 | 0.00629, 22, 0                                               |
-| SJ-I Combat Stimulant Shot  | `etg`          | 4500 | 0.00642, 25, 0                                               |
-| SJ-V Combat Stimulant Shot  | `sj1`          | 4000 | 0.00442, 20, 0.15                                            |
-| SJ-IX Combat Stimulant Shot | `sj6`          | 5500 | 0.00842, 30, 0.2                                             |
+| Hercules                    | `drug_booster` | 3480 | 0.0028, 6, 0                                                 |
+| Cocaine                     | `cocaine`      | 3860 | 0.00442, 8, 0                                                |
+| Epinephrine Shot            | `adrenalin`    | 6520 | 0.00629, 16, 0                                               |
+| SJ-I Combat Stimulant Shot  | `etg`          | 4580 | 0.00642, 10, 0                                               |
+| SJ-V Combat Stimulant Shot  | `sj1`          | 3880 | 0.00442, 10, 0.15                                            |
+| SJ-IX Combat Stimulant Shot | `sj6`          | 5580 | 0.00842, 12, 0.25                                            |
 
 ### Radiation
 
 Items that primarily give radiation resistance or remove radiation exposure.
 
-| Name                 | Identifier            | Cost | boost_radiation_protection, boost_radiation_restore |
+| Name                 | Identifier            | Cost | boost_radiation_restore, boost_radiation_protection |
 | -------------------- | --------------------- | ---- | --------------------------------------------------- |
-| Chlortetracycline    | `antibio_chlor`       | 521  | 0.00035, 0                                          |
-| Sulfadimethoxine     | `antibio_sulfad`      | 933  | 0.0005, 0                                           |
-| Radioprotectant      | `drug_radioprotector` | 1250 | 0.001, 0                                            |
-| Cystamine            | `antirad_cystamine`   | 1950 | 0.0018, 0                                           |
-| Potassium Iodide     | `antirad_kalium`      | 2340 | 0, 0.0012                                           |
-| Anti-Radiation Drugs | `antirad`             | 2700 | 0, 0.008                                            |
+| Potassium Iodide     | `antirad_kalium`      | 1280 | 0, 0.0024                                           |
+| Cystamine            | `antirad_cystamine`   | 1680 | 0.0008, 0.0100                                      |
+| Radioprotectant      | `drug_radioprotector` | 1880 | 0, 0.0160                                           |
+| Anti-Radiation Drugs | `antirad`             | 2260 | 0.0046, 0                                           |
 
 ### Toxicity
 
-Items that primarily give resistance to toxic anomalies (acid). Toxicity damage is directly applied as health damage, so no restoration property exists.
+Items that primarily give resistance to toxic anomalies (acid). Toxicity damage is directly applied as health damage, so no restoration property exists. All toxicity items were changed to pill form.
 
-| Name              | Identifier       | Cost | boost_chemburn_protection |
-| ----------------- | ---------------- | ---- | ------------------------- |
-| Antidote          | `drug_antidot`   | 3360 | 0.0038                    |
-| Chlortetracycline | `antibio_chlor`  | 521  | 0.009                     |
-| Sulfadimethoxine  | `antibio_sulfad` | 933  | 0.0025                    |
+| Name              | Identifier       | Cost | boost_chemburn_protection, boost_radiation_protection |
+| ----------------- | ---------------- | ---- | ----------------------------------------------------- |
+| Chlortetracycline | `antibio_chlor`  | 880  | 0.009, 0.00035                                        |
+| Sulfadimethoxine  | `antibio_sulfad` | 1280 | 0.020, 0.0088                                         |
+| Antidote          | `drug_antidot`   | 2280 | 0.048, 0                                              |
 
 ### Electric Shock
 
@@ -95,14 +92,10 @@ There are no items that give resistance to electric shock damage.
 
 Items that give resistance to psychic damage (e.g. psy fields, psy anomalies, psy-based creatures like poltergheists and controllers). Some of these medications may be referred to as antipsychotics in the overhaul; *Psy Block* may become *Clozapine*.
 
-| Name           | Identifier           | Cost | boost_telepat_protection |
-| -------------- | -------------------- | ---- | ------------------------ |
-| Cannabis Joint | `joint`              | 380  | 0.02                     |
-| Marijuana      | `marijuana`          | 1040 | 0.03                     |
-| Etperazine     | `antiemetic`         | 678  | 0.041                    |
-| Psy Block      | `drug_psy_blockade`  | 4450 | 0.075                    |
-| Diazepam       | `drug_sleepingpills` | 4200 | 0.025                    |
-
-### Miscellaneous
-
-…
+| Name           | Identifier           | Cost | boost_telepat_protection, eat_sleepiness |
+| -------------- | -------------------- | ---- | ---------------------------------------- |
+| Cannabis Joint | `joint`              | 680  | 0.02, 0.17                               |
+| Marijuana      | `marijuana`          | 1180 | 0.03, 0.22                               |
+| Etperazine     | `antiemetic`         | 2480 | 0.04, 0.05                               |
+| Psy Block      | `drug_psy_blockade`  | 3680 | 0.075, 0.046                             |
+| Diazepam       | `drug_sleepingpills` | 2080 | 0.025, 2.25                              |
