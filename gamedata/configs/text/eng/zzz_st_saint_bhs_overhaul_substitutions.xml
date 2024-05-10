@@ -327,6 +327,18 @@
 		</text>
 	</string>
 	
+	<string id="st_antiemetic">
+		<text>Etperazine</text>
+	</string>
+	<string id="st_antiemetic_descr">
+		<text>A moderately potent antipsychotic medication of the phenothiazine class with antiallergic, sedative, miorelaxing, and antiemetic effects, acting by blocking Dopamine D2 receptors in the mesocortical and mesolimbic systems. It is used in the treatment of psychosis, hallucinations, schizophrenia, mild to moderate psychomotor agitation, and as an antiemetic. In the Zone, it is used for resistance to the effects of mind-affecting hazards. Side effects include nausea, disorientation, and apathy. Prolonged exposure to cognition-affecting fields is highly discouraged, wearing properly shielding headgear is advised.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_purple] • %c[ui_gray_2] moderate antipsychotic\n
+		</text>
+	</string>
+
 	<string id="st_drug_psy_blockade">
 		<text>Haloperidol</text>
 	</string>
