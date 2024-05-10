@@ -39,10 +39,10 @@
 	</string>
 
 	<string id="st_drug_antidot">
-		<text>Antidote</text>
+		<text>IP2 Antitoxin</text>
 	</string>
 	<string id="st_drug_antidot_descr">
-		<text>The IP2 antitoxin is a complex substance comprising several antidotes, including metoclopramidum, pyridoxine, thiamine, riboxin and other compounds. The drug is used to inject a range of antibiotics to neutralize natural poisons, together with synthetic poison absorbers, into the bloodstream. IP2 is not particularly popular in the Zone as most stalkers rely on a gas mask and a protective suit. However, there are still those who have a few units of this antidote stashed for emergency situations. The effects of the drug are long-lasting. Take one capsule at a time.\n \n
+		<text>An experimental substance comprising of several antidotes, including metoclopramidum, pyridoxine, thiamine, riboxin and other compounds. The drug is used to inject a range of antibiotics to neutralize natural poisons, together with synthetic poison absorbers, into the bloodstream. Antitoxins are not commonly used in the Zone as most stalkers rely on more expensive situation-appropriate protective equipment like hazard protection suits with dedicated oxygen supply. However, IP2 is used for scenarios with only brief expected exposure, as augmentation to worn protective gear, and in expeditions with limites supplies or funds. Side effects include nausea, dry mouth, and skin irritability.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medicine\n
 		%c[d_blue] • %c[ui_gray_2] imported\n
