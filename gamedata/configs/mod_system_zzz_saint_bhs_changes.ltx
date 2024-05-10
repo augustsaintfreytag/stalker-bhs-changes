@@ -8,7 +8,7 @@
 cost											= 1680
 inv_weight										= 0.02
 empty_weight									= 0.001
-eat_alcohol										= -0.1
+eat_alcohol										= -0.05
 eat_thirstiness									= 0.05
 boost_health_restore							= 0.0001
 boost_wound_immunity							= 0.02
@@ -28,7 +28,7 @@ snd_on_take										= other
 ![yadylin]
 cost											= 1880
 inv_weight										= 0.08
-eat_alcohol										= 0.3
+eat_alcohol										= 0.2
 eat_thirstiness									= 0.05
 boost_health_restore							= 0.0002
 boost_wound_immunity							= 0.05
@@ -70,7 +70,7 @@ snd_on_take										= other
 cost											= 3880
 inv_weight										= 0.02
 empty_weight									= 0.001
-eat_alcohol										= 0.15
+eat_alcohol										= 0.12
 eat_satiety										= -0.12
 eat_thirstiness									= 0.1
 boost_health_restore							= 0
@@ -128,44 +128,372 @@ $spawn											= "food and drugs\analgetic"
 visual											= dynamics\eft_meds\itm_stim_morphine.ogf
 use_sound										= interface\inv_syringe
 snd_on_take										= other
+
+
+; First Aid
+
+; First Aid Kit
 ![medkit]
+cost											= 1800
 boost_time										= 65
 boost_health_restore							= 0.0015
-boost_bleeding_restore							= 0.0018
-boost_radiation_restore							= 0.0004
+boost_bleeding_restore							= 0.0010
+boost_power_restore								= 0
+boost_radiation_restore							= 0
+boost_bhs_healone								= 21
+boost_bhs_painkiller							= 1
 
+; Military Medkit
 ![medkit_army]
+cost											= 2800
 boost_time										= 65
 boost_health_restore							= 0.0025
-boost_bleeding_restore							= 0.0025
-boost_radiation_restore							= 0.004
+boost_bleeding_restore							= 0.0020
+boost_power_restore								= 0.004
+boost_radiation_restore							= 0
+boost_bhs_healone								= 32
+boost_bhs_painkiller							= 4
 
-![medkit_scientific]
-boost_time										= 90
-boost_health_restore							= 0.0025
+; Expeditionary Medkit
+![medkit_scientic]
+cost											= 4200
+boost_time										= 65
+boost_health_restore							= 0.01
 boost_bleeding_restore							= 0.0025
+boost_power_restore								= 0.004
 boost_radiation_restore							= 0.001
+boost_radiation_protection						= 0.0007
+boost_telepat_protection						= 0.01
+boost_bhs_healone								= 32
+boost_bhs_painkiller							= 4
 
+; Stimpack
+![stimpack]
+cost											= 2200
+boost_time										= 12
+boost_health_restore							= 0.007
+boost_bleeding_restore							= 0
+boost_bhs_healone								= 21
+boost_bhs_painkiller							= 1
+
+; Military Stimpack
+![stimpack_army]
+cost											= 3200
+boost_time										= 15
+boost_health_restore							= 0.01
+boost_bleeding_restore							= 0
+boost_bhs_healone								= 32
+boost_bhs_painkiller							= 3
+
+; Expeditionary Stimpack
+![stimpack_scientic]
+cost											= 4600
+boost_time										= 15
+boost_health_restore							= 0.01
+boost_bleeding_restore							= 0
+boost_radiation_restore							= 0.001
+boost_radiation_protection						= 0.0007
+boost_telepat_protection						= 0.01
+boost_bhs_healone								= 32
+boost_bhs_painkiller							= 3
+
+; Fluorapine Shot
+![propital]
+cost											= 3580
+boost_time										= 180
+boost_health_restore							= 0.0015
+boost_bhs_healone								= 21
+
+; Survival Kit
+![survival_kit]
+cost											= 7200
+boost_time										= 90
+boost_health_restore							= 0.0015
+boost_radiation_restore							= 0.0004
+boost_bleeding_restore							= 0.05
+boost_bhs_healone								= 60
+
+; Axyltallisal
+![rebirth]
+cost											= 12000
+boost_time										= 17
+boost_health_restore							= 0.0188
+boost_radiation_restore							= 0.0122
+boost_bleeding_restore							= 0.05
+boost_bhs_healone								= 60
+boost_bhs_painkiller							= 7
+
+
+; Bleeding & Body
+
+; Bandage
 ![bandage]
-boost_time										= 5
+cost											= 600
+inv_weight										= 0.02
+boost_time										= 1
 boost_bleeding_restore							= 0.016
 
-![jgut]
-boost_time										= 5
-boost_bleeding_restore							= 0.04
-
+; Military Bandage
 ![bandage_army]
-boost_time										= 5
-boost_bleeding_restore							= 0.024
+cost											= 800
+inv_weight										= 0.028
+boost_time										= 1
+boost_bleeding_restore							= 0.02
 
-![propital]
-boost_wound_immunity							= 0.005
+; Tourniquet
+![jgut]
+cost											= 1200
+inv_weight										= 0.04
+boost_time										= 1
+boost_bleeding_restore							= 0.12
 
+; Tourniquet
+![drug_coagulant]
+cost											= 1880
+boost_bleeding_restore							= 0.00042
+boost_bhs_healone								= 11
+
+; Synthetic Splint
+![splint]
+cost											= 800
+boost_bhs_splint								= 1
+
+; SAM Splint
+![alu_splint]
+cost											= 1400
+boost_bhs_splint								= 1
+
+; Surgical Field Kit
+![cms]
+cost											= 8000
+boost_bhs_surgery								= 1
+
+; Surgical Instruments
+![surginst]
+cost											= 1180
+boost_bhs_surgery								= 1
+
+
+; Stimulants
+
+; Caffeine Tablets
+![caffeine]
+cost											= 1480
+boost_time										= 1200
+boost_power_restore								= 0.0008
+boost_max_weight								= 1.0
+
+; Modafinil
+![akvatab]
+cost											= 2280
+eat_satiety										= 0
+eat_thirstiness									= 0.1
+eat_sleepiness									= -0.65
+eat_alcohol										= -0.35
+boost_time										= 1200
+boost_power_restore								= 0.001
+boost_max_weight								= 2.0
+
+; Hercules
+![drug_booster]
+cost											= 3480
+boost_time										= 900
+boost_power_restore								= 0.0028
+boost_max_weight								= 6.0
+
+; Cocaine
+![cocaine]
+cost											= 3860
+boost_time										= 900
+boost_power_restore								= 0.00442
+boost_max_weight								= 8.0
+
+; Epinephrine Shot
+![adrenalin]
+cost											= 6520
+boost_time										= 900
+boost_power_restore								= 0.00629
+boost_max_weight								= 16.0
+boost_bhs_painkiller							= 2
+
+; SJ-I Combat Stimulant Shot
 ![etg]
-boost_telepat_protection						= 0.03
+cost											= 4580
+boost_time										= 1800
+boost_power_restore								= 0.00642
+boost_max_weight								= 10.0
+boost_bhs_painkiller							= 4
 
+; SJ-V Combat Stimulant Shot
 ![sj1]
+cost											= 3880
+boost_time										= 1800
+boost_power_restore								= 0.00442
+boost_max_weight								= 10.0
+boost_strike_immunity							= 0.15
+boost_wound_immunity							= 0.15
+boost_explosion_immunity						= 0.15
+boost_fire_wound_immunity						= 0.15
+boost_telepat_protection						= 0.04
+boost_bhs_painkiller							= 6
+
+; SJ-IX Combat Stimulant Shot
+![sj6]
+cost											= 5580
+boost_time										= 1800
+boost_power_restore								= 0.00842
+boost_max_weight								= 12.0
+boost_strike_immunity							= 0.25
+boost_wound_immunity							= 0.25
+boost_explosion_immunity						= 0.25
+boost_fire_wound_immunity						= 0.25
+boost_telepat_protection						= 0.06
+boost_bhs_painkiller							= 6
+
+
+; Radiation
+
+; Potassium Iodide (Pills)
+![antirad_kalium]
+cost											= 1280
+max_uses										= 3
+eat_satiety										= -0.344
+eat_sleepiness									= 0.224
+eat_health										= -0.083
+boost_time										= 300 ;  was 10
+boost_radiation_restore							= 0 ; was 0.0046
+boost_radiation_protection						= 0.0024 ; was 0
+
+; Cystamine (Shot)
+![antirad_cystamine]
+cost											= 1680
+eat_satiety										= -0.13
+eat_sleepiness									= 0.1
+eat_health										= 0
+boost_time										= 300
+boost_radiation_restore							= 0.0008 ; was 0
+boost_radiation_protection						= 0.0100 ; was 0.0104
+
+; Radioprotectant
+![drug_radioprotector]
+cost											= 1880
+max_uses										= 2
+eat_satiety										= -0.1
+eat_sleepiness									= 0.07
+eat_thirstiness									= 0.2
+eat_health										= 0
+boost_time										= 360
+boost_radiation_restore							= 0 ; was 0
+boost_radiation_protection						= 0.0160 ; was 0.0154
+
+; Anti-Radiation Drugs
+![antirad]
+cost											= 2260 ; was 1860
+eat_satiety										= -0.344
+eat_sleepiness									= 0.124
+eat_thirstiness									= 0.2
+eat_health										= -0.053
+boost_time										= 10
+boost_radiation_restore							= 0.0046 ; was 0.0046
+boost_radiation_protection						= 0 ; was 0
+
+
+; Toxicity
+
+; Chlortetracycline
+![antibio_chlor]
+cost											= 880
+boost_time										= 900
+eat_health										= 0 ; was -0.0315
+eat_alcohol										= 0.01
+eat_satiety										= 0
+eat_thirstiness									= 0.12
+eat_sleepiness									= 0.03
+boost_radiation_protection						= 0.00035
+boost_chemburn_protection						= 0.009
+
+; Sulfadimethoxine
+![antibio_sulfad]
+cost											= 1280
+max_uses										= 3
+boost_time										= 900
+eat_health										= 0 ; was -0.0155
+eat_alcohol										= 0.01
+eat_satiety										= 0
+eat_thirstiness									= 0.12
+eat_sleepiness									= 0.06
+boost_radiation_protection						= 0.0088
+boost_chemburn_protection						= 0.020
+
+; IP2 Antitoxin
+![drug_antidot]
+cost											= 2280	; was 3360
+max_uses										= 3
+boost_time										= 900
+eat_health										= 0
+eat_alcohol										= 0.01
+eat_satiety										= 0
+eat_thirstiness									= 0.18
+eat_sleepiness									= 0.13
+boost_radiation_protection						= 0
+boost_chemburn_protection						= 0.048
+
+
+; Psy/Mental
+
+; Cannabis Joint
+![joint]
+cost											= 680
+boost_time										= 420
+eat_alcohol										= -0.033
+eat_satiety										= -0.074
+eat_thirstiness									= 0.15
+eat_sleepiness									= 0.17
+boost_telepat_protection						= 0.02
+boost_radiation_restore							= 0.0008
+boost_bhs_painkiller							= 1
+
+; Marijuana
+![marijuana]
+cost											= 1180
+boost_time										= 600
+eat_alcohol										= -0.062
+eat_satiety										= -0.148
+eat_thirstiness									= 0.15
+eat_sleepiness									= 0.22
+boost_telepat_protection						= 0.03
+boost_radiation_restore							= 0.0011
+boost_bhs_painkiller							= 1
+
+; Etperazine
+![antiemetic]
+cost											= 2480
+max_uses										= 2
+boost_time										= 720
+eat_alcohol										= -0.032
+eat_satiety										= 0
+eat_thirstiness									= 0.18
+eat_sleepiness									= 0.05
 boost_telepat_protection						= 0.04
 
-![sj6]
-boost_telepat_protection						= 0.05
+; Psy Block
+![drug_psy_blockade]
+cost											= 3680
+max_uses										= 4
+boost_time										= 1200
+eat_alcohol										= 0.125
+eat_satiety										= -0.124
+eat_thirstiness									= 0.2
+eat_sleepiness									= 0.046
+boost_telepat_protection						= 0.075
+
+; Diazepam
+![drug_sleepingpills]
+cost											= 2080
+max_uses										= 2
+boost_time										= 1200
+eat_alcohol										= 0.15
+eat_satiety										= 0
+eat_thirstiness									= 0.2
+eat_sleepiness									= 2.25
+boost_telepat_protection						= 0.025
