@@ -37,7 +37,7 @@ function apply_compatibility_patches()
 		icon_n = "",
 		track = false,
 		magnitude = 12500, -- 0.0004 should be 5% PAR/x,
-		unit = "st_par_hour",
+		unit = "st_par_sec",
 		compare = false,
 		sign = true,
 		show_always = false

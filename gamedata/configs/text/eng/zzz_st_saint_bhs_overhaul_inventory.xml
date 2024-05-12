@@ -6,8 +6,8 @@
 	<string id="st_ml">
 		<text>ml</text>
 	</string>
-	<string id="st_par_hour">
-		<text>PAR/h</text>
+	<string id="st_par_sec">
+		<text>PAR/sec</text>
 	</string>
 	<string id="st_levels">
 		<text>levels</text>
