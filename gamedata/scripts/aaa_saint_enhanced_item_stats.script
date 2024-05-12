@@ -347,7 +347,7 @@ function prop_formatted_time(val)
 
 	if minutes > 1 then
 		formatted = minutes .. " " .. game.translate_string("ui_inv_minutes")
-	else if seconds > 1 then
+	elseif seconds > 1 then
 		formatted = seconds .. " " .. game.translate_string("ui_inv_seconds")
 	else
 		formatted = game.translate_string("ui_inv_time_instant")
