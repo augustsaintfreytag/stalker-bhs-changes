@@ -273,6 +273,30 @@
 		</text>
 	</string>
 
+	<string id="st_antirad">
+		<text>Hipyridine Shot</text>
+	</string>
+	<string id="st_antirad_descr">
+		<text>A highly potent combination preparation of Ca-DTPA (calcium diethylenetriamine pentaacetate) and (HOPO), an experimental octadentate hydroxypyridinone ligand, for the treatment of acute and emergency radiation exposure. Both compounds act by binding radical radionuclides in the body, preventing traumatic cell damage, and accelerate flushing radioactive material before irreversible damage can occur. The substance is combined with a light antiemetic to counter-act adverse reactions of nausea. Side effects include nausea, chills, fever, itching, muscle cramps, as well as headaches, drowsiness, and metallic taste in the mouth. Hipyridine binds to various vital minerals, replenishment after ingestion is advised.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_red] • %c[ui_gray_2] moderate satiety drain\n
+		%c[d_purple] • %c[ui_gray_2] major radiation treatment\n
+		</text>
+	</string>
+
+	<string id="st_antirad_cystamine">
+		<text>Amiprodine Cx</text>
+	</string>
+	<string id="st_antirad_cystamine_descr">
+		<text>A combination medication for the treatment of light to moderate radiation exposure consisting of a broad-spectrum cytoprotective and radioprotective agent and Prussian Blue, a chelating agent that binds absorbed radionucleides in the body. It provides protection from radiation-induced cell damage and has antioxidant and inflammation-reducing effects. Developed for use by trauma and recovery teams in nuclear desaster and conflict zones, widely carried and used in the Zone as a more accessible and tolerable alternative to more aggressive anti-radiation infusions. Side effects include nausea, flushing, chest pain, upset stomach, constipation, and loss of consciousness.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		</text>
+	</string>
+
 	<string id="st_rebirth">
 		<text>Axyltallisal</text>
 	</string>
