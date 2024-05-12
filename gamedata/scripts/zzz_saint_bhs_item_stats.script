@@ -27,7 +27,7 @@ function apply_compatibility_patches()
 	bhs_items_surgical = zzz_player_injuries.surgerylist or {}
 	bhs_items_analgesic = zzz_player_injuries.painkillerlist or {}
 
-	utils_ui.stats_table["booster"]["boost_time"]["index"] = 0
+	utils_ui.stats_table["booster"]["boost_time"]["index"] = 1
 
 	utils_ui.stats_table["booster"]["boost_health_restore"] = {
 		index = 2,
@@ -114,8 +114,8 @@ function apply_compatibility_patches()
 		unit = "st_msv",
 		compare = false,
 		sign = true,
-		show_always = false,
-		sign_inverse_txt = false
+		sign_inverse_txt = false,
+		show_always = false
 	}
 
 	utils_ui.stats_table["booster"]["eat_satiety"] = {
@@ -125,10 +125,11 @@ function apply_compatibility_patches()
 		icon_p = "ui_am_prop_satiety_restore_speed",
 		icon_n = "ui_am_prop_satiety",
 		track = false,
-		magnitude = 1000,
+		magnitude = 2000,
 		unit = "st_kcal",
 		compare = false,
 		sign = true,
+		sign_inverse = false,
 		show_always = false
 	}
 
@@ -139,12 +140,13 @@ function apply_compatibility_patches()
 		icon_p = "ui_am_prop_thirst_p",
 		icon_n = "ui_am_prop_thirst_n",
 		track = false,
-		magnitude = 1000,
+		magnitude = 100,
 		unit = "st_ml",
 		compare = false,
 		sign = true,
-		show_always = false,
-		sign_inverse_txt = false
+		sign_inverse = true,
+		sign_inverse_txt = true,
+		show_always = false
 	}
 
 	utils_ui.stats_table["booster"]["eat_sleepiness"] = {
@@ -154,10 +156,11 @@ function apply_compatibility_patches()
 		icon_p = "ui_am_prop_sleep_p",
 		icon_n = "ui_am_prop_sleep_n",
 		track = false,
-		magnitude = 1000,
+		magnitude = 250,
 		unit = "st_perc",
 		compare = false,
 		sign = true,
+		sign_inverse = true,
 		show_always = false
 	}
 end
