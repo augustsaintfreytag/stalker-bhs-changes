@@ -117,7 +117,7 @@ function utils_ui.UIInfoItem:Update(obj, sec, flags)
 		return false
 	end
 
-	for stat, gr in spairs(value, sort_by_index) do
+	for stat, gr in spairs(value, utils_ui.sort_by_index) do
 		-- get stat value
 		local val_a = utils_ui.utils_ui.get_stats_value(obj, sec, gr, stat)
 		local val_a_is_empty = val_is_empty(val_a)
