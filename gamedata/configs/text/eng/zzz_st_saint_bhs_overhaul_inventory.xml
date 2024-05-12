@@ -57,7 +57,7 @@
 		<text>Radiation</text>
 	</string>
 	<string id="ui_inv_sleep">
-		<text>Exhaustion</text>
+		<text>Fatigue</text>
 	</string>
 	<string id="ui_inv_damage_immunity">
 		<text>Analgesic Effect</text>
