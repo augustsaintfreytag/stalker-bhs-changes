@@ -154,53 +154,8 @@ function utils_ui.UIInfoItem:Update(obj, sec, flags)
 		ele.txt:Show(false)
 		ele.comp:Show(false)
 
-		-- Progress bar
-		if gr.track then
-			val_a = tonumber(val_a) or 0 -- This routine assumes numeric value, force convert to prevent crashes.
-			local valbar_a = clamp((math.floor(math.abs(val_a) * gr.magnitude)), 0, 1)
-
-			-- Comparison item
-			local val_b = obj_b and utils_ui.get_stats_value(obj_b, obj_b:section(), gr, stat)
-			local valbar_b = val_b and clamp((math.floor(math.abs(val_b) * gr.magnitude)), 0, 1)
-			if valbar_b and (valbar_a ~= valbar_b) then
-				-- If focued item's value is bigger than slot item's value -> focued item's bar: green + 2nd layer
-				if valbar_a > valbar_b then
-					ele.bar1:SetProgressPos(valbar_b)
-					ele.bar1:SetColor(clr_list["info_def"])
-
-					ele.bar2:SetProgressPos(valbar_a)
-					ele.bar2:SetColor(clr_list["info_p"])
-
-					ele.comp:SetTextColor(clr_list["info_p_txt"])
-
-					-- If focued item's value is smaller than slot item's value -> focued item's bar: red + 1nd layer
-				else
-					ele.bar1:SetProgressPos(valbar_a)
-					ele.bar1:SetColor(clr_list["info_def"])
-
-					ele.bar2:SetProgressPos(valbar_b)
-					ele.bar2:SetColor(clr_list["info_n"])
-
-					ele.comp:SetTextColor(clr_list["info_n_txt"])
-				end
-
-				local diff_val = math.ceil((valbar_a - valbar_b) * 100)
-				ele.comp:SetText((diff_val > 0 and "+" or "") .. diff_val .. "%")
-				ele.comp:Show(true)
-				ele.bar1:Show(true)
-				ele.bar2:Show(true)
-				ele.bar1:ShowBackground(false)
-
-				-- No comparison
-			else
-				ele.bar1:SetProgressPos(valbar_a)
-				ele.bar1:SetColor(clr_list["info_def"])
-				ele.bar1:Show(true)
-				ele.bar1:ShowBackground(true)
-			end
-
-			-- Text
-		elseif ele.txt then
+		-- Text value
+		if ele.txt then
 			-- This routine allows for both numeric and text (pre-formatted) values.
 
 			if type(val_a) == "number" then
@@ -264,8 +219,51 @@ function utils_ui.UIInfoItem:Update(obj, sec, flags)
 				ele.txt:SetTextColor(clr)
 				ele.txt:Show(true)
 			end
-		end
+		elseif gr.track then
+			val_a = tonumber(val_a) or 0 -- This routine assumes numeric value, force convert to prevent crashes.
+			local valbar_a = clamp((math.floor(math.abs(val_a) * gr.magnitude)), 0, 1)
 
+			-- Comparison item
+			local val_b = obj_b and utils_ui.get_stats_value(obj_b, obj_b:section(), gr, stat)
+			val_b = tonumber(val_b) or 0 -- This routine assumes numeric value, force convert to prevent crashes.
+			local valbar_b = val_b and clamp((math.floor(math.abs(val_b) * gr.magnitude)), 0, 1)
+
+			if valbar_b and (valbar_a ~= valbar_b) then
+				-- If focussed item's value is bigger than slot item's value -> focued item's bar: green + 2nd layer
+				if valbar_a > valbar_b then
+					ele.bar1:SetProgressPos(valbar_b)
+					ele.bar1:SetColor(clr_list["info_def"])
+
+					ele.bar2:SetProgressPos(valbar_a)
+					ele.bar2:SetColor(clr_list["info_p"])
+
+					ele.comp:SetTextColor(clr_list["info_p_txt"])
+
+					-- If focussed item's value is smaller than slot item's value -> focued item's bar: red + 1nd layer
+				else
+					ele.bar1:SetProgressPos(valbar_a)
+					ele.bar1:SetColor(clr_list["info_def"])
+
+					ele.bar2:SetProgressPos(valbar_b)
+					ele.bar2:SetColor(clr_list["info_n"])
+
+					ele.comp:SetTextColor(clr_list["info_n_txt"])
+				end
+
+				local diff_val = math.ceil((valbar_a - valbar_b) * 100)
+				ele.comp:SetText((diff_val > 0 and "+" or "") .. diff_val .. "%")
+				ele.comp:Show(true)
+				ele.bar1:Show(true)
+				ele.bar2:Show(true)
+				ele.bar1:ShowBackground(false)
+			else
+				-- No comparison
+				ele.bar1:SetProgressPos(valbar_a)
+				ele.bar1:SetColor(clr_list["info_def"])
+				ele.bar1:Show(true)
+				ele.bar1:ShowBackground(true)
+			end
+		end
 
 		y = y + ele.base:GetHeight()
 		--printf("stat ele [%s] [%s] | cnt: %s - y: %s - value: %s", sec, stat, cnt, y, val_a)
@@ -316,6 +314,8 @@ function utils_ui.UIInfoItem:Update(obj, sec, flags)
 	-- Finale
 	self:Sync_Finale(true, self.stats_dialog, self.ammo, self.frame, 10)
 end
+
+-- Utility
 
 -- Numeric value formatting with thousands separator, supporting both integers and floats.
 -- Examples, input 200 -> 200, 1000 -> 1.000, 2250000 -> 2.250.000, 1250.50 -> 1.250,50
