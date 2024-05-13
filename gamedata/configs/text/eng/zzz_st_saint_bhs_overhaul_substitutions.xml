@@ -28,11 +28,11 @@
 		</text>
 	</string>
 
-	<string id="st_drug_anabiotic">
-		<text>Anabiotics</text>
+	<string id="st_drug_coagulant">
+		<text>Vikasolum</text>
 	</string>
-	<string id="st_drug_anabiotic_descr">
-		<text>An experimental drug developed by Professor Ozersky for scientific research teams working in the Zone. At its core, the drug contains tetrodotoxin, known colloquially as "zombie powder," which causes a complete shutdown of the body's central nervous system that may allow people to survive emissions outside cover. After six years worth of field tests, thoughtful stalkers know to keep a few on hand for unexpected blowouts.\n \n
+	<string id="st_drug_coagulant_descr">
+		<text>A medication containing the synthetic naphthoquinone Menadione (also called Vitamin K) that promotes blood coagulation and counter-acts heavy bleeding and hemorrhages. It is carried and used as a common emergency treatment for moderate injuries in the field and may also be used as augmentive treatment together with physical wound dressings (like bandages) to accelerate wound healing and prevent critical blood loss.
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
@@ -274,16 +274,15 @@
 		</text>
 	</string>
 
-	<string id="st_antirad">
-		<text>Hipyridine Shot</text>
+	<string id="st_drug_radioprotector">
+		<text>Radioprotectant</text>
 	</string>
-	<string id="st_antirad_descr">
-		<text>A highly potent combination preparation of Ca-DTPA (calcium diethylenetriamine pentaacetate) and (HOPO), an experimental octadentate hydroxypyridinone ligand, for the treatment of acute and emergency radiation exposure. Both compounds act by binding radical radionuclides in the body, preventing traumatic cell damage, and accelerate flushing radioactive material before irreversible damage can occur. The substance is combined with a light antiemetic to counter-act adverse reactions of nausea. Side effects include nausea, chills, fever, itching, muscle cramps, as well as headaches, drowsiness, and metallic taste in the mouth. Hipyridine binds to various vital minerals, replenishment after ingestion is advised.\n \n
+	<string id="st_drug_radioprotector_descr">
+		<text>A medication containing B190 indraline radioprotectant, commonly included in medkits issued to nuclear power plant staff and military personnel tasked to operate in heavily irradiated environments. Effectively reduces the effects of gamma radiation on live tissue and prevents absorption in the body. Must be consumed before exposure, does not aid in the removal of already absorbed radionucleides. Used in the Zone as a more potent alternative to iodide and as a preemptive measure to not require more drastic post-exposure treatment, like Amiprodine or Hipyridine injections that come with broader side effects profiles.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
-		%c[d_red] • %c[ui_gray_2] moderate satiety drain\n
-		%c[d_purple] • %c[ui_gray_2] major radiation treatment\n
+		%c[d_purple] • %c[ui_gray_2] moderate radiation protection\n
 		</text>
 	</string>
 
@@ -295,6 +294,20 @@
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_purple] • %c[ui_gray_2] minor radiation treatment\n
+		</text>
+	</string>
+	
+	<string id="st_antirad">
+		<text>Hipyridine Shot</text>
+	</string>
+	<string id="st_antirad_descr">
+		<text>A highly potent combination preparation of Ca-DTPA (calcium diethylenetriamine pentaacetate) and (HOPO), an experimental octadentate hydroxypyridinone ligand, for the treatment of acute and emergency radiation exposure. Both compounds act by binding radical radionuclides in the body, preventing traumatic cell damage, and accelerate flushing radioactive material before irreversible damage can occur. The substance is combined with a light antiemetic to counter-act adverse reactions of nausea. Side effects include nausea, chills, fever, itching, muscle cramps, as well as headaches, drowsiness, and metallic taste in the mouth. Hipyridine binds to various vital minerals, replenishment after ingestion is advised.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_red] • %c[ui_gray_2] moderate satiety drain\n
+		%c[d_purple] • %c[ui_gray_2] major radiation treatment\n
 		</text>
 	</string>
 
