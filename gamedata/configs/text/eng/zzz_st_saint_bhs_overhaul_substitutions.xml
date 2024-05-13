@@ -6,23 +6,25 @@
 		<text>Bandage</text>
 	</string>
 	<string id="st_bandage_descr">
-		<text>An elastic bandage used to stop bleeding and prevent the infection of wounds. For regular bleeding, carefully apply the bandage to the wound. For arterial bleeding, urgently tie the bandage around the affected area.\n \n
+		<text>A common elastic gauze bandage made of soft fabric and a small dressing pad. It is widely used for first aid to wounds, together with additional medical gauze and topical antibiotics if needed. It is wrapped tightly around the affected are to stop heavy bleeding and lower the risk of secondary infection in the field. It is a cheap entry-level option to more widely preferred military-grade field dressings.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
-		%c[d_blue] • %c[ui_gray_2] fast usage (adhesive plaster)\n
-		%c[d_orange] • %c[ui_gray_2] moderate bleeding control\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (roller gauze)\n
+		%c[d_purple] • %c[ui_gray_2] major bleeding control\n
 		</text>
 	</string>
 
-	<string id="st_drug_coagulant">
-		<text>Vinca</text>
+	<string id="st_bandage_army">
+		<text>Military Bandage</text>
 	</string>
-	<string id="st_drug_coagulant_descr">
-		<text>An artificial equivalent of vitamin K, also known as Vikasolum. Its main function is to increase blood coagulation speed. In great demand among stalkers who want slow-healing wounds and lacerations inflicted by mutants to close up faster. Its effects are long-lasting and can be used in situations with high risk of injury.\n \n
+	<string id="st_bandage_army_descr">
+		<text>An military-issue emergency bandage made of dense, elastic fabric with a sterile dressing pad and a plastic clip on one end to secure it in place after application. It is widely used to dress wounds, stop heavy bleeding, and prevent secondary infection in the field. It is a reliable high-quality alternative to cheaper stock of first aid items.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
-		%c[d_blue] • %c[ui_gray_2] medicine\n
-		%c[d_blue] • %c[ui_gray_2] imported\n
-		%c[d_orange] • %c[ui_gray_2] moderate bleeding control\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] fast usage (clip)\n
+		%c[d_purple] • %c[ui_gray_2] major bleeding control\n
 		</text>
 	</string>
 
@@ -398,19 +400,6 @@
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_purple] • %c[ui_gray_2] minor bleeding control\n
 		%c[d_purple] • %c[ui_gray_2] minor bleeding resistance\n
-		</text>
-	</string>
-
-	<string id="st_bandage_army">
-		<text>Military Bandage</text>
-	</string>
-	<string id="st_bandage_army_descr">
-		<text>An elastic, self-adhesive military-issue bandage used to stop bleeding and prevent infection of wounds. It provides excellent grip, can be quickly applied in the field, and later removed without residue. The bandage is lightweight, flexible, and can be used for regular and arterial bleeding.\n \n
-		%c[ui_gray_3]PROPERTIES:\n
-		%c[d_blue] • %c[ui_gray_2] imported item\n
-		%c[d_blue] • %c[ui_gray_2] military item\n
-		%c[d_blue] • %c[ui_gray_2] fast usage (adhesive)\n
-		%c[d_purple] • %c[ui_gray_2] major bleeding control\n
 		</text>
 	</string>
 
