@@ -1,36 +1,242 @@
 ; Ibuprofen
-![salicidic_acid]
-snd = interface\item_usage\drug_tabletos_use
-anm = item_ea_drug_akvatab
-cam = itemuse_anm_effects\drug_tabletos_use.anm
-tm = 4350
+@[salicidic_acid]
+snd = interface\item_usage\pills_use
+anm = item_ea_drug_coagulant
+cam = itemuse_anm_effects\tabletki_use.anm
+tm = 3700
 helm = false
+
+; Yadylin
+@[yadylin]:salicidic_acid
 
 ; Diclofenac
-![analgetic]
-snd = interface\item_usage\pills_use
-anm = item_ea_drug_sleepingpills
-cam = itemuse_anm_effects\tabletki_use.anm
-tm = 3700
-helm = false
+@[analgetic]:salicidic_acid
+anm = item_ea_caffeine
 
 ; Oxycodone
-![tetanus]
-snd = interface\item_usage\pills_use
-anm = item_ea_drug_sleepingpills
-cam = itemuse_anm_effects\tabletki_use.anm
-tm = 3700
-helm = false
+@[tetanus]::salicidic_acid
+anm = item_ea_caffeine
 
 ; Metamizole Shot
-![analgin]
+@[analgin]
 snd = interface\item_usage\syringe2
 anm = item_ea_syringer_guns
 cam = itemuse_anm_effects\antirad.anm
 tm = 3200
 helm = true
 
+; Morphine Shot
+@[morphine]:analgin
+
+
+
+; First Aid Kit
+@[medkit]
+snd = interface\item_usage\medkit_use_slow80
+anm = item_ea_medkit
+cam = itemuse_anm_effects\aptechka_use.anm
+tm = 10000
+speed = 0.8
+helm = true
+
+; Military Medkit
+@[medkit_army]:medkit
+anm = item_ea_medkit_army
+
+; Expeditionary Medkit
+@[medkit_scientic]:medkit
+anm = item_ea_medkit_scientic
+
+; Stimpack
+@[stimpack]
+snd = interface\item_usage\antirad_use
+anm = item_ea_stimpack
+cam = itemuse_anm_effects\antirad_use.anm
+tm = 4600
+helm = true
+
+; Military Stimpack
+@[stimpack_army]
+anm = item_ea_stimpack_army
+
+; Expeditionary Stimpack
+@[stimpack_scientic]
+anm = item_ea_stimpack_scientic
+
+; Fluorapine Shot
+@[propital]
+snd = interface\item_usage\syringe1
+anm = item_ea_syringe_def
+cam = itemuse_anm_effects\antirad.anm
+tm = 7200
+helm = true
+
+; Axyltallisal
+@[rebirth]:propital
+
+; Survival Kit
+@[survival_kit]:medkit
+anm = item_ea_medkit_elite
+tm = 7000
+
+
+
+; Bandage
+; Unchanged
+
+; Military Bandage
+; Unchanged
+
+; Tourniquet
+!![jgut]
+!snd
+!anm
+!cam
+!tm
+!helm
+
+; Synthetic Splint
+!![splint]
+!snd
+!anm
+!cam
+!tm
+!helm
+
+; SAM Splint
+!![alu_splint]
+!snd
+!anm
+!cam
+!tm
+!helm
+
+; Surgical Field Kit
+!![cms]
+!snd
+!anm
+!cam
+!tm
+!helm
+
+; Surgical Instruments
+!![surginst]
+!snd
+!anm
+!cam
+!tm
+!helm
+
+; Vikasolum
+@[drug_coagulant]
+snd = interface\item_usage\pills_use
+anm = item_ea_drug_coagulant
+cam = itemuse_anm_effects\tabletki_use.anm
+tm = 3700
+helm = false
+
+
+
+; Caffeine Tablets
+@[caffeine]
+snd = interface\item_usage\pills_use
+anm = item_ea_drug_sleepingpills
+cam = itemuse_anm_effects\tabletki_use.anm
+tm = 3700
+helm = false
+
+; Modafinil
+@[akvatab]:caffeine
+anm = item_ea_caffeine
+
+; Hercules
+; Unchanged
+
+; Cocaine
+; Unchanged
+
+; Epinephrine Shot
+@[adrenalin]
+snd = interface\item_usage\morphine_use_v2
+anm = item_ro_injector_adrenaline
+cam = itemuse_anm_effects\morphine_cam_anim.anm
+tm = 4000
+helm = true
+
+; SJ-I Combat Stimulant Shot
+@[etg]:adrenalin
+anm = item_ro_injector_etg
+
+; SJ-V Combat Stimulant Shot
+@[sj1]:adrenalin
+anm = item_ro_injector_sj1
+
+; SJ-IX Combat Stimulant Shot
+@[sj6]:adrenalin
+anm = item_ro_injector_sj6
+
+
+
+; Potassium Iodide
+@[antirad_kalium]
+snd = interface\item_usage\pills_use
+anm = item_ea_drug_coagulant
+cam = itemuse_anm_effects\tabletki_use.anm
+tm = 3700
+helm = false
+
+; Radioprotectant
+@[drug_radioprotector]:antirad_kalium
+anm = item_ea_drug_radioprotector
+
+; Amiprodine Cx Shot
+@[antirad_cystamine]
+snd = interface\item_usage\syringe2
+anm = item_ea_syringer_guns
+cam = itemuse_anm_effects\antirad.anm
+tm = 3200
+helm = true
+
+; Hipyridine Shot
+@[antirad]:antirad_cystamine
+
+
+
 ; Chlortetracycline
-![antibio_chlor]:drug_coagulant
+@[antibio_chlor]
+snd = interface\item_usage\pills_use
+anm = item_ea_antirad_kalium
+cam = itemuse_anm_effects\tabletki_use.anm
+tm = 3700
+helm = false
+
+; Sulfadimethoxine
+@[antibio_sulfad]:antibio_chlor
 anm = item_ea_antibio_sulfad
 
+; IP2 Antitoxin
+@[drug_antidot]:antibio_chlor
+anm = item_ea_drug_antidot
+
+
+; Cannabis Joint
+; Unchanged
+
+; Marijuana
+; Unchanged
+
+; Etperazine
+@[antiemetic]:antibio_chlor
+snd = interface\item_usage\pills_use
+anm = item_ea_drug_antidot
+cam = itemuse_anm_effects\tabletki_use.anm
+tm = 3700
+helm = false
+
+; Diazepam
+@[drug_sleepingpills]:antiemetic
+anm = item_ea_drug_psy_blocade
+
+; Haloperidol
+@[drug_psy_blockade]:antiemetic
+anm = item_ea_drug_psy_blocade
