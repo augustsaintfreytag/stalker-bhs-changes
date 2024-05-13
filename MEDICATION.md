@@ -1,5 +1,52 @@
 A sheet documenting all available medical items in BHS and BHSRO to map out identifiers, names, primary effects, icon design, and assigned item use animation. Used as reference for consistency and to determine gaps in player needs against what items provide. This document applies to an assumed mod pack combination of Anomaly x GAMMA x Body Health System (BHS) x Body Health System Realistic Overhaul (BHSRO).
 
+## Applicators
+
+- Pills/Blister
+- Pills/Bottle
+- Bottle
+- Ampoule
+- Pen Injector
+- Compact Injector
+- Big Injector
+
+## Animations
+
+| Animation Identifier          | Applicator                                    |
+| ----------------------------- | --------------------------------------------- |
+| `item_ea_antibio_sulfad`      | Pills (Small, Yellow/Blue)                    |
+| `item_ea_antirad_kalium`      | Pills (Small, Green)                          |
+| `item_ea_drug_antidot`        | Pills (Small, Magenta/Blue)                   |
+| `item_ea_drug_psy_blocade`    | Pills (Small, Red)                            |
+| `item_ea_drug_sleepingpills`  | Pills (Small, Gray)                           |
+| `item_ea_drug_coagulant`      | Pills (Small, Yellow)                         |
+| `item_ea_drug_akvatab`        | Pills (Blue Bottle)                           |
+| `item_ea_drug_yadulin`        | Pills (White Bottle)                          |
+| `item_ea_antiemetic`          | Pills (Small, Orange)                         |
+| `item_ea_caffeine`            | Pills (White)                                 |
+| `item_ea_drug_radioprotector` | Pills (Big, Yellow)                           |
+| `item_ea_antirad`             | Big Injector, Red                             |
+| `item_ea_stimpack_army`       | Big Injector, Blue                            |
+| `item_ea_stimpack_scientic`   | Big Injector, Yellow                          |
+| `item_ea_morphine`            | Compact Injector (`syringe_hand, syringe`)    |
+| `item_ea_syringe_def`         | Compact Injector (`syringe1_hands, syringe1`) |
+| `item_ea_syringer_guns`       | Ampoule (`syringe2_hands, syringe2`)          |
+| `item_ea_medkit`              | Medkit (Red)                                  |
+| `item_ea_medkit_army`         | Medkit (Red)                                  |
+| `item_ea_medkit_scientic`     | Medkit (Red)                                  |
+| `item_ea_medkit_elite`        | Medkit (Unknown)                              |
+| `item_ea_bandage`             | Bandage (Red)                                 |
+| `item_ea_bandage_israeli`     | Unused                                        |
+| `item_ea_bio_bandage`         | Unused                                        |
+| `item_ro_injector_morphine`   | Pen Injector (Default)                        |
+| `item_ro_injector_adrenaline` | Pen Injector (Yellow)                         |
+| `item_ro_injector_propital`   | Pen Injector (Textured)                       |
+| `item_ro_injector_zagustin`   | Pen Injector (Textured)                       |
+| `item_ro_injector_etg`        | Pen Injector (Textured)                       |
+| `item_ro_injector_sj1`        | Pen Injector (Textured)                       |
+| `item_ro_injector_sj6`        | Pen Injector (Textured)                       |
+
+
 ## Items
 
 A listing of all items as they are added by the pack combination.
