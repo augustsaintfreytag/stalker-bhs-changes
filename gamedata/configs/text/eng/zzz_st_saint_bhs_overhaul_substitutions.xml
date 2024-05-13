@@ -34,9 +34,8 @@
 	<string id="st_drug_anabiotic_descr">
 		<text>An experimental drug developed by Professor Ozersky for scientific research teams working in the Zone. At its core, the drug contains tetrodotoxin, known colloquially as "zombie powder," which causes a complete shutdown of the body's central nervous system that may allow people to survive emissions outside cover. After six years worth of field tests, thoughtful stalkers know to keep a few on hand for unexpected blowouts.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
-		%c[d_blue] • %c[ui_gray_2] medicine\n
-		%c[d_blue] • %c[ui_gray_2] zone-produced\n
-		%c[d_red] • %c[ui_gray_2] causes temporary blackout\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
 		</text>
 	</string>
 
@@ -46,8 +45,8 @@
 	<string id="st_drug_antidot_descr">
 		<text>An experimental substance comprising of several antidotes, including metoclopramidum, pyridoxine, thiamine, riboxin and other compounds. The drug is used to inject a range of antibiotics to neutralize natural poisons, together with synthetic poison absorbers, into the bloodstream. Antitoxins are not commonly used in the Zone as most stalkers rely on more expensive situation-appropriate protective equipment like hazard protection suits with dedicated oxygen supply. However, IP2 is used for scenarios with only brief expected exposure, as augmentation to worn protective gear, and in expeditions with limites supplies or funds. Side effects include nausea, dry mouth, and skin irritability.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
-		%c[d_blue] • %c[ui_gray_2] medicine\n
-		%c[d_blue] • %c[ui_gray_2] imported\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_orange] • %c[ui_gray_2] moderate toxin resistance\n
 		</text>
 	</string>
@@ -59,7 +58,7 @@
 		<text>A haemostatic rubber tourniquet, used to stop arterial bleeding. The tourniquet is applied to the limb above the wound, and tightened until the bleeding stops, then secured in place. An applied tourniquet should be removed after 15-20 minutes to prevent tissue necrosis.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
-		%c[d_blue] • %c[ui_gray_2] imported\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] major bleeding control\n
 		</text>
 	</string>
@@ -70,8 +69,8 @@
 	<string id="st_yadylin_descr">
 		<text>A strong nonsteroidal anti-inflammatory drug (NSAID) for managing varying levels of pain. Yadulin features quick onset analgesic effects, an increased production of adrenaline in the body, and blocks enzymes responsible for inflammation and swelling. Has frequent side effects of nausea. A common pain relief drug in the Zone, though arguably more popular for its versatility in the synthesis of other compounds.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
-		%c[d_blue] • %c[ui_gray_2] medicine\n
-		%c[d_blue] • %c[ui_gray_2] imported\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_orange] • %c[ui_gray_2] minor analgesic effects\n
 		%c[d_red] • %c[ui_gray_2]causes nausea\n
 		</text>
@@ -132,8 +131,8 @@
 	<string id="st_salicidic_acid_descr">
 		<text>Common analgesic medication in the nonsteroidal anti-inflammatory drug (NSAID) class used for treating minor to moderate pain. Ibuprofen works by inhibiting the production of prostaglandins, chemicals that promote inflammation, pain, and fever in the body, it is fast-acting, well tolerated, and cheap. Commonly used to treat minor injuries and headaches.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
-		%c[d_blue] • %c[ui_gray_2] medicine\n
-		%c[d_blue] • %c[ui_gray_2] imported\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_orange] • %c[ui_gray_2] minor analgesic effect\n
 		</text>
 	</string>
@@ -270,7 +269,7 @@
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
-		%c[d_purple] • %c[ui_gray_2] minor radiation resistance\n
+		%c[d_purple] • %c[ui_gray_2] minor radiation protection\n
 		%c[d_purple] • %c[ui_gray_2] minor toxicity resistance\n
 		</text>
 	</string>
