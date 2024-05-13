@@ -86,10 +86,10 @@ Items that primarily prevent or reduce bleeding and are used to triage or fully 
 
 | Name                 | Identifier       | Cost | bleeding_restore, bhs_* | Applicator            |
 | -------------------- | ---------------- | ---- | ----------------------- | --------------------- |
+| Vikasolum            | `drug_coagulant` | 1880 | 0.00042, 11 (healone)   | Pills (Yellow, Small) |
 | Bandage              | `bandage`        | 600  | 0.016, none             | Bandage               |
 | Military Bandage     | `bandage_army`   | 800  | 0.02, none              | Bandage               |
 | Tourniquet           | `jgut`           | 1200 | 0.12, none              | (Dummy, clear)        |
-| Vinca                | `drug_coagulant` | 1880 | 0.00042, 11 (healone)   | Pills (Yellow, Small) |
 | Synthetic Splint     | `splint`         | 800  | 0, 1 (splint)           | (Dummy, clear)        |
 | SAM Splint           | `alu_splint`     | 1400 | 0, 1 (splint)           | (Dummy, clear)        |
 | Surgical Field Kit   | `cms`            | 8000 | 0, 1 (surgery)          | (Dummy, fade)         |
@@ -101,7 +101,7 @@ Items that are taken before or during combat for primarily increased carry weigh
 
 | Name                        | Identifier     | Cost | power_restore, max_weight, strike_immunity | Applicator            |
 | --------------------------- | -------------- | ---- | ------------------------------------------ | --------------------- |
-| Caffeine Tablets            | `caffeine`     | 1480 | 0.0008, 1, 0                               | Pills (White, Small)  |
+| Caffeine Tablets            | `caffeine`     | 1480 | 0.0008, 1, 0                               | Pills (Gray, Small)   |
 | Modafinil                   | `akvatab`      | 2280 | 0.001, 2, 0                                | Pills (White, Big)    |
 | Hercules                    | `drug_booster` | 3480 | 0.0028, 6, 0                               | Drink                 |
 | Cocaine                     | `cocaine`      | 3860 | 0.00442, 8, 0                              | Crystalline Powder    |
@@ -146,3 +146,4 @@ Items that give resistance to psychic damage (e.g. psy fields, psy anomalies, ps
 | Etperazine     | `antiemetic`         | 2480 | 0.04, 0.05                         | Pills (Magenta/Blue, Small) |
 | Diazepam       | `drug_sleepingpills` | 2080 | 0.025, 2.25                        | Pills (Red, Small)          |
 | Haloperidol    | `drug_psy_blockade`  | 3680 | 0.075, 0.046                       | Pills (Red, Big)            |
+| Anabiotic      | `drug_anabiotic`     | 6880 | 0, 0                               | Pills (White, Big)          |
