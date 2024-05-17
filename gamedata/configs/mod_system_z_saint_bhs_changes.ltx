@@ -15,7 +15,7 @@ boost_wound_immunity							= 0.02
 boost_fire_wound_immunity						= 0.02
 boost_explosion_immunity						= 0.02
 boost_strike_immunity							= 0.02
-boost_bhs_painkiller							= 2
+boost_bhs_pain_protection						= 0.02
 boost_time										= 280
 max_uses										= 5
 tier											= 1
@@ -35,7 +35,7 @@ boost_wound_immunity							= 0.05
 boost_fire_wound_immunity						= 0.05
 boost_explosion_immunity						= 0.05
 boost_strike_immunity							= 0.05
-boost_bhs_painkiller							= 5
+boost_bhs_pain_protection						= 0.05
 boost_time										= 180
 max_uses										= 1
 tier											= 2
@@ -56,7 +56,7 @@ boost_wound_immunity							= 0.05
 boost_fire_wound_immunity						= 0.05
 boost_explosion_immunity						= 0.05
 boost_strike_immunity							= 0.05
-boost_bhs_painkiller							= 5
+boost_bhs_pain_protection						= 0.05
 boost_time										= 280
 max_uses										= 5
 tier											= 2
@@ -78,7 +78,7 @@ boost_wound_immunity							= 0.06
 boost_fire_wound_immunity						= 0.06
 boost_explosion_immunity						= 0.06
 boost_strike_immunity							= 0.06
-boost_bhs_painkiller							= 6
+boost_bhs_pain_protection						= 0.07
 boost_time										= 280
 max_uses										= 5
 tier											= 2
@@ -99,7 +99,7 @@ boost_wound_immunity							= 0.1
 boost_fire_wound_immunity						= 0.1
 boost_explosion_immunity						= 0.1
 boost_strike_immunity							= 0.1
-boost_bhs_painkiller							= 10
+boost_bhs_pain_protection						= 0.12
 boost_time										= 360
 max_uses										= 1
 tier											= 3
@@ -120,7 +120,7 @@ boost_wound_immunity							= 0.15
 boost_fire_wound_immunity						= 0.15
 boost_explosion_immunity						= 0.15
 boost_strike_immunity							= 0.15
-boost_bhs_painkiller							= 15
+boost_bhs_pain_protection						= 0.17
 boost_time										= 360
 max_uses										= 1
 tier											= 4
@@ -140,8 +140,8 @@ boost_health_restore							= 0.0010
 boost_bleeding_restore							= 0.0010
 boost_power_restore								= 0
 boost_radiation_restore							= 0
-boost_bhs_healone								= 21
-boost_bhs_painkiller							= 1
+boost_bhs_limb_restore							= 0.25
+boost_bhs_pain_protection						= 0.012
 
 ; Military Medkit
 ![medkit_army]
@@ -151,8 +151,8 @@ boost_health_restore							= 0.0018
 boost_bleeding_restore							= 0.0020
 boost_power_restore								= 0.004
 boost_radiation_restore							= 0
-boost_bhs_healone								= 32
-boost_bhs_painkiller							= 4
+boost_bhs_limb_restore							= 0.38
+boost_bhs_pain_protection						= 0.05
 
 ; Expeditionary Medkit
 ![medkit_scientic]
@@ -164,8 +164,8 @@ boost_power_restore								= 0.004
 boost_radiation_restore							= 0.001
 boost_radiation_protection						= 0.0007
 boost_telepat_protection						= 0.01
-boost_bhs_healone								= 32
-boost_bhs_painkiller							= 4
+boost_bhs_limb_restore							= 0.38
+boost_bhs_pain_protection						= 0.05
 
 ; Stimpack
 ![stimpack]
@@ -173,8 +173,8 @@ cost											= 2200
 boost_time										= 12
 boost_health_restore							= 0.007
 boost_bleeding_restore							= 0
-boost_bhs_healone								= 21
-boost_bhs_painkiller							= 1
+boost_bhs_limb_restore							= 0.25
+boost_bhs_pain_protection						= 0.012
 
 ; Military Stimpack
 ![stimpack_army]
@@ -182,8 +182,8 @@ cost											= 3200
 boost_time										= 15
 boost_health_restore							= 0.01
 boost_bleeding_restore							= 0
-boost_bhs_healone								= 32
-boost_bhs_painkiller							= 3
+boost_bhs_limb_restore							= 0.38
+boost_bhs_pain_protection						= 0.04
 
 ; Expeditionary Stimpack
 ![stimpack_scientic]
@@ -194,15 +194,15 @@ boost_bleeding_restore							= 0
 boost_radiation_restore							= 0.001
 boost_radiation_protection						= 0.0007
 boost_telepat_protection						= 0.01
-boost_bhs_healone								= 32
-boost_bhs_painkiller							= 3
+boost_bhs_limb_restore							= 0.38
+boost_bhs_pain_protection						= 0.04
 
 ; Fluorapine Shot
 ![propital]
 cost											= 3580
 boost_time										= 180
 boost_health_restore							= 0.0015
-boost_bhs_healone								= 21
+boost_bhs_limb_restore							= 0.25
 
 ; Axyltallisal
 ![rebirth]
@@ -211,8 +211,8 @@ boost_time										= 17
 boost_health_restore							= 0.0188
 boost_radiation_restore							= 0.0122
 boost_bleeding_restore							= 0.05
-boost_bhs_healone								= 60
-boost_bhs_painkiller							= 7
+boost_bhs_limb_restore							= 0.75
+boost_bhs_pain_protection						= 0.08
 
 ; Survival Kit
 ![survival_kit]
@@ -221,7 +221,7 @@ boost_time										= 90
 boost_health_restore							= 0.0015
 boost_radiation_restore							= 0.0004
 boost_bleeding_restore							= 0.05
-boost_bhs_healone								= 60
+boost_bhs_limb_restore							= 0.7
 
 
 ; Bleeding & Body
@@ -231,14 +231,14 @@ boost_bhs_healone								= 60
 cost											= 1880
 boost_time										= 300
 boost_bleeding_restore							= 0.00042
-boost_bhs_healone								= 11
+boost_bhs_limb_restore							= 0.13
 
 ; Tranexyban Shot
 ![zagustin]
 cost											= 2880
 boost_time										= 300
 boost_bleeding_restore							= 0.0009
-boost_bhs_healone								= 14
+boost_bhs_limb_restore							= 0.17
 
 ; Bandage
 ![bandage]
@@ -246,6 +246,7 @@ cost											= 500
 inv_weight										= 0.02
 boost_time										= 1
 boost_bleeding_restore							= 0.012
+boost_bhs_limb_splint							= 0.012
 
 ; Military Bandage
 ![bandage_army]
@@ -253,6 +254,7 @@ cost											= 800
 inv_weight										= 0.028
 boost_time										= 1
 boost_bleeding_restore							= 0.022
+boost_bhs_limb_splint							= 0.012
 
 ; Tourniquet
 ![jgut]
@@ -260,26 +262,27 @@ cost											= 1200
 inv_weight										= 0.04
 boost_time										= 1
 boost_bleeding_restore							= 0.15
+boost_bhs_limb_splint							= 0.012
 
 ; Synthetic Splint
 ![splint]
 cost											= 800
-boost_bhs_splint								= 1
+boost_bhs_limb_splint							= 0.5
 
 ; SAM Splint
 ![alu_splint]
 cost											= 1400
-boost_bhs_splint								= 1
+boost_bhs_limb_splint							= 0.5
 
 ; Surgical Field Kit
 ![cms]
 cost											= 8000
-boost_bhs_surgery								= 1
+boost_bhs_broken_limb_restore					= 0.25
 
 ; Surgical Instruments
 ![surginst]
 cost											= 1180
-boost_bhs_surgery								= 1
+boost_bhs_broken_limb_restore					= 0.05
 
 
 ; Stimulants
@@ -322,7 +325,7 @@ cost											= 6520
 boost_time										= 900
 boost_power_restore								= 0.00629
 boost_max_weight								= 16.0
-boost_bhs_painkiller							= 2
+boost_bhs_pain_protection						= 0.02
 
 ; SJ-I Combat Stimulant Shot
 ![etg]
@@ -330,7 +333,7 @@ cost											= 4580
 boost_time										= 1800
 boost_power_restore								= 0.00642
 boost_max_weight								= 10.0
-boost_bhs_painkiller							= 4
+boost_bhs_pain_protection						= 0.05
 
 ; SJ-V Combat Stimulant Shot
 ![sj1]
@@ -343,7 +346,7 @@ boost_wound_immunity							= 0.15
 boost_explosion_immunity						= 0.15
 boost_fire_wound_immunity						= 0.15
 boost_telepat_protection						= 0.04
-boost_bhs_painkiller							= 6
+boost_bhs_pain_protection						= 0.07
 
 ; SJ-IX Combat Stimulant Shot
 ![sj6]
@@ -356,7 +359,7 @@ boost_wound_immunity							= 0.25
 boost_explosion_immunity						= 0.25
 boost_fire_wound_immunity						= 0.25
 boost_telepat_protection						= 0.06
-boost_bhs_painkiller							= 6
+boost_bhs_pain_protection						= 0.07
 
 
 ; Radiation
@@ -459,7 +462,7 @@ eat_thirstiness									= 0.15
 eat_sleepiness									= 0.14
 boost_telepat_protection						= 0.02
 boost_radiation_restore							= 0.0008
-boost_bhs_painkiller							= 1
+boost_bhs_pain_protection						= 0.012
 
 ; Marijuana
 ![marijuana]
@@ -471,7 +474,7 @@ eat_thirstiness									= 0.15
 eat_sleepiness									= 0.19
 boost_telepat_protection						= 0.03
 boost_radiation_restore							= 0.0011
-boost_bhs_painkiller							= 1
+boost_bhs_pain_protection						= 0.012
 
 ; Etperazine
 ![antiemetic]
@@ -509,3 +512,18 @@ boost_telepat_protection						= 0.025
 ; Anabiotic
 ![drug_anabiotic]
 cost											= 6880
+
+
+; Food & Drinks
+
+![vodka]
+boost_bhs_pain_protection						= 0.011
+
+![vodka2]
+boost_bhs_pain_protection						= 0.011
+
+![vodka_quality]
+boost_bhs_pain_protection						= 0.011
+
+![bottle_metal]
+boost_bhs_pain_protection						= 0.011
