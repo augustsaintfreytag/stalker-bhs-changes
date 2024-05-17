@@ -19,7 +19,7 @@
 		<text>Military Bandage</text>
 	</string>
 	<string id="st_bandage_army_descr">
-		<text>An military-issue emergency bandage made of dense, elastic fabric with a sterile dressing pad and a plastic clip on one end to secure it in place after application. It is widely used to dress wounds, stop heavy bleeding, and prevent secondary infection in the field. It is a reliable high-quality alternative to cheaper stock of first aid items.\n \n
+		<text>A military-issue emergency bandage made of dense, elastic fabric with a sterile dressing pad and a plastic clip on one end to secure it in place after application. It is widely used to dress wounds, stop heavy bleeding, and prevent secondary infection in the field. It is a reliable high-quality alternative to cheaper stock of first aid items.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
@@ -122,6 +122,16 @@
 		%c[d_orange] • %c[ui_gray_2] moderate limb recovery\n
 		%c[d_orange] • %c[ui_gray_2] moderate radiation treatment\n
 		%c[d_orange] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_survival_kit">
+		<text>Survival Kit</text>
+	</string>
+	<string id="st_survival_kit_descr">
+		<text>A custom-assembled survival kit with high-quality tools and items for wound dressing, disinfection, and pain relief in the field. It contains bandages, antiseptics, painkillers, radiation-absorbing drugs, light antitoxins, and emergency rations. For severe injuries, it also contains a compact set of surgical tools, including sewing needles and leather strips for splinting limbs. It provides an all-in-one treatment option, though it is usually expensive to assemble and acquire.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
 		</text>
 	</string>
 
@@ -302,7 +312,7 @@
 		<text>Hipyridine Shot</text>
 	</string>
 	<string id="st_antirad_descr">
-		<text>A highly potent combination preparation of Ca-DTPA (calcium diethylenetriamine pentaacetate) and (HOPO), an experimental octadentate hydroxypyridinone ligand, for the treatment of acute and emergency radiation exposure. Both compounds act by binding radical radionuclides in the body, preventing traumatic cell damage, and accelerate flushing radioactive material before irreversible damage can occur. The substance is combined with a light antiemetic to counter-act adverse reactions of nausea. Side effects include nausea, chills, fever, itching, muscle cramps, as well as headaches, drowsiness, and metallic taste in the mouth. Hipyridine binds to various vital minerals, replenishment after ingestion is advised.\n \n
+		<text>A highly potent combination preparation of Ca-DTPA (calcium diethylenetriamine pentaacetate) and HOPO, an experimental octadentate hydroxypyridinone ligand, for the treatment of acute and emergency radiation exposure. Both compounds act by binding radical radionuclides in the body, preventing traumatic cell damage, and accelerate flushing radioactive material before irreversible damage can occur. The substance is combined with a light antiemetic to counter-act adverse reactions of nausea. Side effects include nausea, chills, fever, itching, muscle cramps, as well as headaches, drowsiness, and metallic taste in the mouth. Hipyridine binds to various vital minerals, replenishment after ingestion is advised.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
@@ -315,7 +325,7 @@
 		<text>Axyltallisal</text>
 	</string>
 	<string id="st_rebirth_descr">
-		<text>An extremely potent, highly experimental regenerative drug. For its near-miraculous beneficial effects, it is informally called "Rebirth". The compound was developed by Zone researchers as part of an interdisciplinary study on triage and recovery after severe physical trauma and serious anomalous field exposure. The drug is assumed to contain volatile neurogenetics, neuroprotectants, immunotherapeutics, analeptics, and additional unknown agents; its official composition was not published. Intended to be used in a controlled and safe environment. When ingested, the patient will enter a short-lasting comatose state while the drug induces an extreme state of physical and neurological regeneration. The patient should regain consciousness after the effect naturally wears off. Side effects of repeated uses are unknown.\n \n
+		<text>An extremely potent, highly experimental regenerative drug. The compound was developed by Zone researchers as part of an interdisciplinary study on triage and recovery after severe bodily trauma and serious anomalous field exposure. The drug is assumed to contain volatile neurogenetics, neuroprotectants, immunotherapeutics, analeptics, and additional unknown agents; its official composition was never published. Intended to be used in a controlled and safe environment. When ingested, the patient will enter a short-lasting comatose state while the drug induces an extreme state of physical and neurological regeneration. The patient should regain consciousness after the effect naturally wears off. Side effects of repeated uses are unknown. For its near-miraculous beneficial effects, it is informally called "Rebirth".\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] experimental item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
@@ -381,7 +391,7 @@
 		<text>Haloperidol</text>
 	</string>
 	<string id="st_drug_psy_blockade_descr">
-		<text>A potent psychotropic medication often resold under the colloquial brand "Psy Block" for resistance to the effects of mind-affecting hazards found in the Zone. Haloperidol is a potent first generation antipsychotic used in the treatment of acute psychosis, hallucinations, hyperactive delirium, schizophrenia, severe nausea from the effects of radiation therapy, and as an antiemetic. Ingestion induces short-term alexithymia (emotional blindness) and may cause side effects of nausea, disorientation, and apathy. Prolonged exposure to cognition-affecting fields is highly discouraged, wearing properly shielding headgear is advised.\n \n
+		<text>A potent psychotropic medication, often resold as a preparation under the colloquial brand "Psy Block" for resistance to the effects of mind-affecting hazards found in the Zone. Haloperidol is a potent first generation antipsychotic used in the treatment of acute psychosis, hallucinations, hyperactive delirium, schizophrenia, severe nausea from the effects of radiation therapy, and as an antiemetic. Ingestion induces short-term alexithymia (emotional blindness) and may cause side effects of nausea, disorientation, and apathy. Prolonged exposure to cognition-affecting fields is highly discouraged, wearing properly shielding headgear is advised.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] experimental item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
@@ -419,7 +429,7 @@
 		<text>Fluorapine Shot</text>
 	</string>
 	<string id="st_propital_descr">
-		<text>An military-issue injector containing a moderate metabolic stimulant and a mix of purine and pyrimidine analog cytotoxic substances. Its stimulant part acts to accelerate wound-healing processes in the body, while the cytotoxic substances aim to target and destroy damaged cells and pathogens. The drug was originally developed from pharmaceutical anti-cancer trials and selected for military use for its effect on trauma recovery times. It is used to triage physical injuries in the field when proper medical care can not be provided. Side effects include chest pain, fever, bleeding, and increased nutritional demand.\n \n
+		<text>A military-issue injector containing a moderate metabolic stimulant and a mix of purine and pyrimidine analog cytotoxic substances. Its stimulant part acts to accelerate wound-healing processes in the body, while the cytotoxic substances aim to target and destroy damaged cells and pathogens. The drug was originally developed from pharmaceutical anti-cancer trials and selected for military use for its effect on trauma recovery times. It is used to triage physical injuries in the field when proper medical care can not be provided. Side effects include chest pain, fever, bleeding, and increased nutritional demand.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] military item\n
