@@ -28,7 +28,7 @@ A sheet documenting all available medical items in BHS and BHSRO to map out iden
 | `item_ea_antirad`             | Big Injector, Red                             |
 | `item_ea_stimpack_army`       | Big Injector, Blue                            |
 | `item_ea_stimpack_scientic`   | Big Injector, Yellow                          |
-| `item_ea_morphine`            | Compact Injector (`syringe_hand, syringe`)    |
+| `item_ea_morphine`            | Antique Syringe (`syringe_hand, syringe`)     |
 | `item_ea_syringe_def`         | Compact Injector (`syringe1_hands, syringe1`) |
 | `item_ea_syringer_guns`       | Ampoule (`syringe2_hands, syringe2`)          |
 | `item_ea_medkit`              | Medkit (Red)                                  |
@@ -38,13 +38,13 @@ A sheet documenting all available medical items in BHS and BHSRO to map out iden
 | `item_ea_bandage`             | Bandage (Red)                                 |
 | `item_ea_bandage_israeli`     | Unused                                        |
 | `item_ea_bio_bandage`         | Unused                                        |
-| `item_ro_injector_morphine`   | Pen Injector (Default)                        |
-| `item_ro_injector_adrenaline` | Pen Injector (Yellow)                         |
-| `item_ro_injector_propital`   | Pen Injector (Textured)                       |
-| `item_ro_injector_zagustin`   | Pen Injector (Textured)                       |
-| `item_ro_injector_etg`        | Pen Injector (Textured)                       |
-| `item_ro_injector_sj1`        | Pen Injector (Textured)                       |
-| `item_ro_injector_sj6`        | Pen Injector (Textured)                       |
+| `item_ro_injector_morphine`   | Pen Injector (Dark Blue)                      |
+| `item_ro_injector_adrenaline` | Pen Injector (Red)                            |
+| `item_ro_injector_propital`   | Pen Injector (Yellow)                         |
+| `item_ro_injector_zagustin`   | Pen Injector (Purple)                         |
+| `item_ro_injector_etg`        | Pen Injector (Green)                          |
+| `item_ro_injector_sj1`        | Pen Injector (Red)                            |
+| `item_ro_injector_sj6`        | Pen Injector (Blue)                           |
 
 
 ## Items
@@ -84,16 +84,17 @@ Items that are taken after sustaining damage, to heal main player health and to 
 
 Items that primarily prevent or reduce bleeding and are used to triage or fully treat head, torso, arms, and legs.
 
-| Name                 | Identifier       | Cost | bleeding_restore, bhs_* | Applicator            |
-| -------------------- | ---------------- | ---- | ----------------------- | --------------------- |
-| Vikasolum            | `drug_coagulant` | 1880 | 0.00042, 11 (healone)   | Pills (Yellow, Small) |
-| Bandage              | `bandage`        | 600  | 0.016, none             | Bandage               |
-| Military Bandage     | `bandage_army`   | 800  | 0.02, none              | Bandage               |
-| Tourniquet           | `jgut`           | 1200 | 0.12, none              | (Dummy, clear)        |
-| Synthetic Splint     | `splint`         | 800  | 0, 1 (splint)           | (Dummy, clear)        |
-| SAM Splint           | `alu_splint`     | 1400 | 0, 1 (splint)           | (Dummy, clear)        |
-| Surgical Field Kit   | `cms`            | 8000 | 0, 1 (surgery)          | (Dummy, fade)         |
-| Surgical Instruments | `surginst`       | 1180 | 0, 1 (surgery)          | (Dummy, clear)        |
+| Name                 | Identifier       | Cost | bleeding_restore, bhs_* | Applicator             |
+| -------------------- | ---------------- | ---- | ----------------------- | ---------------------- |
+| Vikasolum            | `drug_coagulant` | 1880 | 0.00042, 11 (healone)   | Pills (Yellow, Small)  |
+| Tranexyban Shot      | `zagustin`       | 2880 | 0.002, 14 (healone)     | Pen Injector (Magenta) |
+| Bandage              | `bandage`        | 600  | 0.016, none             | Bandage                |
+| Military Bandage     | `bandage_army`   | 800  | 0.02, none              | Bandage                |
+| Tourniquet           | `jgut`           | 1200 | 0.12, none              | (Dummy, clear)         |
+| Synthetic Splint     | `splint`         | 800  | 0, 1 (splint)           | (Dummy, clear)         |
+| SAM Splint           | `alu_splint`     | 1400 | 0, 1 (splint)           | (Dummy, clear)         |
+| Surgical Field Kit   | `cms`            | 8000 | 0, 1 (surgery)          | (Dummy, fade)          |
+| Surgical Instruments | `surginst`       | 1180 | 0, 1 (surgery)          | (Dummy, clear)         |
 
 ### Stimulants
 
@@ -125,11 +126,11 @@ Items that primarily give radiation resistance or remove radiation exposure.
 
 Items that primarily give resistance to toxic anomalies (acid). Toxicity damage is directly applied as health damage, so no restoration property exists.
 
-| Name              | Identifier       | Cost | chemburn_protection, radiation_protection | Applicator                |
-| ----------------- | ---------------- | ---- | ----------------------------------------- | ------------------------- |
-| Chlortetracycline | `antibio_chlor`  | 880  | 0.009, 0.00035                            | Pills (Green, Small)      |
-| Sulfadimethoxine  | `antibio_sulfad` | 1280 | 0.020, 0.0088                             | Pills (Yellow/Blue, Big)  |
-| IP2 Antitoxin     | `drug_antidot`   | 2280 | 0.048, 0                                  | Pills (Magenta/Blue, Big) |
+| Name              | Identifier       | Cost | chemburn_protection, radiation_protection | Applicator               |
+| ----------------- | ---------------- | ---- | ----------------------------------------- | ------------------------ |
+| Chlortetracycline | `antibio_chlor`  | 880  | 0.009, 0.00035                            | Pills (Red, Small)       |
+| Sulfadimethoxine  | `antibio_sulfad` | 1280 | 0.020, 0.0088                             | Pills (Green, Small)     |
+| IP2 Antitoxin     | `drug_antidot`   | 2280 | 0.048, 0                                  | Pills (Yellow/Blue, Big) |
 
 ### Electric Shock
 
@@ -139,11 +140,11 @@ There are no items that give resistance to electric shock damage.
 
 Items that give resistance to psychic damage (e.g. psy fields, psy anomalies, psy-based creatures like poltergheists and controllers). Some of these medications may be referred to as antipsychotics in the overhaul; *Psy Block* may become *Clozapine*.
 
-| Name           | Identifier           | Cost | telepat_protection, eat_sleepiness | Applicator                  |
-| -------------- | -------------------- | ---- | ---------------------------------- | --------------------------- |
-| Cannabis Joint | `joint`              | 680  | 0.02, 0.17                         | Joint                       |
-| Marijuana      | `marijuana`          | 1180 | 0.03, 0.22                         | Joint                       |
-| Etperazine     | `antiemetic`         | 2480 | 0.04, 0.05                         | Pills (Magenta/Blue, Small) |
-| Diazepam       | `drug_sleepingpills` | 2080 | 0.025, 2.25                        | Pills (Red, Small)          |
-| Haloperidol    | `drug_psy_blockade`  | 3680 | 0.075, 0.046                       | Pills (Red, Big)            |
-| Anabiotic      | `drug_anabiotic`     | 6880 | 0, 0                               | Pills (White, Big)          |
+| Name           | Identifier           | Cost | telepat_protection, eat_sleepiness | Applicator                |
+| -------------- | -------------------- | ---- | ---------------------------------- | ------------------------- |
+| Cannabis Joint | `joint`              | 680  | 0.02, 0.17                         | Joint                     |
+| Marijuana      | `marijuana`          | 1180 | 0.03, 0.22                         | Joint                     |
+| Etperazine     | `antiemetic`         | 2480 | 0.04, 0.05                         | Pills (Magenta/Blue, Big) |
+| Diazepam       | `drug_sleepingpills` | 2080 | 0.025, 2.25                        | Pills (Red, Small)        |
+| Haloperidol    | `drug_psy_blockade`  | 3680 | 0.075, 0.046                       | Pills (Magenta/Blue, Big) |
+| Anabiotic      | `drug_anabiotic`     | 6880 | 0, 0                               | Pills (White, Big)        |
