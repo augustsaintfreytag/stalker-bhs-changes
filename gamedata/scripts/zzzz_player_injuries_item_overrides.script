@@ -11,10 +11,10 @@
 
 -- Supported section properties:
 
--- `boost_bhs_pain_resistance`, amount, infer time from boost time
+-- `boost_bhs_pain_protection`, amount, infer time from boost time
 -- `boost_bhs_limb_restore, total amount, is either used as is for mode 2, or divided up for mode 1
 -- `boost_bhs_limb_splint`, temporary health amount, no boost time
--- `boost_bhs_limb_broken_restore`, limb surgery health amount, no boost time
+-- `boost_bhs_broken_limb_restore`, limb surgery health amount, no boost time
 
 -- If `medkits_heal_logic` is `1`, register `healhelplist` with individual limbs
 -- If `medkits_heal_logic` is `2`, register `healonelist` with `head+torso` formula for `healamount`
@@ -139,7 +139,7 @@ end
 
 function ported_pain_resistance_table(context, section)
 	local duration = math.floor(ini_sys:r_float_ex(section, "boost_time")) or 0
-	local value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_pain_resistance"))
+	local value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_pain_protection"))
 
 	if value == nil or value == 0 then
 		return nil
@@ -220,7 +220,7 @@ function ported_limb_splint_table(context, section)
 end
 
 function ported_limb_broken_restore_table(context, section)
-	local value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_limb_broken_restore"))
+	local value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_broken_limb_restore"))
 
 	if value == nil or value == 0 then
 		return nil
