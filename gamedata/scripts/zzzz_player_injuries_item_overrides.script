@@ -1,0 +1,254 @@
+-- BHSRO Extension Module (by Saint)
+--
+-- Allows specifying BHS values as regular floats in the style of all other item properties of the game.
+-- Values are read from sections on load and copied over into the BHS script.
+--
+-- Sample values:
+-- Base medkit, 42 total healing = 0.5 value
+-- Army and scientific medkit, 60 total healing = 0.715 value
+-- Rebirth, 84 total healing = 1.0 value
+
+
+-- Supported section properties:
+
+-- `boost_bhs_pain_resistance`, amount, infer time from boost time
+-- `boost_bhs_limb_restore, total amount, is either used as is for mode 2, or divided up for mode 1
+-- `boost_bhs_limb_splint`, temporary health amount, no boost time
+-- `boost_bhs_limb_broken_restore`, limb surgery health amount, no boost time
+
+-- If `medkits_heal_logic` is `1`, register `healhelplist` with individual limbs
+-- If `medkits_heal_logic` is `2`, register `healonelist` with `head+torso` formula for `healamount`
+
+
+-- Internal Configuration
+
+local medkit_or_stimpack_sections = map_from_table_values({ "medkit", "medkit_army", "medkit_scientic", "stimpack",
+	"stimpack_army",
+	"stimpack_scientic", "survival_kit" })
+local rebirth_sections = map_from_table_values({ "rebirth" })
+local bandage_sections = map_from_table_values({ "bandage", "bandage_army" })
+local splint_sections = map_from_table_values({ "splint", "alu_splint" })
+local surgical_instrument_sections = map_from_table_values({ "surginst" })
+local cms_sections = map_from_table_values({ "cms" })
+local tourniquet_sections = map_from_table_values({ "jgut" })
+
+-- External Configuration
+
+local tourniquet_is_splint = zzz_player_injuries_mcm.get_config("TOURNIQUET_IS_SPLINT")
+local bandage_is_splint = zzz_player_injuries_mcm.get_config("BANDAGE_IS_SPLINT")
+local medkit_is_splint = zzz_player_injuries_mcm.get_config("MEDKIT_IS_SPLINT")
+local medkits_heal_logic = zzz_player_injuries_mcm.get_config("MEDKITS_HEAL_LOGIC") or 2
+local rebirth_heal_logic = zzz_player_injuries_mcm.get_config("REBIRTH_HEAL_LOGIC") or 2
+local cms_restores_hp_too = zzz_player_injuries_mcm.get_config("CMS_RESTORES_HP_TOO")
+
+-- Patching
+
+function patch_medication_items()
+	local z = zzz_player_injuries
+
+	local context = {
+		max_limb_health = z.maxhp.head * 2 + z.maxhp.leftarm * 2 + z.maxhp.leftleg * 2 -- Is 84 by default
+	}
+
+	-- Reset Effect Tables
+
+	z.painkillerlist = {}
+	z.healhelplist = {}
+	z.healonelist = {}
+	z.splintlist = {}
+	z.surgerylist = {}
+
+	-- Process Sections
+
+	ini_sys:section_for_each(function(section)
+		-- Filter
+
+		local section_kind = ini_sys:r_string_ex(section, "kind")
+
+		if section_kind ~= "i_medical" or string.match(section, "mp_") or string.match(section, "_script") then
+			return
+		end
+
+		-- Process Painkillers
+
+		local pain_resistance_table = ported_pain_resistance_table(context, section)
+		if pain_resistance_table ~= nil then
+			z.painkillerlist[section] = pain_resistance_table
+		end
+
+		-- Process Limb Restore (Medkits, Mode 1, All Limbs)
+
+		if map_contains_value(medkit_or_stimpack_sections, section) and medkits_heal_logic == 1 then
+			local limb_restore_table = ported_limb_restore_table_for_all_limbs(context, section)
+
+			if limb_restore_table ~= nil then
+				z.healhelplist[section] = limb_restore_table
+			end
+		end
+
+		-- Process Limb Restore (Medkits, Mode 2, One Limb)
+
+		if map_contains_value(medkit_or_stimpack_sections, section) and medkits_heal_logic == 2 then
+			local limb_restore_table = ported_limb_restore_table_for_one_limb(context, section)
+
+			if limb_restore_table ~= nil then
+				z.healonelist[section] = limb_restore_table
+			end
+		end
+
+		-- Process Limb Restore (Rebirth, Mode 1, One Limb)
+
+		if map_contains(rebirth_sections, value) and rebirth_heal_logic == 1 then
+			local limb_restore_table = ported_limb_restore_table_for_all_limbs(context, section)
+
+			if limb_restore_table ~= nil then
+				z.healhelplist[section] = limb_restore_table
+			end
+		end
+
+		-- Process Limb Restore (Rebirth, Mode 2, All Limbs)
+
+		if map_contains(rebirth_sections, value) and rebirth_heal_logic == 2 then
+			local limb_restore_table = ported_limb_restore_table_for_one_limb(context, section)
+
+			if limb_restore_table ~= nil then
+				z.healonelist[section] = limb_restore_table
+			end
+		end
+
+		-- Process Splinting
+
+		local splint_table = ported_limb_splint_table(context, section)
+		local splint_section_is_disabled = map_contains_value(bandage_sections, section) and not bandage_is_splint
+			or map_contains_value(medkit_or_stimpack_sections, section) and not medkit_is_splint
+			or map_contains_value(tourniquet_sections, section) and not tourniquet_is_splint
+
+		if not splint_section_is_disabled and splint_table ~= nil then
+			z.splintlist[section] = splint_table
+		end
+
+		-- Process Surgery
+
+		local surgery_table = ported_limb_broken_restore_table(context, section)
+
+		if surgery_table ~= nil then
+			z.surgerylist[section] = surgery_table
+		end
+	end)
+end
+
+function ported_pain_resistance_table(context, section)
+	local duration = math.floor(ini_sys:r_float_ex(section, "boost_time")) or 0
+	local value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_pain_resistance"))
+
+	if value == nil or value == 0 then
+		return nil
+	end
+
+	-- Define maximum "countdown increment" value previously used by script.
+	local max_increment = 125
+
+	-- The approximated logarithmic factor used to grow and limit values.
+	local log_power = 0.25
+
+	-- Calculate derived estimated increment value based on duration.
+	local increments = max_increment * math.log(math.floor(duration / 10) + 1, log_power)
+
+	local value_table = {
+		painkillerpower = value * context.max_limb_health,
+		painkillerduration = duration * 1000,
+		countdown_increments = increments
+	}
+
+	return value_table
+end
+
+function ported_limb_restore_table_for_one_limb(context, section)
+	local duration = math.floor(ini_sys:r_float_ex(section, "boost_time")) or 0
+	local total_value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_limb_restore"))
+
+	if total_value == nil or total_value == 0 then
+		return nil
+	end
+
+	local value_table = {
+		healamount = total_value * context.max_limb_health,
+		healtimer = duration * 1000,
+		healpower = 1
+	}
+
+	return value_table
+end
+
+function ported_limb_restore_table_for_all_limbs(context, section)
+	local duration = math.floor(ini_sys:r_float_ex(section, "boost_time")) or 0
+	local total_value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_limb_restore"))
+
+	if total_value == nil or total_value == 0 then
+		return nil
+	end
+
+	local head_and_torso_value = math.floor(total_value * 0.25) * context.max_limb_health
+	local arms_and_legs_value = math.floor(total_value * 0.12) * context.max_limb_health
+
+	local value_table = {
+		head = head_and_torso_value,
+		torso = head_and_torso_value,
+		rightleg = arms_and_legs_value,
+		leftleg = arms_and_legs_value,
+		rightarm = arms_and_legs_value,
+		leftarm = arms_and_legs_value,
+		healpower = 1,
+		healtimer = duration * 1000
+	}
+
+	return value_table
+end
+
+function ported_limb_splint_table(context, section)
+	local value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_limb_splint"))
+
+	if value == nil or value == 0 then
+		return nil
+	end
+
+	local value_table = {
+		splintamount = value * context.max_limb_health
+	}
+
+	return value_table
+end
+
+function ported_limb_broken_restore_table(context, section)
+	local value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_limb_broken_restore"))
+
+	if value == nil or value == 0 then
+		return nil
+	end
+
+	local value_table = {
+		surgeryamount = value * context.max_limb_health
+	}
+
+	return value_table
+end
+
+-- Utilities
+
+function map_from_table_values(values)
+	local map = {}
+
+	for _, value in ipairs(values) do
+		map[value] = true
+	end
+
+	return map
+end
+
+function map_contains_value(collection, value)
+	return collection[value] or false
+end
+
+-- Run
+
+patch_medication_items()
