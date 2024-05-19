@@ -73,9 +73,9 @@ function patch_medication_items()
 
 	-- Reset Effect Tables
 
-	z.painkillerlist = {}
-	z.healhelplist = {}
-	z.healonelist = {}
+	z.painkillerlist = { lasttimestamp = time_global(), painkillerduration = 0, painkillerpower = 0, countdown_increments = 0 }
+	z.healhelplist = { lastregen = time_global(), healtimer = 30000, healamount = 0, healpower = 0 }
+	z.healonelist = { lastregen = time_global(), healtimer = 30000, healamount = 0, healpower = 0 }
 	z.splintlist = {}
 	z.surgerylist = {}
 
