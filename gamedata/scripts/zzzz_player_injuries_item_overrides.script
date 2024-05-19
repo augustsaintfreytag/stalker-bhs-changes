@@ -159,8 +159,8 @@ function patch_medication_items()
 end
 
 function ported_pain_resistance_table(context, section)
-	local duration = math.floor(ini_sys:r_float_ex(section, "boost_time")) or 0
-	local value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_pain_protection"))
+	local duration = ini_sys:r_float_ex(section, "boost_time") or 0
+	local value = ini_sys:r_float_ex(section, "boost_bhs_pain_protection")
 
 	if value == nil or value == 0 then
 		return nil
@@ -185,8 +185,8 @@ function ported_pain_resistance_table(context, section)
 end
 
 function ported_limb_restore_table_for_one_limb(context, section)
-	local duration = math.floor(ini_sys:r_float_ex(section, "boost_time")) or 0
-	local total_value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_limb_restore"))
+	local duration = ini_sys:r_float_ex(section, "boost_time") or 0
+	local total_value = ini_sys:r_float_ex(section, "boost_bhs_limb_restore")
 
 	if total_value == nil or total_value == 0 then
 		return nil
@@ -202,8 +202,8 @@ function ported_limb_restore_table_for_one_limb(context, section)
 end
 
 function ported_limb_restore_table_for_all_limbs(context, section)
-	local duration = math.floor(ini_sys:r_float_ex(section, "boost_time")) or 0
-	local total_value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_limb_restore"))
+	local duration = ini_sys:r_float_ex(section, "boost_time") or 0
+	local total_value = ini_sys:r_float_ex(section, "boost_bhs_limb_restore")
 
 	if total_value == nil or total_value == 0 then
 		return nil
@@ -227,7 +227,7 @@ function ported_limb_restore_table_for_all_limbs(context, section)
 end
 
 function ported_limb_splint_table(context, section)
-	local value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_limb_splint"))
+	local value = ini_sys:r_float_ex(section, "boost_bhs_limb_splint")
 
 	if value == nil or value == 0 then
 		return nil
@@ -241,7 +241,7 @@ function ported_limb_splint_table(context, section)
 end
 
 function ported_limb_broken_restore_table(context, section)
-	local value = math.floor(ini_sys:r_float_ex(section, "boost_bhs_broken_limb_restore"))
+	local value = ini_sys:r_float_ex(section, "boost_bhs_broken_limb_restore")
 
 	if value == nil or value == 0 then
 		return nil
