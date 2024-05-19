@@ -22,24 +22,45 @@
 
 -- Internal Configuration
 
-local medkit_or_stimpack_sections = map_from_table_values({ "medkit", "medkit_army", "medkit_scientic", "stimpack",
-	"stimpack_army",
-	"stimpack_scientic", "survival_kit" })
-local rebirth_sections = map_from_table_values({ "rebirth" })
-local bandage_sections = map_from_table_values({ "bandage", "bandage_army" })
-local splint_sections = map_from_table_values({ "splint", "alu_splint" })
-local surgical_instrument_sections = map_from_table_values({ "surginst" })
-local cms_sections = map_from_table_values({ "cms" })
-local tourniquet_sections = map_from_table_values({ "jgut" })
+local medkit_or_stimpack_sections
+local rebirth_sections
+local bandage_sections
+local splint_sections
+local surgical_instrument_sections
+local cms_sections
+local tourniquet_sections
 
 -- External Configuration
 
-local tourniquet_is_splint = zzz_player_injuries_mcm.get_config("TOURNIQUET_IS_SPLINT")
-local bandage_is_splint = zzz_player_injuries_mcm.get_config("BANDAGE_IS_SPLINT")
-local medkit_is_splint = zzz_player_injuries_mcm.get_config("MEDKIT_IS_SPLINT")
-local medkits_heal_logic = zzz_player_injuries_mcm.get_config("MEDKITS_HEAL_LOGIC") or 2
-local rebirth_heal_logic = zzz_player_injuries_mcm.get_config("REBIRTH_HEAL_LOGIC") or 2
-local cms_restores_hp_too = zzz_player_injuries_mcm.get_config("CMS_RESTORES_HP_TOO")
+local tourniquet_is_splint
+local bandage_is_splint
+local medkit_is_splint
+local medkits_heal_logic
+local rebirth_heal_logic
+local cms_restores_hp_too
+
+function init_config()
+	-- Internal Configuration
+
+	medkit_or_stimpack_sections = map_from_table_values({ "medkit", "medkit_army", "medkit_scientic", "stimpack",
+		"stimpack_army",
+		"stimpack_scientic", "survival_kit" })
+	rebirth_sections = map_from_table_values({ "rebirth" })
+	bandage_sections = map_from_table_values({ "bandage", "bandage_army" })
+	splint_sections = map_from_table_values({ "splint", "alu_splint" })
+	surgical_instrument_sections = map_from_table_values({ "surginst" })
+	cms_sections = map_from_table_values({ "cms" })
+	tourniquet_sections = map_from_table_values({ "jgut" })
+
+	-- External Configuration
+
+	tourniquet_is_splint = zzz_player_injuries_mcm.get_config("TOURNIQUET_IS_SPLINT")
+	bandage_is_splint = zzz_player_injuries_mcm.get_config("BANDAGE_IS_SPLINT")
+	medkit_is_splint = zzz_player_injuries_mcm.get_config("MEDKIT_IS_SPLINT")
+	medkits_heal_logic = zzz_player_injuries_mcm.get_config("MEDKITS_HEAL_LOGIC") or 2
+	rebirth_heal_logic = zzz_player_injuries_mcm.get_config("REBIRTH_HEAL_LOGIC") or 2
+	cms_restores_hp_too = zzz_player_injuries_mcm.get_config("CMS_RESTORES_HP_TOO")
+end
 
 -- Patching
 
@@ -251,4 +272,5 @@ end
 
 -- Run
 
+init_config()
 patch_medication_items()
