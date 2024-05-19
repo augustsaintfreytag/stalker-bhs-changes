@@ -1,0 +1,74 @@
+local gc = game.translate_string
+local original_build_desc_footer = ui_item.build_desc_footer
+
+local removal_matches = {
+	eat_sleepiness = extracted_format_match(gc("st_itm_desc_eat_sleepiness")),
+	eat_thirstiness = extracted_format_match(gc("st_itm_desc_eat_thirst")),
+	eat_rad_poison = gc("st_itm_desc_eat_radiation"),
+	eat_health = gc("st_itm_desc_eat_health")
+}
+
+function patch_ui_item()
+	removal_matches = {
+		eat_sleepiness = extracted_format_match(gc("st_itm_desc_eat_sleepiness")),
+		eat_thirstiness = extracted_format_match(gc("st_itm_desc_eat_thirst")),
+		eat_rad_poison = gc("st_itm_desc_eat_radiation"),
+		eat_health = gc("st_itm_desc_eat_health")
+	}
+
+	ui_item.build_desc_footer = function(obj, sec, str)
+		local str = original_build_desc_footer(obj, sec, str)
+		local lines = split_string_into_collection(str, "\n")
+
+		local new_lines = {}
+
+		for line_index, _ in ipairs(lines) do
+			local line = lines[line_index]
+			local should_remove = false
+
+			for removal_key, removal_value in pairs(removal_matches) do
+				if line:find(removal_value) then
+					should_remove = true
+					break
+				end
+			end
+
+			if not should_remove then
+				new_lines[#new_lines + 1] = line
+			end
+		end
+
+		return str
+	end
+end
+
+-- Utility: Collections
+
+function extracted_format_match(str)
+	str = strformat(str, "", "") or ""
+	str = str:gsub("^%s*(.-)%s*$", "%1")
+
+	return str
+end
+
+function split_string_into_collection(str, sep)
+	local lines = {}
+	local last_split_index = nil
+
+	-- Find occurrence of `sep` in `str`, split `str` at that index, and store the split substrings in `lines`
+	for i = 1, #str do
+		if str:sub(i, i + #sep - 1) == sep then
+			lines[#lines + 1] = str:sub(last_split_index or 1, i - 1)
+			last_split_index = i + #sep
+		end
+	end
+
+	-- Store the last substring in `str` in `lines`
+	lines[#lines + 1] = str:sub(last_split_index or 1)
+
+	return lines
+end
+
+-- Run
+
+patch_ui_item()
