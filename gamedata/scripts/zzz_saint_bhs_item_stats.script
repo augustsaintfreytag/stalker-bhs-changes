@@ -13,7 +13,7 @@ bhs_items_surgical = {}
 bhs_items_analgesic = {}
 
 function apply_compatibility_patches()
-	if not zzz_player_injuries or not zzz_player_injuries.healhelplist then
+	if not zzz_player_injuries or not zzz_player_injuries_mcm or not zzz_player_injuries.healhelplist then
 		-- BHS or other modules not available.
 		return
 	end
