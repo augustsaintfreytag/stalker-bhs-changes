@@ -77,7 +77,7 @@ Items that are taken after sustaining damage, to heal main player health and to 
 | Military Stimpack      | `stimpack_army`     | 3200  | 0.01, 32                        | Big Injector (Blue)   |
 | Expeditionary Stimpack | `stimpack_scientic` | 4600  | 0.01, 32                        | Big Injector (Yellow) |
 | Fluorapine Shot        | `propital`          | 3580  | 0.0015, 21                      | Compact Injector      |
-| Axyltallisal           | `rebirth`           | 12000 | 0.0188, 60                      | Compact Injector      |
+| Axyltallisal Shot      | `rebirth`           | 12000 | 0.0188, 60                      | Compact Injector      |
 | Survival Kit           | `survival_kit`      | 7200  | 0.0015, 60                      | (Dummy, fade)         |
 
 ### Bleeding & Body
