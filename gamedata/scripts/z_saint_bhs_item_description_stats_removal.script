@@ -26,7 +26,7 @@ function patch_ui_item()
 			local line = lines[line_index]
 			local should_remove = false
 
-			for removal_key, removal_value in pairs(removal_matches) do
+			for _, removal_value in pairs(removal_matches) do
 				if line:find(removal_value) then
 					should_remove = true
 					break
