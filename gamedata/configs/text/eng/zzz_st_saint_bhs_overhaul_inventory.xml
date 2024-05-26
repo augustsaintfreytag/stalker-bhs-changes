@@ -25,7 +25,7 @@
 		<text>Instantaneous</text>
 	</string>
 	<string id="ui_inv_health">
-		<text>Wound Healing</text>
+		<text>Health Restoration</text>
 	</string>
 	<string id="ui_inv_suffix_effect_prolonged">
 		<text>Prolonged Effect</text>
@@ -36,14 +36,26 @@
 	<string id="ui_inv_splint">
 		<text>Splint</text>
 	</string>
+	<string id="ui_inv_injured_limbs">
+		<text>Injured Limbs</text>
+	</string>
+	<string id="ui_inv_broken_limbs">
+		<text>Broken Limbs</text>
+	</string>
 	<string id="ui_inv_splint_arms_legs">
 		<text>Arms, Legs</text>
 	</string>
-	<string id="ui_inv_splint_all">
-		<text>All Body Parts</text>
+	<string id="ui_inv_limb_restore_all">
+		<text>All Injured Limbs</text>
 	</string>
-	<string id="ui_inv_splint_sequential">
-		<text>Any Body Part</text>
+	<string id="ui_inv_limb_restore_any">
+		<text>Any Injured Limb</text>
+	</string>
+	<string id="ui_inv_broken_limb_restore_all">
+		<text>All Broken Limbs</text>
+	</string>
+	<string id="ui_inv_broken_limb_restore_any">
+		<text>Any Broken Limb</text>
 	</string>
 
 	<!-- Inventory Stats -->
@@ -63,13 +75,13 @@
 		<text>Analgesic Effect</text>
 	</string>
 	<string id="ui_inv_limb_splint">
-		<text>Limb Triage</text>
+		<text>Limb Splint</text>
 	</string>
 	<string id="ui_inv_limb_restore">
-		<text>Limb Recovery</text>
+		<text>Limb Restoration</text>
 	</string>
-	<string id="ui_inv_limb_surgery">
-		<text>Body Operation</text>
+	<string id="ui_inv_broken_limb_restore">
+		<text>Limb Triage</text>
 	</string>
 	<string id="ui_inv_af_condition">
 		<text>Condition</text>

@@ -6,6 +6,7 @@ local gc = game.translate_string
 
 bhs_max_limb_health = {}
 bhs_max_limb_health_total = 1 -- Don't use default value 0 to prevent division by zero.
+bhs_max_arms_or_legs_health = 1
 bhs_items_all_limb_restore = {}
 bhs_items_sequential_limb_restore = {}
 bhs_items_limb_splint = {}
@@ -21,11 +22,16 @@ function apply_compatibility_patches()
 	bhs_max_limb_health = zzz_player_injuries.maxhp or {}
 	bhs_max_limb_health_total = bhs_max_limb_health.head + bhs_max_limb_health.torso + bhs_max_limb_health.rightleg +
 		bhs_max_limb_health.leftleg + bhs_max_limb_health.rightarm + bhs_max_limb_health.leftarm
+	bhs_max_arms_or_legs_health = bhs_max_limb_health.rightarm
 	bhs_items_all_limb_restore = zzz_player_injuries.healhelplist or {}
 	bhs_items_sequential_limb_restore = zzz_player_injuries.healonelist or {}
 	bhs_items_limb_splint = zzz_player_injuries.splintlist or {}
 	bhs_items_surgical = zzz_player_injuries.surgerylist or {}
 	bhs_items_analgesic = zzz_player_injuries.painkillerlist or {}
+
+	local broken_limb_restoration_treats_all_limbs = zzz_player_injuries_mcm.get_config("SURGERY_ALL_LIMBS") or false
+
+	-- Stats Table
 
 	utils_ui.stats_table["booster"]["boost_time"]["index"] = 1
 
@@ -43,7 +49,7 @@ function apply_compatibility_patches()
 		show_always = false
 	}
 
-	utils_ui.stats_table["booster"]["boost_damage_immunity"] = {
+	utils_ui.stats_table["booster"]["boost_bhs_pain_protection"] = {
 		index = 3,
 		typ = "float",
 		name = "ui_inv_damage_immunity",
@@ -51,14 +57,14 @@ function apply_compatibility_patches()
 		icon_n = "",
 		track = false,
 		magnitude = 1,
-		unit = "",
+		unit = "st_levels",
 		compare = false,
 		sign = true,
 		show_always = false,
-		value_functor = { "zzz_saint_bhs_item_stats", "get_damage_immunity" }
+		value_functor = { "zzz_saint_bhs_item_stats", "get_bhs_pain_protection" }
 	}
 
-	utils_ui.stats_table["booster"]["boost_limb_splint"] = {
+	utils_ui.stats_table["booster"]["boost_bhs_limb_splint"] = {
 		index = 4,
 		typ = "float",
 		name = "ui_inv_limb_splint",
@@ -70,10 +76,10 @@ function apply_compatibility_patches()
 		compare = false,
 		sign = false,
 		show_always = false,
-		value_functor = { "zzz_saint_bhs_item_stats", "get_limb_splint" }
+		value_functor = { "zzz_saint_bhs_item_stats", "get_bhs_limb_splint" }
 	}
 
-	utils_ui.stats_table["booster"]["boost_limb_restore"] = {
+	utils_ui.stats_table["booster"]["boost_bhs_limb_restore"] = {
 		index = 5,
 		typ = "float",
 		name = "ui_inv_limb_restore",
@@ -85,13 +91,13 @@ function apply_compatibility_patches()
 		compare = false,
 		sign = false,
 		show_always = false,
-		value_functor = { "zzz_saint_bhs_item_stats", "get_limb_restore" }
+		value_functor = { "zzz_saint_bhs_item_stats", "get_bhs_limb_restore" }
 	}
 
-	utils_ui.stats_table["booster"]["boost_limb_surgery"] = {
+	utils_ui.stats_table["booster"]["boost_bhs_broken_limb_restore"] = {
 		index = 6,
 		typ = "float",
-		name = "ui_inv_limb_surgery",
+		name = "ui_inv_broken_limb_restore",
 		icon_p = "ui_am_prop_limb_surgery",
 		icon_n = "",
 		track = false,
@@ -100,7 +106,7 @@ function apply_compatibility_patches()
 		compare = false,
 		sign = false,
 		show_always = false,
-		value_functor = { "zzz_saint_bhs_item_stats", "get_limb_surgery" }
+		value_functor = { "zzz_saint_bhs_item_stats", "get_bhs_broken_limb_restore" }
 	}
 
 	utils_ui.stats_table["booster"]["eat_radiation"] = {
@@ -167,7 +173,7 @@ end
 
 -- Values & Descriptions
 
-function get_damage_immunity(obj, sec)
+function get_bhs_pain_protection(obj, sec)
 	if not sec then sec = obj:section() end
 
 	local effects = bhs_items_analgesic[sec] or {}
@@ -177,13 +183,10 @@ function get_damage_immunity(obj, sec)
 		return nil
 	end
 
-	-- local duration = math.ceil(effects.painkillerduration / 1000)
-	local str = level .. " " .. gc("st_levels") .. " (" .. gc("ui_inv_suffix_effect_prolonged") .. ")"
-
-	return str
+	return level
 end
 
-function get_limb_splint(obj, sec)
+function get_bhs_limb_splint(obj, sec)
 	if not sec then sec = obj:section() end
 
 	local effects = bhs_items_limb_splint[sec] or {}
@@ -193,10 +196,10 @@ function get_limb_splint(obj, sec)
 		return nil
 	end
 
-	return gc("ui_inv_splint") .. " (" .. gc("ui_inv_splint_arms_legs") .. ")"
+	return amount .. "%" .. " (" .. gc("ui_inv_broken_limb_restore_any") .. ")"
 end
 
-function get_limb_restore(obj, sec)
+function get_bhs_limb_restore(obj, sec)
 	if not sec then sec = obj:section() end
 
 	local all_limb_effects = bhs_items_all_limb_restore[sec]
@@ -212,30 +215,29 @@ function get_limb_restore(obj, sec)
 		local total_heal_amount_limbs = effects.rightleg + effects.leftleg + effects.rightarm + effects.leftarm
 		local total_heal_amount = total_heal_amount_head_and_torso + total_heal_amount_limbs
 
-		total_heal_power = math.ceil(total_heal_amount / bhs_max_limb_health_total) * 100
+		total_heal_power = math.ceil(total_heal_amount / bhs_max_limb_health_total)
 		total_heal_duration = math.ceil(effects.healtimer / 1000)
 	elseif sequential_limb_effects then
 		local effects = sequential_limb_effects
 		local total_heal_amount = effects.healamount
 
-		total_heal_power = math.ceil(total_heal_amount / bhs_max_limb_health_total) * 100
+		total_heal_power = math.ceil(total_heal_amount / bhs_max_limb_health_total)
 		total_heal_duration = math.ceil(effects.healtimer / 1000)
 	else
 		return nil
 	end
 
-	local str = tostring(total_heal_power) .. "%"
+	local total_heal_percentage = math.clamp(total_heal_power, 0, 1) * 100
+	local heal_str = tostring(total_heal_percentage) .. "%"
 
 	if all_limb_effects then
-		str = str .. " (" .. gc("ui_inv_splint_all") .. ")"
+		return heal_str .. " (" .. gc("ui_inv_limb_restore_all") .. ")"
 	elseif sequential_limb_effects then
-		str = str .. " (" .. gc("ui_inv_splint_sequential") .. ")"
+		return heal_str .. " (" .. gc("ui_inv_limb_restore_any") .. ")"
 	end
-
-	return str
 end
 
-function get_limb_surgery(obj, sec)
+function get_bhs_broken_limb_restore(obj, sec)
 	if not sec then sec = obj:section() end
 
 	local effects = bhs_items_surgical[sec] or {}
@@ -245,7 +247,14 @@ function get_limb_surgery(obj, sec)
 		return nil
 	end
 
-	return gc("ui_inv_surgery") .. " (" .. gc("ui_inv_splint_all") .. ")"
+	local heal_percentage = math.clamp(amount / bhs_max_limb_health_total, 0, 1) * 100
+	local heal_str = tostring(heal_percentage) .. "%"
+
+	if broken_limb_restoration_treats_all_limbs then
+		return heal_str .. " (" .. gc("ui_inv_broken_limb_restore_all") .. ")"
+	else
+		return heal_str .. " (" .. gc("ui_inv_broken_limb_restore_any") .. ")"
+	end
 end
 
 -- Hooks
