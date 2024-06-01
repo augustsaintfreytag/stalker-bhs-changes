@@ -162,7 +162,7 @@ function apply_compatibility_patches()
 		icon_p = "ui_am_prop_sleep_p",
 		icon_n = "ui_am_prop_sleep_n",
 		track = false,
-		magnitude = 250,
+		magnitude = 150,
 		unit = "st_perc",
 		compare = false,
 		sign = true,
@@ -179,7 +179,7 @@ function get_bhs_pain_protection(obj, sec)
 	local effects = bhs_items_analgesic[sec] or {}
 	local level = effects.painkillerpower
 
-	if not level then
+	if not level or level == 0 then
 		return nil
 	end
 
@@ -192,7 +192,7 @@ function get_bhs_limb_splint(obj, sec)
 	local effects = bhs_items_limb_splint[sec] or {}
 	local amount = effects.splintamount
 
-	if not amount then
+	if not amount or amount == 0 then
 		return nil
 	end
 
