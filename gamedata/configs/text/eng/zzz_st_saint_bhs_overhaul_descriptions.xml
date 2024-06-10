@@ -154,7 +154,7 @@
 		<text>An injectable stimulant delivery package for use in the field. Contains a composition of agents with analgetic and analeptic effects. This type of stimpack is produced directly by factions in the Zone with an unknown blend of imported and synthesized substances and questionable purity. Frequent side effects include headaches, paraesthesia, and considerable increase in nutritional demand. Popular medical item used among novices due to its low price compared to imported medical supplies and wide availability.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
-		%c[d_orange] • %c[ui_gray_2] zone-produced\n
+		%c[d_orange] • %c[ui_gray_2] zone-produced item\n
 		%c[d_blue] • %c[ui_gray_2] fast usage (injector)\n
 		%c[d_orange] • %c[ui_gray_2] moderate health recovery\n
 		%c[d_orange] • %c[ui_gray_2] moderate limb recovery\n
@@ -403,7 +403,7 @@
 		<text>Surgical Instruments</text>
 	</string>
 	<string id="st_surginst_descr">
-		<text>Medical tools that belong to a surgical field kit for emergency procedures. The tools can either be combined with other items to make make assemble a proper kit or used as-is for emergency interventions. Without a proper surgery kit, direct use will require disinfection and bandaging.\n \n
+		<text>Medical tools that belong to a surgical field kit for emergency procedures. Can either be combined with other items to assemble a proper kit or used as-is for emergency interventions. Without a proper surgery kit, direct use will require disinfection and bandaging.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
