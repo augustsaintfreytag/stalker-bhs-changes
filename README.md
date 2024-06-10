@@ -1,6 +1,6 @@
 # STALKER Body Health System Changes
 
-A mod implementing custom changes to the Body Health System mod and its add-on Body Health System Overhaul (BHS Overhaul) for the GAMMA mod pack available for STALKER Anomaly (Open X-Ray/Monolith engine).
+A mod implementing custom changes to the Body Health System mod and its add-on Body Health System Realistic Overhaul (BHSRO) for the GAMMA mod pack available for STALKER Anomaly (Open X-Ray/Monolith engine).
 
 > [!WARNING]
 > This mod is in active development and not yet functional.
@@ -31,4 +31,4 @@ It also provides the following content-related changes:
 
 ## License
 
-This mod was created by Saint for free use by the STALKER modding community with basic attribution under the MIT license. This mod may be distributed with mod packs. Parts of this mod use DLTX created by Demonized (https://github.com/themrdemonized).
+This mod was created by Saint for free use by the STALKER modding community with basic attribution under the MIT license. This mod may be distributed with mod packs. Parts of this mod use DLTX created by Demonized (https://github.com/themrdemonized). Body Health System created by Grokitach (https://www.moddb.com/mods/stalker-anomaly/addons/100-groks-body-health-system-redux-for-151), and the Realistic Overhaul by Mirrowel (https://www.moddb.com/mods/stalker-anomaly/addons/bhs-realistic-overhaul).
