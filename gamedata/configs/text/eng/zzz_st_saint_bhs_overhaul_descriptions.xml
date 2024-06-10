@@ -549,4 +549,32 @@
 		%c[d_purple] • %c[ui_gray_2] moderate limb triage\n
 		</text>
 	</string>
+
+	<string id="st_joint">
+		<text>Cannabis Joint</text>
+	</string>
+	<string id="st_joint_descr">
+		<text>A hand-rolled joint, filled with Eastern European tobacco sourced from specific Balkan varieties, paired with a moderate amount of low-quality marijuana. Marijuana, or cannabis, contains the psychoactive compound THC, which induces light euphoria, relaxation, and altered perception. Common side effects include dry mouth, red eyes, and increased appetite. The long paper of the Joint was prepared in a somewhat loose and uneven roll. The tobacco used has harsh aromas of burnt vanilla, pine wood, and hints of gasoline. The batch is of low quality, yet still provides some temporary relief from stress and mild pain with minor anxiolytic and antipsychotic effects. The origin or age of the used cannabis are unknown.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] zone-produced item\n
+		%c[d_blue] • %c[ui_gray_2] slow usage (smoked joint)\n
+		%c[d_purple] • %c[ui_gray_2] very minor analgesic effect\n
+		%c[d_purple] • %c[ui_gray_2] very minor antipsychotic effects\n
+		</text>
+	</string>
+
+	<string id="st_marijuana">
+		<text>Bag of Marijuana</text>
+	</string>
+	<string id="st_marijuana_descr">
+		<text>A few grams of dried marijuana leaves in a small, resealable plastic bag. The leaves are well-preserved and show a vibrant green hue and a distinct, pungent aroma, an indicator for decent quality product. Marijuana, or cannabis, contains the psychoactive compound THC, which induces light euphoria, relaxation, and altered perception. Common side effects include dry mouth, red eyes, and increased appetite. It is rumored that that the Freedom faction employs cultivation of cannabis in hidden indoor greenhouses within the Zone perimeter. Producing items directly inside the Zone has significant appeal when faced with difficult import routes and military checkpoints. Zone-produced cannabis makes up the majority of all cannabis consumed in the Zone. This batch of Marijuana appears to be of average quality and offers a balanced experience for both recreational and medicinal purposes. It provides temporary relief from stress and mild pain with minor anxiolytic and antipsychotic effects.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_blue] • %c[ui_gray_2] zone-produced item\n
+		%c[d_blue] • %c[ui_gray_2] slow usage (smoked joint)\n
+		%c[d_purple] • %c[ui_gray_2] minor analgesic effect\n
+		%c[d_purple] • %c[ui_gray_2] minor antipsychotic effects\n
+		</text>
+	</string>
 </string_table>
