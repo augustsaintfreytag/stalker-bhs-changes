@@ -11,10 +11,10 @@ A mod implementing custom changes to the Body Health System mod and its add-on B
 
 This mod provides the following technical features:
 
-- Introduce the ability to display pre-formatted text in item states, modifies `utils_ui`
-- Introduce new stats icons for medical effects (pain, neurons, limbs/bones, splint)
-- Move texture reference identifiers to use `ui_actor_sleep_screen` (instead of `ui_ingame2_common`)
-- Introduce script to display a number of consumable properties as proper stats (including an icon, formatting, and unit)
+- Introduce the ability to display pre-formatted text in item stats (via `utils_ui`)
+- Introduce new stats icons for medical effects (pain, nerves, limbs, splint)
+- Move texture reference identifiers to use `ui_actor_sleep_screen` (from `ui_ingame2_common`)
+- Introduce script-based way to display consumable properties as proper stats (including an icon, formatting, and unit)
   - Update stats item for health restoration (`boost_health_restore`) with a new medically inspired unit (PAR/h)
   - Update stats item for damage resistance (`boost_damage_immunity`), rebrand as analgesic (painkilling) effect with new "levels" unit
   - Add stats item for limb splinting (`boost_limb_splint`), part of BHS functionality
