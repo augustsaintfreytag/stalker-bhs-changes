@@ -1,3 +1,5 @@
+![Artwork BHSRO Overhaul 04](https://github.com/augustsaintfreytag/stalker-bhs-changes/assets/7656669/b7c084f4-1184-4ef8-a522-896a37c01a99)
+
 # STALKER Body Health System Changes
 
 A mod implementing custom changes to the Body Health System mod and its add-on Body Health System Realistic Overhaul (BHSRO) for the GAMMA mod pack available for STALKER Anomaly (Open X-Ray/Monolith engine).
