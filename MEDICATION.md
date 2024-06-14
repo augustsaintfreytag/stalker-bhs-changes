@@ -9,14 +9,14 @@ A listing of all items as they are added by the pack combination.
 
 Items that are primarily painkillers and damage resistance boosters. These may be used to triage damaged body parts as a temporary relief and taken voluntarily before combat encounters to increase survival chances.
 
-| Name            | Identifier       | Cost | strike_immunity, wound_immunity, bhs_painkillerlist | Applicator    |
-| --------------- | ---------------- | ---- | --------------------------------------------------- | ------------- |
-| Ibuprofen       | `salicidic_acid` | 1680 | 0.02, 0.02, 2                                       | Pills (White) |
-| Yadylin         | `yadylin`        | 1880 | 0.05, 0.05, 5                                       | Pills (White) |
-| Diclofenac      | `analgetic`      | 2680 | 0.05, 0.05, 5                                       | Pills (White) |
-| Oxycodone       | `tetanus`        | 3880 | 0.06, 0.06, 6                                       | Pills (White) |
-| Metamizole Shot | `analgin`        | 4280 | 0.1, 0.1, 10                                        | Ampoule       |
-| Morphine Shot   | `morphine`       | 5080 | 0.15, 0.15, 15                                      | Ampoule       |
+| Name            | Identifier       | Cost | strike_immunity, wound_immunity, bhs_pain_protection | Applicator    |
+| --------------- | ---------------- | ---- | ---------------------------------------------------- | ------------- |
+| Ibuprofen       | `salicidic_acid` | 1680 | 0.05, 0.05, 0.1                                      | Pills (White) |
+| Yadylin         | `yadylin`        | 1880 | 0.1, 0.1, 0.2                                        | Pills (White) |
+| Diclofenac      | `analgetic`      | 2680 | 0.12, 0.12, 0.25                                     | Pills (White) |
+| Oxycodone       | `tetanus`        | 3880 | 0.2, 0.2, 0.4                                        | Pills (White) |
+| Metamizole Shot | `analgin`        | 4280 | 0.25, 0.25, 0.5                                      | Ampoule       |
+| Morphine Shot   | `morphine`       | 5080 | 0.3, 0.3, 0.6                                        | Ampoule       |
 
 ### First Aid
 
@@ -92,7 +92,7 @@ There are no items that give resistance to electric shock damage.
 
 ### Psy
 
-Items that give resistance to psychic damage (e.g. psy fields, psy anomalies, psy-based creatures like poltergheists and controllers). Some of these medications may be referred to as antipsychotics in the overhaul; *Psy Block* may become *Clozapine*.
+Items that give resistance to psychic damage (e.g. psy fields, psy anomalies, psy-based creatures like poltergheists and controllers). Medications may be referred to as antipsychotics.
 
 | Name           | Identifier           | Cost | telepat_protection, eat_sleepiness | Applicator                |
 | -------------- | -------------------- | ---- | ---------------------------------- | ------------------------- |
