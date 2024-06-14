@@ -176,7 +176,7 @@ function ported_pain_resistance_table(context, section)
 	local increments = max_increment * math.log(math.floor(duration / 10) + 1, log_power)
 
 	local value_table = {
-		painkillerpower = value * context.max_limb_health,
+		painkillerpower = value * 10,
 		painkillerduration = duration * 1000,
 		countdown_increments = increments
 	}
