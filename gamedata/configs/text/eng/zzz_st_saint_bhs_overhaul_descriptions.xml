@@ -55,7 +55,7 @@
 		<text>Tourniquet</text>
 	</string>
 	<string id="st_jgut_descr">
-		<text>A haemostatic rubber tourniquet, used to stop arterial bleeding. The tourniquet is applied to the limb above the wound, and tightened until the bleeding stops, then secured in place. An applied tourniquet should be removed after 15-20 minutes to prevent tissue necrosis.\n \n
+		<text>A haemostatic rubber tourniquet for rapid treatment of arterial bleeding. It is manufactured from durable, stretch-resistant rubber for maximum efficacy. The device is applied proximal to the injury site and cinched tightly to occlude blood flow, then secured with a reliable locking mechanism. Due to the risk of tissue necrosis, it is critical to release the tourniquet within 15-20 minutes. Regular inspection for wear and elasticity is recommended to ensure optimal performance. Reusing an already applied tourniquet is not advised.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
