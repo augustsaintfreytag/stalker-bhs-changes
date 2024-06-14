@@ -169,6 +169,35 @@ function apply_compatibility_patches()
 		sign_inverse = true,
 		show_always = false
 	}
+
+	utils_ui.stats_table["outfit"]["fire_wound_protection"]["index"] = 1
+	utils_ui.stats_table["outfit"]["wound_protection"]["index"] = 2
+	utils_ui.stats_table["outfit"]["strike_protection"]["index"] = 3
+	utils_ui.stats_table["outfit"]["explosion_protection"]["index"] = 4
+	utils_ui.stats_table["outfit"]["radiation_protection"]["index"] = 5
+	utils_ui.stats_table["outfit"]["burn_protection"]["index"] = 6
+	utils_ui.stats_table["outfit"]["chemical_burn_protection"]["index"] = 7
+	utils_ui.stats_table["outfit"]["shock_protection"]["index"] = 8
+	utils_ui.stats_table["outfit"]["telepatic_protection"]["index"] = 9
+	utils_ui.stats_table["outfit"]["artefact_count"]["index"] = 10
+	utils_ui.stats_table["outfit"]["additional_inventory_weight"]["index"] = 11
+
+	utils_ui.stats_table["artefact"]["condition"]["index"] = 1
+	utils_ui.stats_table["artefact"]["health_restore_speed"]["index"] = 2
+	utils_ui.stats_table["artefact"]["satiety_restore_speed"]["index"] = 3
+	utils_ui.stats_table["artefact"]["power_restore_speed"]["index"] = 4
+	utils_ui.stats_table["artefact"]["bleeding_restore_speed"]["index"] = 5
+	utils_ui.stats_table["artefact"]["radiation_restore_speed"]["index"] = 6
+	utils_ui.stats_table["artefact"]["fire_wound_immunity"]["index"] = 7
+	utils_ui.stats_table["artefact"]["wound_immunity"]["index"] = 8
+	utils_ui.stats_table["artefact"]["strike_immunity"]["index"] = 9
+	utils_ui.stats_table["artefact"]["explosion_immunity"]["index"] = 10
+	utils_ui.stats_table["artefact"]["radiation_immunity"]["index"] = 11
+	utils_ui.stats_table["artefact"]["burn_immunity"]["index"] = 12
+	utils_ui.stats_table["artefact"]["chemical_burn_immunity"]["index"] = 13
+	utils_ui.stats_table["artefact"]["shock_immunity"]["index"] = 14
+	utils_ui.stats_table["artefact"]["telepatic_immunity"]["index"] = 15
+	utils_ui.stats_table["artefact"]["additional_inventory_weight"]["index"] = 16
 end
 
 -- Values & Descriptions
