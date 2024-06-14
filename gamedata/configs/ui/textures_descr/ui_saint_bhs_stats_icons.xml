@@ -7,23 +7,32 @@
 		<texture id="ui_am_prop_limb_restore" x="806" y="528" width="19" height="19" />
 
 		<!-- Overrides -->
-		<texture id="ui_am_propery_01" x="749" y="433" width="19" height="19" /> <!-- Fire Wound Protection -->
-		<texture id="ui_am_propery_02" x="749" y="452" width="19" height="19" /> <!-- Bleeding Protection -->
-		<texture id="ui_am_propery_03" x="749" y="471" width="19" height="19" /> <!-- Durability -->
-		<texture id="ui_am_propery_04" x="749" y="490" width="19" height="19" /> <!-- Wound Healing -->
-		<texture id="ui_am_propery_05" x="749" y="509" width="19" height="19" /> <!-- Health Restoration -->
-		<texture id="ui_am_propery_06" x="768" y="433" width="19" height="19" /> <!-- Vision -->
-		<texture id="ui_am_propery_07" x="768" y="452" width="19" height="19" /> <!-- Stamina/Breathing -->
-		<texture id="ui_am_propery_08" x="768" y="471" width="19" height="19" /> <!-- Weight -->
-		<texture id="ui_am_propery_09" x="768" y="490" width="19" height="19" /> <!-- Radiation Protection -->
-		<texture id="ui_am_propery_10" x="768" y="509" width="19" height="19" /> <!-- Electric Protection -->
-		<texture id="ui_am_propery_11" x="787" y="433" width="19" height="19" /> <!-- Psi Protection-->
+		<texture id="ui_wp_propery_07" x="711" y="452" width="19" height="19" /> 				<!-- Round Capacity -->
 
-		<texture id="ui_am_prop_time_period" x="806" y="433" width="19" height="19" /> <!-- Duration -->
-		<texture id="ui_am_prop_radio_restore" x="863" y="490" width="19" height="19" /> <!-- Radiation Damage -->
-		<texture id="ui_am_prop_sleep_p" x="768" y="585" width="19" height="19" /> <!-- Sleep Positive -->
-		<texture id="ui_am_prop_sleep_n" x="863" y="585" width="19" height="19" /> <!-- Sleep Negative -->
-		<texture id="ui_am_prop_thirst_p" x="749" y="585" width="19" height="19" /> <!-- Thirst Positive -->
-		<texture id="ui_am_prop_thirst_n" x="844" y="585" width="19" height="19" /> <!-- Thirst Positive -->
+		<texture id="ui_am_propery_01" x="749" y="433" width="19" height="19" /> 				<!-- Ballistic Protection -->
+		<texture id="ui_am_propery_02" x="749" y="452" width="19" height="19" /> 				<!-- Bleeding Protection -->
+		<texture id="ui_am_propery_03" x="749" y="471" width="19" height="19" /> 				<!-- Durability -->
+		<texture id="ui_am_propery_04" x="749" y="490" width="19" height="19" /> 				<!-- Wound Healing -->
+		<texture id="ui_am_propery_05" x="749" y="509" width="19" height="19" /> 				<!-- Health Restoration -->
+		<texture id="ui_am_propery_06" x="768" y="433" width="19" height="19" />				<!-- Vision -->
+		<texture id="ui_am_propery_07" x="768" y="452" width="19" height="19" /> 				<!-- Stamina/Breathing -->
+		<texture id="ui_am_propery_08" x="768" y="471" width="19" height="19" /> 				<!-- Weight -->
+		<texture id="ui_am_propery_09" x="768" y="490" width="19" height="19" /> 				<!-- Radiation Protection -->
+		<texture id="ui_am_propery_10" x="768" y="509" width="19" height="19" /> 				<!-- Electric Protection -->
+		<texture id="ui_am_propery_11" x="787" y="433" width="19" height="19" /> 				<!-- Psi Protection-->
+
+		<texture id="ui_am_prop_wound" x="749" y="490" width="19" height="19" />				<!-- Wound Protection -->
+		<texture id="ui_am_prop_wound_minus" x="844" y="490" width="19" height="19" />			<!-- Wound Protection Negative-->
+		<texture id="ui_am_prop_strike" x="806" y="566" width="19" height="19" />				<!-- Impact Protection -->
+		<texture id="ui_am_prop_strike_minus" x="901" y="566" width="19" height="19" />			<!-- Impact Protection Negative -->
+		<texture id="ui_am_prop_explo" x="806" y="547" width="19" height="19" />				<!-- Explosion Protection -->
+		<texture id="ui_am_prop_explo_minus" x="901" y="547" width="19" height="19" />			<!-- Explosion Protection Negative -->
+
+		<texture id="ui_am_prop_time_period" x="806" y="433" width="19" height="19" /> 			<!-- Duration -->
+		<texture id="ui_am_prop_radio_restore" x="863" y="490" width="19" height="19" />		<!-- Radiation Damage -->
+		<texture id="ui_am_prop_sleep_p" x="768" y="585" width="19" height="19" /> 				<!-- Sleep Positive -->
+		<texture id="ui_am_prop_sleep_n" x="863" y="585" width="19" height="19" /> 				<!-- Sleep Negative -->
+		<texture id="ui_am_prop_thirst_p" x="749" y="585" width="19" height="19" /> 			<!-- Thirst Positive -->
+		<texture id="ui_am_prop_thirst_n" x="844" y="585" width="19" height="19" /> 			<!-- Thirst Positive -->
     </file>
 </w>
