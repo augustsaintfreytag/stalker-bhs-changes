@@ -72,7 +72,7 @@
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_orange] • %c[ui_gray_2] minor analgesic effects\n
-		%c[d_red] • %c[ui_gray_2]causes nausea\n
+		%c[d_red] • %c[ui_gray_2] causes nausea\n
 		</text>
 	</string>
 
@@ -225,9 +225,9 @@
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
-		%c[d_purple] • %c[ui_gray_2]minor bleeding control\n
-		%c[d_purple] • %c[ui_gray_2]major limb triage\n
-		%c[d_purple] • %c[ui_gray_2]major analgesic effect\n
+		%c[d_purple] • %c[ui_gray_2] minor bleeding control\n
+		%c[d_purple] • %c[ui_gray_2] major limb triage\n
+		%c[d_purple] • %c[ui_gray_2] major analgesic effect\n
 		</text>
 	</string>
 
@@ -239,9 +239,9 @@
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
-		%c[d_purple] • %c[ui_gray_2]very minor bleeding control\n
-		%c[d_purple] • %c[ui_gray_2]moderate limb triage\n
-		%c[d_purple] • %c[ui_gray_2]moderate analgesic effect\n</text>
+		%c[d_purple] • %c[ui_gray_2] very minor bleeding control\n
+		%c[d_purple] • %c[ui_gray_2] moderate limb triage\n
+		%c[d_purple] • %c[ui_gray_2] moderate analgesic effect\n</text>
 	</string>
 
 	<string id="st_antibio_sulfad">
@@ -521,7 +521,7 @@
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
-		%c[d_purple] • %c[ui_gray_2]moderate stimulant effects\n</text>
+		%c[d_purple] • %c[ui_gray_2] moderate stimulant effects\n</text>
 	</string>
 
 	<string id="st_splint">
