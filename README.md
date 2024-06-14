@@ -18,14 +18,14 @@ This mod provides the following technical features:
 - Move texture reference identifiers to use `ui_actor_sleep_screen` (from `ui_ingame2_common`)
 - Introduce script-based way to display consumable properties as proper stats (including an icon, formatting, and unit)
   - Update stats item for health restoration (`boost_health_restore`) with a new medically inspired unit (PAR/h)
-  - Update stats item for damage resistance (`boost_damage_immunity`), rebrand as analgesic (painkilling) effect with new "levels" unit
-  - Add stats item for limb splinting (`boost_limb_splint`), part of BHS functionality
-  - Add stats item for limb restoration (`boost_limb_restore`), part of BHS functionality
-  - Add stats item for limb surgery (`boost_limb_surgery`), part of BHS functionality
+  - Update stats item for painkiller effects (`boost_bhs_pain_protection`), commonly rebranded as analgesic effects
+  - Add stats item for limb restoration (`boost_bhs_limb_restore`), part of BHS/RO functionality
+  - Add stats item for limb surgery (`boost_bhs_broken_limb_restore`), part of BHS/RO functionality
+  - Add stats item for limb splinting (`boost_bhs_limb_splint`), part of BHS/RO functionality
 
 It also provides the following content-related changes:
 
-- Add new human-written descriptions to all medical items
+- Add new highly detailed hand-written descriptions for all medical items
 - List consistent tags in item descriptions (medical item, imported item, core effects)
 - Update descriptions and tags to use appropriate and lore-fitting medical terms
 - Rebrand some medical items to realistic analogues, reduce yoinkage from other games (e.g. Tarkov)
