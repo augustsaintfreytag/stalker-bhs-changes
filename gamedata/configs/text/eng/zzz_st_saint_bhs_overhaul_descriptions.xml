@@ -32,7 +32,7 @@
 		<text>Vikasolum</text>
 	</string>
 	<string id="st_drug_coagulant_descr">
-		<text>A medication containing the synthetic naphthoquinone Menadione (also called Vitamin K) that promotes blood coagulation and counter-acts heavy bleeding and hemorrhages. It is carried and used as a common emergency treatment for moderate injuries in the field and may also be used as augmentive treatment together with physical wound dressings (like bandages) to accelerate wound healing and prevent critical blood loss.
+		<text>A medication containing the synthetic naphthoquinone Menadione (also called Vitamin K) that promotes blood coagulation and counter-acts heavy bleeding and hemorrhages. It is carried and used as a common emergency treatment for moderate injuries in the field and may also be used as augmentive treatment together with physical wound dressings (like bandages) to accelerate wound healing and prevent critical blood loss.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] medical item\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
