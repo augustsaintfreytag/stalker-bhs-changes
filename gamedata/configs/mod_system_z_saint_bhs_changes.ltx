@@ -5,7 +5,7 @@
 
 ; Ibuprofen
 ![salicidic_acid]
-cost											= 1680
+cost											= 1280
 inv_weight										= 0.02
 empty_weight									= 0.001
 eat_alcohol										= -0.05
@@ -47,7 +47,7 @@ snd_on_take										= other
 
 ; Diclofenac
 ![analgetic]
-cost											= 2680
+cost											= 2480
 inv_weight										= 0.02
 empty_weight									= 0.001
 eat_alcohol										= 0.05
@@ -68,7 +68,7 @@ snd_on_take										= other
 
 ; Oxycodone
 ![tetanus]
-cost											= 3880
+cost											= 3280
 inv_weight										= 0.02
 empty_weight									= 0.001
 eat_alcohol										= 0.12
@@ -137,10 +137,10 @@ snd_on_take										= other
 
 ; First Aid Kit
 ![medkit]
-cost											= 1800
+cost											= 1600
 boost_time										= 60
-boost_health_restore							= 0.0010
-boost_bleeding_restore							= 0.0010
+boost_health_restore							= 0.0015
+boost_bleeding_restore							= 0.0015
 boost_power_restore								= 0
 boost_radiation_restore							= 0
 boost_bhs_limb_restore							= 0.25
@@ -148,9 +148,9 @@ boost_bhs_pain_protection						= 0.012
 
 ; Military Medkit
 ![medkit_army]
-cost											= 2800
+cost											= 2400
 boost_time										= 60
-boost_health_restore							= 0.0018
+boost_health_restore							= 0.0020
 boost_bleeding_restore							= 0.0020
 boost_power_restore								= 0.004
 boost_radiation_restore							= 0
@@ -159,10 +159,10 @@ boost_bhs_pain_protection						= 0.05
 
 ; Expeditionary Medkit
 ![medkit_scientic]
-cost											= 4200
+cost											= 3800
 boost_time										= 60
-boost_health_restore							= 0.0018
-boost_bleeding_restore							= 0.0025
+boost_health_restore							= 0.0022
+boost_bleeding_restore							= 0.0022
 boost_power_restore								= 0.004
 boost_radiation_restore							= 0.001
 boost_radiation_protection						= 0.0007
@@ -210,7 +210,7 @@ visual											= dynamics\injectors\antirad.ogf
 
 ; Axyltallisal
 ![rebirth]
-cost											= 12000
+cost											= 6880
 boost_time										= 17
 boost_health_restore							= 0.0188
 boost_radiation_restore							= 0.0122
@@ -235,18 +235,19 @@ boost_bhs_limb_restore							= 0.7
 ![drug_coagulant]
 cost											= 1880
 boost_time										= 300
-boost_bleeding_restore							= 0.00042
+boost_bleeding_restore							= 0.0042
 boost_bhs_limb_restore							= 0.13
 $spawn 						                    = "food and drugs\drug_coagulant"
 visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
 use_sound										= interface\inv_eat_pills
 snd_on_take										= other
+tier											= 2
 
 ; Tranexyban Shot
 ![zagustin]
 cost											= 2880
 boost_time										= 300
-boost_bleeding_restore							= 0.0009
+boost_bleeding_restore							= 0.01
 boost_bhs_limb_restore							= 0.17
 
 ; Bandage
@@ -255,16 +256,17 @@ cost											= 500
 max_uses										= 1
 inv_weight										= 0.02
 boost_time										= 1
-boost_bleeding_restore							= 0.012
+boost_bleeding_restore							= 0.04
 boost_bhs_limb_splint							= 0.012
 
 ; Military Bandage
 ![bandage_army]
 cost											= 800
 max_uses										= 1
+use_condition									= false
 inv_weight										= 0.028
 boost_time										= 1
-boost_bleeding_restore							= 0.022
+boost_bleeding_restore							= 0.07
 boost_bhs_limb_splint							= 0.012
 
 ; Tourniquet
@@ -304,14 +306,15 @@ boost_bhs_broken_limb_restore					= 0.05
 
 ; Caffeine Tablets
 ![caffeine]
-cost											= 1480
+cost											= 920
 boost_time										= 1200
 boost_power_restore								= 0.0008
 boost_max_weight								= 1.0
+tier											= 1
 
 ; Modafinil
 ![akvatab]
-cost											= 2280
+cost											= 1720
 eat_satiety										= 0
 eat_thirstiness									= 0.1
 eat_sleepiness									= -0.65
@@ -326,7 +329,7 @@ tier											= 2
 
 ; Hercules
 ![drug_booster]
-cost											= 3480
+cost											= 2120
 boost_time										= 900
 boost_power_restore								= 0.0028
 boost_max_weight								= 6.0
@@ -341,26 +344,29 @@ cost											= 3860
 boost_time										= 900
 boost_power_restore								= 0.00442
 boost_max_weight								= 8.0
+tier											= 4
 
 ; Epinephrine Shot
 ![adrenalin]
-cost											= 6520
+cost											= 3690
 boost_time										= 900
 boost_power_restore								= 0.00629
 boost_max_weight								= 16.0
 boost_bhs_pain_protection						= 0.02
+tier											= 4
 
 ; SJ-I Combat Stimulant Shot
 ![etg]
-cost											= 4580
+cost											= 4590
 boost_time										= 1800
 boost_power_restore								= 0.00642
 boost_max_weight								= 10.0
 boost_bhs_pain_protection						= 0.05
+tier											= 4
 
 ; SJ-V Combat Stimulant Shot
 ![sj1]
-cost											= 3880
+cost											= 3990
 boost_time										= 1800
 boost_power_restore								= 0.00442
 boost_max_weight								= 10.0
@@ -370,10 +376,11 @@ boost_explosion_immunity						= 0.15
 boost_fire_wound_immunity						= 0.15
 boost_telepat_protection						= 0.04
 boost_bhs_pain_protection						= 0.07
+tier											= 5
 
 ; SJ-IX Combat Stimulant Shot
 ![sj6]
-cost											= 5580
+cost											= 5590
 boost_time										= 1800
 boost_power_restore								= 0.00842
 boost_max_weight								= 12.0
@@ -383,6 +390,7 @@ boost_explosion_immunity						= 0.25
 boost_fire_wound_immunity						= 0.25
 boost_telepat_protection						= 0.06
 boost_bhs_pain_protection						= 0.07
+tier											= 5
 
 
 ; Radiation
@@ -396,17 +404,8 @@ eat_sleepiness									= 0.224
 eat_health										= -0.083
 boost_time										= 300 ;  was 10
 boost_radiation_restore							= 0 ; was 0.0046
-boost_radiation_protection						= 0.0024 ; was 0
-
-; Cystamine (Shot)
-![antirad_cystamine]
-cost											= 1680
-eat_satiety										= -0.13
-eat_sleepiness									= 0.1
-eat_health										= 0
-boost_time										= 300
-boost_radiation_restore							= 0.0008 ; was 0
-boost_radiation_protection						= 0.0100 ; was 0.0104
+boost_radiation_protection						= 0.0064 ; was 0
+tier											= 2
 
 ; Radioprotectant
 ![drug_radioprotector]
@@ -418,9 +417,23 @@ eat_thirstiness									= 0.2
 eat_health										= 0
 boost_time										= 360
 boost_radiation_restore							= 0 ; was 0
-boost_radiation_protection						= 0.0160 ; was 0.0154
+boost_radiation_protection						= 0.0154 ; was 0.0154
+tier											= 3
 
-; Anti-Radiation Drugs
+; Amiprodine Cx (Shot)
+![antirad_cystamine]
+cost											= 1780
+eat_satiety										= -0.13
+eat_sleepiness									= 0.1
+eat_health										= 0
+boost_time										= 300
+boost_radiation_restore							= 0.0008 ; was 0
+boost_radiation_protection						= 0.0046 ; was 0.0104
+visual											= dynamics\equipments\medical\rebirth.ogf
+use_sound										= interface\inv_syringe
+tier											= 4
+
+; Hipyridine Shot
 ![antirad]
 cost											= 2260 ; was 1860
 eat_satiety										= -0.344
@@ -439,7 +452,7 @@ tier											= 5
 
 ; Chlortetracycline
 ![antibio_chlor]
-cost											= 880
+cost											= 1180
 boost_time										= 900
 eat_health										= 0 ; was -0.0315
 eat_alcohol										= 0.01
@@ -454,7 +467,7 @@ tier											= 2
 
 ; Sulfadimethoxine
 ![antibio_sulfad]
-cost											= 1280
+cost											= 1780
 max_uses										= 3
 boost_time										= 900
 eat_health										= 0 ; was -0.0155
@@ -462,7 +475,7 @@ eat_alcohol										= 0.01
 eat_satiety										= 0
 eat_thirstiness									= 0.12
 eat_sleepiness									= 0.06
-boost_radiation_protection						= 0.0088
+boost_radiation_protection						= 0.0050
 boost_chemburn_protection						= 0.020
 visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
 use_sound										= interface\inv_eat_pills
@@ -470,7 +483,7 @@ tier											= 3
 
 ; IP2 Antitoxin
 ![drug_antidot]
-cost											= 2280	; was 3360
+cost											= 2780	; was 3360
 max_uses										= 3
 boost_time										= 900
 eat_health										= 0
@@ -489,7 +502,7 @@ tier											= 4
 
 ; Cannabis Joint
 ![joint]
-cost											= 680
+cost											= 880
 boost_time										= 420
 eat_alcohol										= -0.033
 eat_satiety										= -0.074
@@ -498,6 +511,7 @@ eat_sleepiness									= 0.14
 boost_telepat_protection						= 0.02
 boost_radiation_restore							= 0.0008
 boost_bhs_pain_protection						= 0.012
+tier											= 2
 
 ; Marijuana
 ![marijuana]
@@ -510,6 +524,7 @@ eat_sleepiness									= 0.19
 boost_telepat_protection						= 0.03
 boost_radiation_restore							= 0.0011
 boost_bhs_pain_protection						= 0.012
+tier											= 3
 
 ; Etperazine
 ![antiemetic]
@@ -525,7 +540,7 @@ visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
 use_sound										= interface\inv_eat_pills
 tier											= 2
 
-; Psy Block
+; Haloperidol
 ![drug_psy_blockade]
 cost											= 3680
 max_uses										= 4
@@ -556,6 +571,7 @@ tier											= 3
 ; Anabiotic
 ![drug_anabiotic]
 cost											= 6880
+tier											= 5
 
 
 ; Food & Drinks
