@@ -106,7 +106,7 @@ max_uses										= 1
 use_condition									= false
 tier											= 3
 $spawn											= "food and drugs\analgetic"
-visual											= dynamics\devices\glucose_shots\glucose.ogf
+visual											= dynamics\equipments\medical\rebirth.ogf
 use_sound										= interface\inv_syringe
 snd_on_take										= other
 
@@ -128,7 +128,7 @@ max_uses										= 1
 use_condition									= false
 tier											= 4
 $spawn											= "food and drugs\analgetic"
-visual											= dynamics\eft_meds\itm_stim_morphine.ogf
+visual											= dynamics\equipments\medical\rebirth.ogf
 use_sound										= interface\inv_syringe
 snd_on_take										= other
 
@@ -206,6 +206,7 @@ cost											= 3580
 boost_time										= 180
 boost_health_restore							= 0.0015
 boost_bhs_limb_restore							= 0.25
+visual											= dynamics\injectors\antirad.ogf
 
 ; Axyltallisal
 ![rebirth]
@@ -216,6 +217,7 @@ boost_radiation_restore							= 0.0122
 boost_bleeding_restore							= 0.05
 boost_bhs_limb_restore							= 0.75
 boost_bhs_pain_protection						= 0.08
+visual											= dynamics\injectors\antirad.ogf
 
 ; Survival Kit
 ![survival_kit]
@@ -235,6 +237,10 @@ cost											= 1880
 boost_time										= 300
 boost_bleeding_restore							= 0.00042
 boost_bhs_limb_restore							= 0.13
+$spawn 						                    = "food and drugs\drug_coagulant"
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills
+snd_on_take										= other
 
 ; Tranexyban Shot
 ![zagustin]
@@ -313,6 +319,10 @@ eat_alcohol										= -0.35
 boost_time										= 1200
 boost_power_restore								= 0.001
 boost_max_weight								= 2.0
+$spawn 						                    = "food and drugs\drug_psy_blockade"
+visual						                    = dynamics\devices\dev_caffeine\dev_caffeine.ogf
+use_sound					                    = interface\inv_eat_pills_effect
+tier											= 2
 
 ; Hercules
 ![drug_booster]
@@ -320,6 +330,10 @@ cost											= 3480
 boost_time										= 900
 boost_power_restore								= 0.0028
 boost_max_weight								= 6.0
+$spawn 						                    = "food and drugs\drug_psy_blockade"
+visual						                    = dynamics\devices\dev_caffeine\dev_caffeine.ogf
+use_sound					                    = interface\inv_eat_pills_effect
+tier											= 3
 
 ; Cocaine
 ![cocaine]
@@ -416,6 +430,9 @@ eat_health										= -0.053
 boost_time										= 10
 boost_radiation_restore							= 0.0046 ; was 0.0046
 boost_radiation_protection						= 0 ; was 0
+visual											= dynamics\equipments\medical\rebirth.ogf
+use_sound										= interface\inv_syringe
+tier											= 5
 
 
 ; Toxicity
@@ -431,6 +448,9 @@ eat_thirstiness									= 0.12
 eat_sleepiness									= 0.03
 boost_radiation_protection						= 0.00035
 boost_chemburn_protection						= 0.009
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills
+tier											= 2
 
 ; Sulfadimethoxine
 ![antibio_sulfad]
@@ -444,6 +464,9 @@ eat_thirstiness									= 0.12
 eat_sleepiness									= 0.06
 boost_radiation_protection						= 0.0088
 boost_chemburn_protection						= 0.020
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills
+tier											= 3
 
 ; IP2 Antitoxin
 ![drug_antidot]
@@ -457,6 +480,9 @@ eat_thirstiness									= 0.18
 eat_sleepiness									= 0.13
 boost_radiation_protection						= 0
 boost_chemburn_protection						= 0.048
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills
+tier											= 4
 
 
 ; Psy/Mental
@@ -495,6 +521,9 @@ eat_satiety										= 0
 eat_thirstiness									= 0.18
 eat_sleepiness									= 0.05
 boost_telepat_protection						= 0.04
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills
+tier											= 2
 
 ; Psy Block
 ![drug_psy_blockade]
@@ -506,6 +535,9 @@ eat_satiety										= -0.124
 eat_thirstiness									= 0.2
 eat_sleepiness									= 0.046
 boost_telepat_protection						= 0.075
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills
+tier											= 5
 
 ; Diazepam
 ![drug_sleepingpills]
@@ -517,6 +549,9 @@ eat_satiety										= 0
 eat_thirstiness									= 0.2
 eat_sleepiness									= 0.35
 boost_telepat_protection						= 0.025
+visual											= dynamics\equipments\medical\drug_sleeping_pills.ogf
+use_sound										= interface\inv_eat_pills
+tier											= 3
 
 ; Anabiotic
 ![drug_anabiotic]
