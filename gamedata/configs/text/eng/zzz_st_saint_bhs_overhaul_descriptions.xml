@@ -197,11 +197,23 @@
 		<text>Cocaine</text>
 	</string>
 	<string id="st_cocaine_descr">
-		<text>A tropane alkaloid acting as a powerful central nervous system stimulant with euphoric effects and heightened energy levels and wakefulness. The duration of its effects depend on the mode of administration and substance purity. Common side effects include anxiety, paranoia, and restlessness. Used both recreationally and practically in the field to counter drowsiness. Some factions openly distribute it among their members while use in the Zone in general is not overly common.\n \n
+		<text>A bag of high quality cocaine, a tropane alkaloid acting as a powerful central nervous system stimulant with euphoric effects and heightened energy levels and wakefulness. The duration of its effects depend on the mode of administration and substance purity. Common side effects include anxiety, paranoia, and restlessness. Used both recreationally and practically in the field to counter drowsiness. Some factions openly distribute it among their members, though general use in the Zone is not overly common.\n \n
 		%c[ui_gray_3]PROPERTIES:\n
 		%c[d_blue] • %c[ui_gray_2] imported item\n
 		%c[d_orange] • %c[ui_gray_2] moderate stimulant\n
 		%c[d_orange] • %c[ui_gray_2] minor analgesic effect\n
+		</text>
+	</string>
+
+	<string id="st_caffeine">
+		<text>Caffeine Tablets</text>
+	</string>
+	<string id="st_caffeine_descr">
+		<text>A blister pack of caffeine and sodium benzoate tablets, each containing 200 mg of anhydrous caffeine (C8H10N4O2) and 50 mg of sodium benzoate (C7H5NaO2) from a Ukrainian pharmaceutical supplier. The tablets are small, round, and white, designed for easy ingestion without a bitter aftertaste. Caffeine acts as a central nervous system stimulant by blocking adenosine receptors, preventing drowsiness, while sodium benzoate enhances caffeine's solubility and absorption. Provides a quick and effective boost of energy and alertness, while reducing the immediate need for sleep. Very commonly used in the Zone to combat fatigue, especially until coffee beans has become more widely available. Overuse can lead to jitteriness and increased heart rate.\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_blue] • %c[ui_gray_2] imported item\n
+		%c[d_blue] • %c[ui_gray_2] medical item\n
+		%c[d_orange] • %c[ui_gray_2] minor stimulant\n
 		</text>
 	</string>
 
